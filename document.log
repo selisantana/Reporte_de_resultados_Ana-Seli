@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  7 MAY 2025 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  7 MAY 2025 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,7 +1116,7 @@ n-do el pre-tra-ta-mien-to biol^^Sogi-co, bas^^Sando-
 
 [25] [26] [27]
 
-LaTeX Warning: Citation `CFE2023' undefined on input line 1476.
+LaTeX Warning: Citation `CFE2023' undefined on input line 1475.
 
 [28] [29] [30] [31] [32] (document.bbl) [33]
 <imagenes/bagazo.png, id=721, 260.47313pt x 287.57437pt>
@@ -1197,7 +1197,7 @@ vos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Archivos de
  programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Archivos de progra
 ma/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programa/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (40 pages, 20757439 bytes).
+Output written on document.pdf (40 pages, 20757485 bytes).
 PDF statistics:
  861 PDF objects out of 1000 (max. 8388607)
  176 named destinations out of 1000 (max. 500000)
