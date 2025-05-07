@@ -1,0 +1,61 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivos del trabajo de tesis}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Metas}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Marco conceptual}{6}{section.2}%
+\contentsline {section}{\numberline {3}Estado del arte}{6}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diseño de experimentos}{6}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Variables}{7}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Diseño factorial del pretratamiento Biológico}{7}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Diseño factorial del pretratamiento Alcalino}{7}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Diseño de experimentos para la configuración: sacarificación y fermentación simultaneas (SSF)}{8}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Diseño Factorial de los pretratamientos}{9}{subsubsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.2}Implementación}{12}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Pre-Pretratamiento}{12}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Pretratamiento Alcalino}{13}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Pretratamiento Biológico}{15}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Acondicionamiento para el pretratamiento}{17}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Hidrólisis y fermentación}{19}{subsubsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.3}Resultados experimentales del proceso de producción de bioetanol con pretratamiento Alcalino}{22}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Pretratamiento Alcalino}{22}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2} Hidrólisis y fermentación para pretratamiento Alcalino}{23}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Resultados experimentales del proceso de producción de bioetanol con pretratamiento Biológico}{25}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Pretratamiento Biológico}{25}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2} Hidrólisis y fermentación para pretratamiento Biológico}{26}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Comparativa de los resultados experimentales}{28}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Costos en la producción de bioetanol}{28}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Costos en la producción de bioetanol con pretratamiento Alcalino}{28}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}Costos en la producción de bioetanol solo para pretratamiento biológico}{29}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.3}Costos en la producción de bioetanol en la etapa de hidrólisis y fermentación}{30}{subsubsection.4.6.3}%
+\contentsline {section}{Referencias}{33}{section*.57}%
+\contentsline {chapter}{Bibliografía}{33}{section*.57}%
+\contentsline {chapter}{Anexos}{34}{section*.58}%
+\contentsline {section}{\numberline {A}Marco conceptual}{34}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {A.1}Bioetanol de segunda generación}{34}{subsection.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}Definición de conceptos }{34}{subsection.Alph1.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Etanol}{34}{subsubsection.Alph1.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Biomasa}{34}{subsubsection.Alph1.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}Bagazo de caña}{34}{subsubsection.Alph1.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Lignocelulosa}{34}{subsubsection.Alph1.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}Pretratamiento}{35}{subsubsection.Alph1.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.6}Hidrólisis}{36}{subsubsection.Alph1.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.7}Fermentación}{36}{subsubsection.Alph1.2.7}%
+\contentsline {subsection}{\numberline {A.3}Configuraciones en la producción de bioetanol}{37}{subsection.Alph1.3}%
+\contentsline {subsubsection}{\numberline {A.3.1}Sacarificación enzimática de la biomasa pretratada y la fermentación separadas}{37}{subsubsection.Alph1.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.2}Sacarificación y fermentación simultáneas}{37}{subsubsection.Alph1.3.2}%
+\contentsline {subsection}{\numberline {A.4}Proceso de obtención }{37}{subsection.Alph1.4}%
+\contentsline {subsection}{\numberline {A.5}Pretratamientos}{37}{subsection.Alph1.5}%
+\contentsline {subsubsection}{\numberline {A.5.1}Pretratamiento alcalino}{38}{subsubsection.Alph1.5.1}%
+\contentsline {subsubsection}{\numberline {A.5.2}Pretratamiento biológico }{38}{subsubsection.Alph1.5.2}%
+\contentsline {subsection}{\numberline {A.6}Proceso de obtención }{38}{subsection.Alph1.6}%
+\contentsline {subsection}{\numberline {A.7}Reactores tipo Batch }{38}{subsection.Alph1.7}%
+\contentsline {section}{\numberline {B}Estado del arte}{38}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {B.1}Tecnología de bioetanol de segunda generación}{39}{subsection.Alph2.1}%
+\contentsline {subsection}{\numberline {B.2}Pretratamientos }{39}{subsection.Alph2.2}%
+\contentsline {subsubsection}{\numberline {B.2.1}Pretratamiento alcalino }{39}{subsubsection.Alph2.2.1}%
+\contentsline {subsubsection}{\numberline {B.2.2}Pretratamiento biológico }{39}{subsubsection.Alph2.2.2}%
+\contentsline {subsubsection}{\numberline {B.2.3}Otros pretratamientos }{39}{subsubsection.Alph2.2.3}%
+\contentsline {subsection}{\numberline {B.3}Configuraciones en la producción de bioetanol}{39}{subsection.Alph2.3}%
+\contentsline {subsubsection}{\numberline {B.3.1}Sacarificación enzimática de la biomasa pretratada y la fermentación separadas }{39}{subsubsection.Alph2.3.1}%
+\contentsline {subsubsection}{\numberline {B.3.2}Sacarificación y fermentación simultáneas }{39}{subsubsection.Alph2.3.2}%
