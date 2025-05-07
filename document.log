@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  7 MAY 2025 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  7 MAY 2025 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,7 +642,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...e {A}Marco conceptual}{28}{appendix.Alph1}
+l.34 ...e {A}Marco conceptual}{30}{appendix.Alph1}
                                                   %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -654,7 +654,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...e {A}Marco conceptual}{28}{appendix.Alph1}
+l.34 ...e {A}Marco conceptual}{30}{appendix.Alph1}
                                                   %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -664,7 +664,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...ignocelulosa}{28}{subsubsection.Alph1.2.4}
+l.40 ...ignocelulosa}{30}{subsubsection.Alph1.2.4}
                                                   % [1
 
 
@@ -777,35 +777,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 LaTeX Warning: Reference `arturo' on page 8 undefined on input line 243.
 
 [8]
-
-! LaTeX Error: File `imagenes/diagrama' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.269 ...s[width=0.7\linewidth]{imagenes/diagrama}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/diagrama.png, id=470, 2651.9075pt x 1770.615pt>
+File: imagenes/diagrama.png Graphic file (type png)
+<use imagenes/diagrama.png>
+Package pdftex.def Info: imagenes/diagrama.png  used on input line 269.
+(pdftex.def)             Requested size: 328.82707pt x 219.54318pt.
+<imagenes/diagrama biologico.png, id=472, 2572.61125pt x 1765.59625pt>
+File: imagenes/diagrama biologico.png Graphic file (type png)
+<use imagenes/diagrama biologico.png>
+Package pdftex.def Info: imagenes/diagrama biologico.png  used on input line 27
+8.
+(pdftex.def)             Requested size: 328.82707pt x 225.6561pt.
 
 
-! LaTeX Error: File `imagenes/diagrama biologico' not found.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 ...7\linewidth]{imagenes/diagrama biologico}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9] [10]
+[9 <./imagenes/diagrama.png>] [10 <./imagenes/diagrama biologico.png>] [11]
 Overfull \hbox (6.6536pt too wide) in paragraph at lines 399--405
 [][] 
  []
@@ -815,77 +802,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--405
 
  []
 
+<imagenes/secado de bagazo.jpg, id=496, 698.61pt x 426.09187pt>
+File: imagenes/secado de bagazo.jpg Graphic file (type jpg)
+<use imagenes/secado de bagazo.jpg>
+Package pdftex.def Info: imagenes/secado de bagazo.jpg  used on input line 414.
 
-! LaTeX Error: File `imagenes/secado de bagazo' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.414 ...m, height=3cm]{imagenes/secado de bagazo}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/cernir_bagazo_1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.420 ...cm, height=3cm]{imagenes/cernir_bagazo_1}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/cernir_bagazo_2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.439 ...eepaspectratio]{imagenes/cernir_bagazo_2}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/cernir_bagazo_cedazo' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.446 ...pectratio]{imagenes/cernir_bagazo_cedazo}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[11]
-
-! LaTeX Error: File `imagenes/cernir_bagazo_pesado' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ...eight=3cm]{imagenes/cernir_bagazo_pesado}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+(pdftex.def)             Requested size: 142.25658pt x 85.3534pt.
+<imagenes/cernir_bagazo_1.jpg, id=497, 1606.0pt x 1208.515pt>
+File: imagenes/cernir_bagazo_1.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_1.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_1.jpg  used on input line 420.
+(pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
+<imagenes/cernir_bagazo_2.jpg, id=500, 906.38625pt x 1204.5pt>
+File: imagenes/cernir_bagazo_2.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_2.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_2.jpg  used on input line 439.
+(pdftex.def)             Requested size: 85.63734pt x 113.80379pt.
+<imagenes/cernir_bagazo_cedazo.jpg, id=501, 1208.515pt x 1606.0pt>
+File: imagenes/cernir_bagazo_cedazo.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_cedazo.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_cedazo.jpg  used on input line 
+446.
+(pdftex.def)             Requested size: 85.63734pt x 113.80379pt.
+[12 <./imagenes/secado de bagazo.jpg> <./imagenes/cernir_bagazo_1.jpg>]
+<imagenes/cernir_bagazo_pesado.jpg, id=510, 2312.64pt x 2413.51688pt>
+File: imagenes/cernir_bagazo_pesado.jpg Graphic file (type jpg)
+<use imagenes/cernir_bagazo_pesado.jpg>
+Package pdftex.def Info: imagenes/cernir_bagazo_pesado.jpg  used on input line 
+459.
+(pdftex.def)             Requested size: 142.24593pt x 85.32875pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 480--480
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Agua des-mi-ne-ra-li-za-da
@@ -906,110 +851,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
+<imagenes/pesado4.jpg, id=513, 1830.84pt x 2312.64pt>
+File: imagenes/pesado4.jpg Graphic file (type jpg)
+<use imagenes/pesado4.jpg>
+Package pdftex.def Info: imagenes/pesado4.jpg  used on input line 495.
+(pdftex.def)             Requested size: 85.34549pt x 142.24593pt.
+<imagenes/hidroxido_pesado.jpg, id=514, 2100.34688pt x 2359.31438pt>
+File: imagenes/hidroxido_pesado.jpg Graphic file (type jpg)
+<use imagenes/hidroxido_pesado.jpg>
+Package pdftex.def Info: imagenes/hidroxido_pesado.jpg  used on input line 502.
 
-! LaTeX Error: File `imagenes/pesado4' not found.
+(pdftex.def)             Requested size: 85.34561pt x 142.23676pt.
+[13 <./imagenes/cernir_bagazo_2.jpg> <./imagenes/cernir_bagazo_cedazo.jpg> <./i
+magenes/cernir_bagazo_pesado.jpg>]
+<imagenes/reactor limpio.jpg, id=521, 2312.64pt x 3071.475pt>
+File: imagenes/reactor limpio.jpg Graphic file (type jpg)
+<use imagenes/reactor limpio.jpg>
+Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 512.
+(pdftex.def)             Requested size: 85.32637pt x 142.24095pt.
+<imagenes/agua con bagazo.jpg, id=523, 966.61125pt x 1284.8pt>
+File: imagenes/agua con bagazo.jpg Graphic file (type jpg)
+<use imagenes/agua con bagazo.jpg>
+Package pdftex.def Info: imagenes/agua con bagazo.jpg  used on input line 527.
+(pdftex.def)             Requested size: 85.35408pt x 85.35774pt.
+<imagenes/bagazo con hidroxido1.jpg, id=524, 3083.52pt x 2842.62pt>
+File: imagenes/bagazo con hidroxido1.jpg Graphic file (type jpg)
+<use imagenes/bagazo con hidroxido1.jpg>
+Package pdftex.def Info: imagenes/bagazo con hidroxido1.jpg  used on input line
+ 534.
+(pdftex.def)             Requested size: 142.23416pt x 85.31828pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.495 ...[width=3cm, height=5cm]{imagenes/pesado4}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidroxido_pesado' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.502 ...m, height=5cm]{imagenes/hidroxido_pesado}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/reactor limpio' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512 ...ht=5cm,angle=90]{imagenes/reactor limpio}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/agua con bagazo' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.527 ...cm, height=3cm]{imagenes/agua con bagazo}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/bagazo con hidroxido1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.534 ...ight=3cm]{imagenes/bagazo con hidroxido1}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[12]
 Overfull \hbox (10.90901pt too wide) in paragraph at lines 543--544
 []\OT1/cmr/bx/n/12 6. \OT1/cmr/m/n/12 El reac-tor se se-lla herm^^Seti-ca-men-t
 e me-dian-te un sis-te-ma mul-ti-ca-pa com-pues-to por:algod^^Son
  []
 
-
-! LaTeX Error: File `imagenes/sellado2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.555 ...=4cm, keepaspectratio]{imagenes/sellado2}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/programa3' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.562 ...4cm, keepaspectratio]{imagenes/programa3}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[14 <./imagenes/pesado4.jpg> <./imagenes/hidroxido_pesado.jpg> <./imagenes/reac
+tor limpio.jpg> <./imagenes/agua con bagazo.jpg> <./imagenes/bagazo con hidroxi
+do1.jpg>]
+<imagenes/sellado2.jpg, id=534, 4095.3pt x 3083.52pt>
+File: imagenes/sellado2.jpg Graphic file (type jpg)
+<use imagenes/sellado2.jpg>
+Package pdftex.def Info: imagenes/sellado2.jpg  used on input line 555.
+(pdftex.def)             Requested size: 151.0988pt x 113.76851pt.
+<imagenes/programa3.jpg, id=535, 4095.3pt x 3083.52pt>
+File: imagenes/programa3.jpg Graphic file (type jpg)
+<use imagenes/programa3.jpg>
+Package pdftex.def Info: imagenes/programa3.jpg  used on input line 562.
+(pdftex.def)             Requested size: 151.0988pt x 113.76851pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 590--590
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Agua des-mi-ne-ra-li-za-da
@@ -1025,136 +914,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 589--594
 
  []
 
+<imagenes/pesado2.jpg, id=538, 548.80031pt x 692.5875pt>
+File: imagenes/pesado2.jpg Graphic file (type jpg)
+<use imagenes/pesado2.jpg>
+Package pdftex.def Info: imagenes/pesado2.jpg  used on input line 606.
+(pdftex.def)             Requested size: 85.35625pt x 142.25612pt.
+<imagenes/humus.jpg, id=539, 1208.515pt x 1606.0pt>
+File: imagenes/humus.jpg Graphic file (type jpg)
+<use imagenes/humus.jpg>
+Package pdftex.def Info: imagenes/humus.jpg  used on input line 613.
+(pdftex.def)             Requested size: 85.3423pt x 142.25475pt.
+[15 <./imagenes/sellado2.jpg> <./imagenes/programa3.jpg>]
 
-! LaTeX Error: File `imagenes/pesado2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.606 ...[width=3cm, height=5cm]{imagenes/pesado2}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/humus' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.613 ...cs[width=3cm, height=5cm]{imagenes/humus}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `reactor' on page 16 undefined on input line 623.
 
 
-LaTeX Warning: Reference `reactor' on page 13 undefined on input line 623.
-
-[13]
-
-LaTeX Warning: Reference `baciado al reactor' on page 14 undefined on input lin
+LaTeX Warning: Reference `baciado al reactor' on page 16 undefined on input lin
 e 627.
 
-
-! LaTeX Error: File `imagenes/reactor limpio' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.634 ...5cm, height=3cm]{imagenes/reactor limpio}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/biologico5' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.641 ...dth=5cm, height=3cm]{imagenes/biologico5}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/humus2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 ...s[width=3cm, height=5cm]{imagenes/humus2}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/cellado del reactor' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.665 ...height=5cm]{imagenes/cellado del reactor}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+File: imagenes/reactor limpio.jpg Graphic file (type jpg)
+<use imagenes/reactor limpio.jpg>
+Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 634.
+(pdftex.def)             Requested size: 142.24593pt x 85.34457pt.
+<imagenes/biologico5.jpg, id=546, 966.61125pt x 1284.8pt>
+File: imagenes/biologico5.jpg Graphic file (type jpg)
+<use imagenes/biologico5.jpg>
+Package pdftex.def Info: imagenes/biologico5.jpg  used on input line 641.
+(pdftex.def)             Requested size: 142.2568pt x 85.35774pt.
+<imagenes/humus2.jpg, id=549, 1208.515pt x 1606.0pt>
+File: imagenes/humus2.jpg Graphic file (type jpg)
+<use imagenes/humus2.jpg>
+Package pdftex.def Info: imagenes/humus2.jpg  used on input line 658.
+(pdftex.def)             Requested size: 85.3423pt x 142.25475pt.
+<imagenes/cellado del reactor.jpg, id=550, 3083.52pt x 4095.3pt>
+File: imagenes/cellado del reactor.jpg Graphic file (type jpg)
+<use imagenes/cellado del reactor.jpg>
+Package pdftex.def Info: imagenes/cellado del reactor.jpg  used on input line 6
+65.
+(pdftex.def)             Requested size: 85.3499pt x 142.22534pt.
+[16 <./imagenes/pesado2.jpg> <./imagenes/humus.jpg> <./imagenes/biologico5.jpg>
+]
 
 LaTeX Warning: Reference `Diseño factorial del pretratamiento Biológico' on p
-age 14 undefined on input line 672.
+age 17 undefined on input line 672.
 
-
-! LaTeX Error: File `imagenes/programa1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.678 ...idth=5cm, height=3cm]{imagenes/programa1}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/programa2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.685 ...idth=5cm, height=3cm]{imagenes/programa2}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<imagenes/programa1.jpg, id=559, 4095.3pt x 3083.52pt>
+File: imagenes/programa1.jpg Graphic file (type jpg)
+<use imagenes/programa1.jpg>
+Package pdftex.def Info: imagenes/programa1.jpg  used on input line 678.
+(pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
+<imagenes/programa2.jpg, id=560, 4095.3pt x 3083.52pt>
+File: imagenes/programa2.jpg Graphic file (type jpg)
+<use imagenes/programa2.jpg>
+Package pdftex.def Info: imagenes/programa2.jpg  used on input line 685.
+(pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
 
 Overfull \hbox (6.6536pt too wide) in paragraph at lines 702--708
 [][] 
@@ -1166,133 +979,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 702--708
  []
 
 
-LaTeX Warning: Reference `biologico1' on page 14 undefined on input line 713.
+LaTeX Warning: Reference `biologico1' on page 17 undefined on input line 713.
 
-[14]
-
-! LaTeX Error: File `imagenes/watimetro' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.721 ...idth=5cm, height=3cm]{imagenes/watimetro}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/biologico1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 ...dth=4cm, height=3cm]{imagenes/biologico1}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/biologico6' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.741 ...dth=5cm, height=3cm]{imagenes/biologico6}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/bagazo_biologico_sacado' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.748 ...ht=3cm]{imagenes/bagazo_biologico_sacado}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imagenes/watimetro.jpg, id=562, 1284.8pt x 966.61125pt>
+File: imagenes/watimetro.jpg Graphic file (type jpg)
+<use imagenes/watimetro.jpg>
+Package pdftex.def Info: imagenes/watimetro.jpg  used on input line 721.
+(pdftex.def)             Requested size: 142.24985pt x 85.35408pt.
+<imagenes/biologico1.jpg, id=563, 1208.515pt x 1606.0pt>
+File: imagenes/biologico1.jpg Graphic file (type jpg)
+<use imagenes/biologico1.jpg>
+Package pdftex.def Info: imagenes/biologico1.jpg  used on input line 728.
+(pdftex.def)             Requested size: 113.79588pt x 85.35284pt.
+[17 <./imagenes/humus2.jpg> <./imagenes/cellado del reactor.jpg> <./imagenes/pr
+ograma1.jpg> <./imagenes/programa2.jpg>]
+<imagenes/biologico6.jpg, id=572, 4095.3pt x 3083.52pt>
+File: imagenes/biologico6.jpg Graphic file (type jpg)
+<use imagenes/biologico6.jpg>
+Package pdftex.def Info: imagenes/biologico6.jpg  used on input line 741.
+(pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
+<imagenes/bagazo_biologico_sacado.jpg, id=573, 1606.0pt x 1208.515pt>
+File: imagenes/bagazo_biologico_sacado.jpg Graphic file (type jpg)
+<use imagenes/bagazo_biologico_sacado.jpg>
+Package pdftex.def Info: imagenes/bagazo_biologico_sacado.jpg  used on input li
+ne 748.
+(pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
+<imagenes/biologico3.jpg, id=576, 877.02657pt x 890.5772pt>
+File: imagenes/biologico3.jpg Graphic file (type jpg)
+<use imagenes/biologico3.jpg>
+Package pdftex.def Info: imagenes/biologico3.jpg  used on input line 767.
+(pdftex.def)             Requested size: 142.25417pt x 85.3531pt.
+<imagenes/secado2.jpg, id=577, 4095.3pt x 3083.52pt>
+File: imagenes/secado2.jpg Graphic file (type jpg)
+<use imagenes/secado2.jpg>
+Package pdftex.def Info: imagenes/secado2.jpg  used on input line 774.
+(pdftex.def)             Requested size: 113.79277pt x 85.3499pt.
+ [18 <./imagenes/watimetro.jpg> <./imagenes/biologico1.jpg> <./imagenes/biologi
+co6.jpg> <./imagenes/bagazo_biologico_sacado.jpg> <./imagenes/biologico3.jpg> <
+./imagenes/secado2.jpg>]
+<imagenes/enjuagado.jpg, id=587, 1638.12pt x 1507.13063pt>
+File: imagenes/enjuagado.jpg Graphic file (type jpg)
+<use imagenes/enjuagado.jpg>
+Package pdftex.def Info: imagenes/enjuagado.jpg  used on input line 793.
+(pdftex.def)             Requested size: 142.25034pt x 85.34161pt.
+<imagenes/secado6.jpg, id=588, 1443.14156pt x 1128.46594pt>
+File: imagenes/secado6.jpg Graphic file (type jpg)
+<use imagenes/secado6.jpg>
+Package pdftex.def Info: imagenes/secado6.jpg  used on input line 800.
+(pdftex.def)             Requested size: 113.80214pt x 85.35449pt.
 
 
-! LaTeX Error: File `imagenes/biologico3' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.767 ...dth=5cm, height=3cm]{imagenes/biologico3}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `biologico6' on page 19 undefined on input line 810.
 
 
-! LaTeX Error: File `imagenes/secado2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.774 ...[width=4cm, height=3cm]{imagenes/secado2}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/enjuagado' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.793 ...idth=5cm, height=3cm]{imagenes/enjuagado}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/secado6' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.800 ...[width=4cm, height=3cm]{imagenes/secado6}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `biologico6' on page 15 undefined on input line 810.
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 817--819
 
  []
@@ -1312,205 +1051,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 823--830
 
  []
 
-
-! LaTeX Error: File `imagenes/agua' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.846 ...ics[width=3cm, height=3cm]{imagenes/agua}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/levadura y acido citrico' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.853 ...t=3cm]{imagenes/levadura y acido citrico}
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidrolisis1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.871 ...th=3cm, height=3cm]{imagenes/hidrolisis1}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidrolisis4 ' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.878 ...h=4cm, height=3cm]{imagenes/hidrolisis4 }
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<imagenes/agua.jpg, id=590, 569.87906pt x 754.31813pt>
+File: imagenes/agua.jpg Graphic file (type jpg)
+<use imagenes/agua.jpg>
+Package pdftex.def Info: imagenes/agua.jpg  used on input line 846.
+(pdftex.def)             Requested size: 85.35643pt x 85.3578pt.
+<imagenes/levadura y acido citrico.jpg, id=591, 2211.01031pt x 1623.81656pt>
+File: imagenes/levadura y acido citrico.jpg Graphic file (type jpg)
+<use imagenes/levadura y acido citrico.jpg>
+Package pdftex.def Info: imagenes/levadura y acido citrico.jpg  used on input l
+ine 853.
+(pdftex.def)             Requested size: 113.79576pt x 85.35818pt.
+[19 <./imagenes/enjuagado.jpg> <./imagenes/secado6.jpg>]
+<imagenes/hidrolisis1.jpg, id=600, 835.62187pt x 916.1728pt>
+File: imagenes/hidrolisis1.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis1.jpg>
+Package pdftex.def Info: imagenes/hidrolisis1.jpg  used on input line 871.
+(pdftex.def)             Requested size: 85.35216pt x 85.34578pt.
+<imagenes/hidrolisis4.jpg, id=601, 1208.515pt x 1606.0pt>
+File: imagenes/hidrolisis4.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis4.jpg>
+Package pdftex.def Info: imagenes/hidrolisis4.jpg  used on input line 878.
+(pdftex.def)             Requested size: 113.79588pt x 85.35284pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 885--886
 
  []
 
-[16]
-
-! LaTeX Error: File `imagenes/hidrolisis9' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.896 ...th=5cm, height=3cm]{imagenes/hidrolisis9}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidrolisis3 ' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.903 ...h=5cm, height=3cm]{imagenes/hidrolisis3 }
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidrolisis 6' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.919 ...h=5cm, height=3cm]{imagenes/hidrolisis 6}
-                                                   % Cambia "imagen1.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/conexion de hidrolisis ' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.926 ...ht=3cm]{imagenes/conexion de hidrolisis }
-                                                   % Cambia "imagen2.jpg" po...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `imagenes/hidrolisis7' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.938 ...th=5cm, height=3cm]{imagenes/hidrolisis7}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[17] [18] [19] [20]
+<imagenes/hidrolisis9.jpg, id=604, 1208.515pt x 1606.0pt>
+File: imagenes/hidrolisis9.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis9.jpg>
+Package pdftex.def Info: imagenes/hidrolisis9.jpg  used on input line 896.
+(pdftex.def)             Requested size: 142.24947pt x 85.35284pt.
+<imagenes/hidrolisis3.jpg, id=605, 1208.515pt x 1606.0pt>
+File: imagenes/hidrolisis3.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis3.jpg>
+Package pdftex.def Info: imagenes/hidrolisis3.jpg  used on input line 903.
+(pdftex.def)             Requested size: 142.24947pt x 85.35284pt.
+[20 <./imagenes/agua.jpg> <./imagenes/levadura y acido citrico.jpg> <./imagenes
+/hidrolisis1.jpg> <./imagenes/hidrolisis4.jpg>]
+<imagenes/hidrolisis 6.jpg, id=615, 1606.0pt x 1208.515pt>
+File: imagenes/hidrolisis 6.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis 6.jpg>
+Package pdftex.def Info: imagenes/hidrolisis 6.jpg  used on input line 919.
+(pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
+<imagenes/conexion de hidrolisis.jpg, id=616, 3083.52pt x 4095.3pt>
+File: imagenes/conexion de hidrolisis.jpg Graphic file (type jpg)
+<use imagenes/conexion de hidrolisis.jpg>
+Package pdftex.def Info: imagenes/conexion de hidrolisis.jpg  used on input lin
+e 926.
+(pdftex.def)             Requested size: 85.3499pt x 85.2977pt.
+<imagenes/hidrolisis7.jpg, id=618, 1284.8pt x 966.61125pt>
+File: imagenes/hidrolisis7.jpg Graphic file (type jpg)
+<use imagenes/hidrolisis7.jpg>
+Package pdftex.def Info: imagenes/hidrolisis7.jpg  used on input line 938.
+(pdftex.def)             Requested size: 142.24985pt x 85.35408pt.
+ [21 <./imagenes/hidrolisis9.jpg> <./imagenes/hidrolisis3.jpg> <./imagenes/hidr
+olisis 6.jpg> <./imagenes/conexion de hidrolisis.jpg> <./imagenes/hidrolisis7.j
+pg>] [22] [23] [24]
 Overfull \hbox (4.7761pt too wide) in paragraph at lines 1284--1285
 []\OT1/cmr/m/n/12 Para el pro-ce-so de pro-duc-ci^^Son de bio-eta-nol uti-li-za
 n-do el pre-tra-ta-mien-to biol^^Sogi-co, bas^^Sando-
  []
 
-[21] [22]
+[25] [26]
 Overfull \hbox (269.64134pt too wide) in paragraph at lines 1458--1472
  [][] 
  []
 
-[23]
+[27]
 
 LaTeX Warning: Citation `CFE2023' undefined on input line 1476.
 
-[24] [25] [26] [27] [28] (document.bbl) [29]
+[28] [29] [30] [31] [32] (document.bbl) [33]
+<imagenes/bagazo.png, id=721, 260.47313pt x 287.57437pt>
+File: imagenes/bagazo.png Graphic file (type png)
+<use imagenes/bagazo.png>
+Package pdftex.def Info: imagenes/bagazo.png  used on input line 1751.
+(pdftex.def)             Requested size: 187.89914pt x 207.4483pt.
 
-! LaTeX Error: File `imagenes/bagazo' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1751 ...cs[width=0.4\linewidth]{imagenes/bagazo}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Citation `portalproduccion' undefined on input line 1761.
 
-[30
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 1765--1767
 
  []
 
-
-! LaTeX Error: File `imagenes/pretrata_1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1770 ...idth=0.4\linewidth]{imagenes/pretrata_1}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[31]
+<imagenes/pretrata_1.png, id=733, 749.80125pt x 529.98pt>
+File: imagenes/pretrata_1.png Graphic file (type png)
+<use imagenes/pretrata_1.png>
+Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1770.
+(pdftex.def)             Requested size: 187.89914pt x 132.81004pt.
+[35 <./imagenes/bagazo.png> <./imagenes/pretrata_1.png>]
 
 LaTeX Warning: Citation `Arturo2022' undefined on input line 1812.
 
-[32] [33] [34] (document.aux (caratula.aux)
+[36] [37] [38] [39] (document.aux (caratula.aux)
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -1529,10 +1171,10 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E9D10DAA5C29A177661D6A9CF559120A;14138.
  ) 
 Here is how much of TeX's memory you used:
- 16419 strings out of 474486
- 288933 string characters out of 5750287
+ 15736 strings out of 474486
+ 267327 string characters out of 5750287
  1970542 words of memory out of 5000000
- 38326 multiletter control sequences out of 15000+600000
+ 37638 multiletter control sequences out of 15000+600000
  567470 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,913b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1560,9 +1202,9 @@ vos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Archivos de
  programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Archivos de progra
 ma/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programa/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (35 pages, 508520 bytes).
+Output written on document.pdf (40 pages, 20758085 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 171 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 861 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 691 words of extra memory for PDF output out of 10000 (max. 10000000)
 
