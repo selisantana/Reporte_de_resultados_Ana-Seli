@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  7 MAY 2025 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.20)  8 MAY 2025 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,6 +502,16 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibitemsep=\skip66
 \biblabelsep=\skip67
 )
+(D:\Archivos de programa\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen270
+\TX@old@table=\dimen271
+\TX@old@col=\dimen272
+\TX@target=\dimen273
+\TX@delta=\dimen274
+\TX@cols=\count320
+\TX@ftn=\toks35
+)
 \@indexfile=\write3
 \openout3 = `document.idx'.
 
@@ -523,31 +533,31 @@ LaTeX Warning: Label `tipos de pretratamientos' multiply defined.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-Package hyperref Info: Link coloring OFF on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package hyperref Info: Link coloring OFF on input line 30.
  (document.out) (document.out)
 \@outlinefile=\write4
 \openout4 = `document.out'.
 
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -585,17 +595,17 @@ LaTeX Info: Redefining \% on input line 31.
 
 (D:\Archivos de programa\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen270
+\scratchcounter=\count321
+\scratchdimen=\dimen275
 \scratchbox=\box65
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen271
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks36
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen276
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks37
 ) (D:\Archivos de programa\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -606,7 +616,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\c@maskedRefs=\count326
+\c@maskedRefs=\count327
 
 (D:\Archivos de programa\MiKTeX\tex/latex/apacite\spanish.apc
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -642,7 +652,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...e {A}Marco conceptual}{34}{appendix.Alph1}
+l.34 ...e {A}Marco conceptual}{29}{appendix.Alph1}
                                                   %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -654,7 +664,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...e {A}Marco conceptual}{34}{appendix.Alph1}
+l.34 ...e {A}Marco conceptual}{29}{appendix.Alph1}
                                                   %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -664,7 +674,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...ignocelulosa}{34}{subsubsection.Alph1.2.4}
+l.40 ...ignocelulosa}{29}{subsubsection.Alph1.2.4}
                                                   % [1
 
 
@@ -686,79 +696,87 @@ Overfull \hbox (11.7942pt too wide) in paragraph at lines 2--2
 \openout6 = `document.lot'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[5] [6]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 	\newpage
+               [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 			\item T
+                emperatura [2]
 
 LaTeX Warning: Reference `tab:Variables a modificar en pretratamiento Biologico
-' on page 7 undefined on input line 138.
+' on page 3 undefined on input line 142.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7]
-Overfull \hbox (3.67848pt too wide) in paragraph at lines 220--220
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.205 \newpage
+               [3]
+Overfull \hbox (3.67848pt too wide) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Biomasa| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Carga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Carga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 \OT1/cmr/m/n/10.95 en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Inoculo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 \OT1/cmr/m/n/10.95 (le-va-du-
  []
 
 
-Overfull \hbox (5.2054pt too wide) in paragraph at lines 220--220
+Overfull \hbox (5.2054pt too wide) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Temperatura| 
  []
 
 
-Overfull \hbox (2.661pt too wide) in paragraph at lines 220--220
+Overfull \hbox (2.661pt too wide) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 Tiempo| 
  []
 
 
-Overfull \hbox (3.2501pt too wide) in paragraph at lines 220--221
+Overfull \hbox (3.2501pt too wide) in paragraph at lines 224--225
 []|\OT1/cmr/m/n/10.95 Agitaci^^Son| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
-[]|\OT1/cmr/m/n/10.95 Bagazo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
-[]|\OT1/cmr/m/n/10.95 20
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []|\OT1/cmr/m/n/10.95 Bagazo
  []
@@ -769,385 +787,410 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
+[]|\OT1/cmr/m/n/10.95 Bagazo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
+[]|\OT1/cmr/m/n/10.95 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 []|\OT1/cmr/m/n/10.95 1725
  []
 
 
-LaTeX Warning: Reference `arturo' on page 8 undefined on input line 243.
+LaTeX Warning: Reference `arturo' on page 4 undefined on input line 247.
 
-[8]
-<imagenes/diagrama.png, id=470, 2651.9075pt x 1770.615pt>
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.251 	\end{equation}
+                      [4]
+<imagenes/diagrama.png, id=466, 2651.9075pt x 1770.615pt>
 File: imagenes/diagrama.png Graphic file (type png)
 <use imagenes/diagrama.png>
-Package pdftex.def Info: imagenes/diagrama.png  used on input line 269.
+Package pdftex.def Info: imagenes/diagrama.png  used on input line 273.
 (pdftex.def)             Requested size: 328.82707pt x 219.54318pt.
-<imagenes/diagrama biologico.png, id=472, 2572.61125pt x 1765.59625pt>
+<imagenes/diagrama biologico.png, id=468, 2572.61125pt x 1765.59625pt>
 File: imagenes/diagrama biologico.png Graphic file (type png)
 <use imagenes/diagrama biologico.png>
-Package pdftex.def Info: imagenes/diagrama biologico.png  used on input line 27
-8.
+Package pdftex.def Info: imagenes/diagrama biologico.png  used on input line 28
+2.
 (pdftex.def)             Requested size: 328.82707pt x 225.6561pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <./imagenes/diagrama.png>] [10 <./imagenes/diagrama biologico.png>] [11]
-Overfull \hbox (6.6536pt too wide) in paragraph at lines 399--405
+[5 <./imagenes/diagrama.png>] [6 <./imagenes/diagrama biologico.png>] [7]
+Overfull \hbox (6.6536pt too wide) in paragraph at lines 403--409
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--405
+Underfull \hbox (badness 10000) in paragraph at lines 403--409
 
  []
 
-<imagenes/secado de bagazo.jpg, id=496, 698.61pt x 426.09187pt>
+<imagenes/secado de bagazo.jpg, id=492, 698.61pt x 426.09187pt>
 File: imagenes/secado de bagazo.jpg Graphic file (type jpg)
 <use imagenes/secado de bagazo.jpg>
-Package pdftex.def Info: imagenes/secado de bagazo.jpg  used on input line 414.
+Package pdftex.def Info: imagenes/secado de bagazo.jpg  used on input line 418.
 
 (pdftex.def)             Requested size: 142.25658pt x 85.3534pt.
-<imagenes/cernir_bagazo_1.jpg, id=497, 1606.0pt x 1208.515pt>
+<imagenes/cernir_bagazo_1.jpg, id=493, 1606.0pt x 1208.515pt>
 File: imagenes/cernir_bagazo_1.jpg Graphic file (type jpg)
 <use imagenes/cernir_bagazo_1.jpg>
-Package pdftex.def Info: imagenes/cernir_bagazo_1.jpg  used on input line 420.
+Package pdftex.def Info: imagenes/cernir_bagazo_1.jpg  used on input line 424.
 (pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
-<imagenes/cernir_bagazo_2.jpg, id=500, 906.38625pt x 1204.5pt>
+<imagenes/cernir_bagazo_2.jpg, id=496, 906.38625pt x 1204.5pt>
 File: imagenes/cernir_bagazo_2.jpg Graphic file (type jpg)
 <use imagenes/cernir_bagazo_2.jpg>
-Package pdftex.def Info: imagenes/cernir_bagazo_2.jpg  used on input line 439.
+Package pdftex.def Info: imagenes/cernir_bagazo_2.jpg  used on input line 443.
 (pdftex.def)             Requested size: 85.63734pt x 113.80379pt.
-<imagenes/cernir_bagazo_cedazo.jpg, id=501, 1208.515pt x 1606.0pt>
+<imagenes/cernir_bagazo_cedazo.jpg, id=497, 1208.515pt x 1606.0pt>
 File: imagenes/cernir_bagazo_cedazo.jpg Graphic file (type jpg)
 <use imagenes/cernir_bagazo_cedazo.jpg>
 Package pdftex.def Info: imagenes/cernir_bagazo_cedazo.jpg  used on input line 
-446.
+450.
 (pdftex.def)             Requested size: 85.63734pt x 113.80379pt.
-[12 <./imagenes/secado de bagazo.jpg> <./imagenes/cernir_bagazo_1.jpg>]
-<imagenes/cernir_bagazo_pesado.jpg, id=510, 2312.64pt x 2413.51688pt>
+[8 <./imagenes/secado de bagazo.jpg> <./imagenes/cernir_bagazo_1.jpg>]
+<imagenes/cernir_bagazo_pesado.jpg, id=506, 2312.64pt x 2413.51688pt>
 File: imagenes/cernir_bagazo_pesado.jpg Graphic file (type jpg)
 <use imagenes/cernir_bagazo_pesado.jpg>
 Package pdftex.def Info: imagenes/cernir_bagazo_pesado.jpg  used on input line 
-459.
+463.
 (pdftex.def)             Requested size: 142.24593pt x 85.32875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--480
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Agua des-mi-ne-ra-li-za-da
  []
 
 
-Overfull \hbox (6.6536pt too wide) in paragraph at lines 479--484
+Overfull \hbox (6.6536pt too wide) in paragraph at lines 483--488
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--484
+Underfull \hbox (badness 10000) in paragraph at lines 483--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--486
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-<imagenes/pesado4.jpg, id=513, 1830.84pt x 2312.64pt>
+<imagenes/pesado4.jpg, id=509, 1830.84pt x 2312.64pt>
 File: imagenes/pesado4.jpg Graphic file (type jpg)
 <use imagenes/pesado4.jpg>
-Package pdftex.def Info: imagenes/pesado4.jpg  used on input line 495.
+Package pdftex.def Info: imagenes/pesado4.jpg  used on input line 499.
 (pdftex.def)             Requested size: 85.34549pt x 142.24593pt.
-<imagenes/hidroxido_pesado.jpg, id=514, 2100.34688pt x 2359.31438pt>
+<imagenes/hidroxido_pesado.jpg, id=510, 2100.34688pt x 2359.31438pt>
 File: imagenes/hidroxido_pesado.jpg Graphic file (type jpg)
 <use imagenes/hidroxido_pesado.jpg>
-Package pdftex.def Info: imagenes/hidroxido_pesado.jpg  used on input line 502.
+Package pdftex.def Info: imagenes/hidroxido_pesado.jpg  used on input line 506.
 
 (pdftex.def)             Requested size: 85.34561pt x 142.23676pt.
-[13 <./imagenes/cernir_bagazo_2.jpg> <./imagenes/cernir_bagazo_cedazo.jpg> <./i
-magenes/cernir_bagazo_pesado.jpg>]
-<imagenes/reactor limpio.jpg, id=521, 2312.64pt x 3071.475pt>
+[9 <./imagenes/cernir_bagazo_2.jpg> <./imagenes/cernir_bagazo_cedazo.jpg> <./im
+agenes/cernir_bagazo_pesado.jpg>]
+<imagenes/reactor limpio.jpg, id=517, 2312.64pt x 3071.475pt>
 File: imagenes/reactor limpio.jpg Graphic file (type jpg)
 <use imagenes/reactor limpio.jpg>
-Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 512.
+Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 516.
 (pdftex.def)             Requested size: 85.32637pt x 142.24095pt.
-<imagenes/agua con bagazo.jpg, id=523, 966.61125pt x 1284.8pt>
+<imagenes/agua con bagazo.jpg, id=519, 966.61125pt x 1284.8pt>
 File: imagenes/agua con bagazo.jpg Graphic file (type jpg)
 <use imagenes/agua con bagazo.jpg>
-Package pdftex.def Info: imagenes/agua con bagazo.jpg  used on input line 527.
+Package pdftex.def Info: imagenes/agua con bagazo.jpg  used on input line 531.
 (pdftex.def)             Requested size: 85.35408pt x 85.35774pt.
-<imagenes/bagazo con hidroxido1.jpg, id=524, 3083.52pt x 2842.62pt>
+<imagenes/bagazo con hidroxido1.jpg, id=520, 3083.52pt x 2842.62pt>
 File: imagenes/bagazo con hidroxido1.jpg Graphic file (type jpg)
 <use imagenes/bagazo con hidroxido1.jpg>
 Package pdftex.def Info: imagenes/bagazo con hidroxido1.jpg  used on input line
- 534.
+ 538.
 (pdftex.def)             Requested size: 142.23416pt x 85.31828pt.
 
-Overfull \hbox (10.90901pt too wide) in paragraph at lines 543--544
+Overfull \hbox (10.90901pt too wide) in paragraph at lines 547--548
 []\OT1/cmr/bx/n/12 6. \OT1/cmr/m/n/12 El reac-tor se se-lla herm^^Seti-ca-men-t
 e me-dian-te un sis-te-ma mul-ti-ca-pa com-pues-to por:algod^^Son
  []
 
-[14 <./imagenes/pesado4.jpg> <./imagenes/hidroxido_pesado.jpg> <./imagenes/reac
+[10 <./imagenes/pesado4.jpg> <./imagenes/hidroxido_pesado.jpg> <./imagenes/reac
 tor limpio.jpg> <./imagenes/agua con bagazo.jpg> <./imagenes/bagazo con hidroxi
 do1.jpg>]
-<imagenes/sellado2.jpg, id=534, 4095.3pt x 3083.52pt>
+<imagenes/sellado2.jpg, id=530, 4095.3pt x 3083.52pt>
 File: imagenes/sellado2.jpg Graphic file (type jpg)
 <use imagenes/sellado2.jpg>
-Package pdftex.def Info: imagenes/sellado2.jpg  used on input line 555.
+Package pdftex.def Info: imagenes/sellado2.jpg  used on input line 559.
 (pdftex.def)             Requested size: 151.0988pt x 113.76851pt.
-<imagenes/programa3.jpg, id=535, 4095.3pt x 3083.52pt>
+<imagenes/programa3.jpg, id=531, 4095.3pt x 3083.52pt>
 File: imagenes/programa3.jpg Graphic file (type jpg)
 <use imagenes/programa3.jpg>
-Package pdftex.def Info: imagenes/programa3.jpg  used on input line 562.
+Package pdftex.def Info: imagenes/programa3.jpg  used on input line 566.
 (pdftex.def)             Requested size: 151.0988pt x 113.76851pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--590
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Agua des-mi-ne-ra-li-za-da
  []
 
 
-Overfull \hbox (6.6536pt too wide) in paragraph at lines 589--594
+Overfull \hbox (6.6536pt too wide) in paragraph at lines 593--598
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--594
+Underfull \hbox (badness 10000) in paragraph at lines 593--598
 
  []
 
-<imagenes/pesado2.jpg, id=538, 548.80031pt x 692.5875pt>
+<imagenes/pesado2.jpg, id=534, 548.80031pt x 692.5875pt>
 File: imagenes/pesado2.jpg Graphic file (type jpg)
 <use imagenes/pesado2.jpg>
-Package pdftex.def Info: imagenes/pesado2.jpg  used on input line 606.
+Package pdftex.def Info: imagenes/pesado2.jpg  used on input line 610.
 (pdftex.def)             Requested size: 85.35625pt x 142.25612pt.
-<imagenes/humus.jpg, id=539, 1208.515pt x 1606.0pt>
+<imagenes/humus.jpg, id=535, 1208.515pt x 1606.0pt>
 File: imagenes/humus.jpg Graphic file (type jpg)
 <use imagenes/humus.jpg>
-Package pdftex.def Info: imagenes/humus.jpg  used on input line 613.
+Package pdftex.def Info: imagenes/humus.jpg  used on input line 617.
 (pdftex.def)             Requested size: 85.3423pt x 142.25475pt.
-[15 <./imagenes/sellado2.jpg> <./imagenes/programa3.jpg>]
+[11 <./imagenes/sellado2.jpg> <./imagenes/programa3.jpg>]
 
-LaTeX Warning: Reference `reactor' on page 16 undefined on input line 623.
+LaTeX Warning: Reference `reactor' on page 12 undefined on input line 627.
 
 
-LaTeX Warning: Reference `baciado al reactor' on page 16 undefined on input lin
-e 627.
+LaTeX Warning: Reference `baciado al reactor' on page 12 undefined on input lin
+e 631.
 
 File: imagenes/reactor limpio.jpg Graphic file (type jpg)
 <use imagenes/reactor limpio.jpg>
-Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 634.
+Package pdftex.def Info: imagenes/reactor limpio.jpg  used on input line 638.
 (pdftex.def)             Requested size: 142.24593pt x 85.34457pt.
-<imagenes/biologico5.jpg, id=546, 966.61125pt x 1284.8pt>
+<imagenes/biologico5.jpg, id=542, 966.61125pt x 1284.8pt>
 File: imagenes/biologico5.jpg Graphic file (type jpg)
 <use imagenes/biologico5.jpg>
-Package pdftex.def Info: imagenes/biologico5.jpg  used on input line 641.
+Package pdftex.def Info: imagenes/biologico5.jpg  used on input line 645.
 (pdftex.def)             Requested size: 142.2568pt x 85.35774pt.
-<imagenes/humus2.jpg, id=549, 1208.515pt x 1606.0pt>
+<imagenes/humus2.jpg, id=545, 1208.515pt x 1606.0pt>
 File: imagenes/humus2.jpg Graphic file (type jpg)
 <use imagenes/humus2.jpg>
-Package pdftex.def Info: imagenes/humus2.jpg  used on input line 658.
+Package pdftex.def Info: imagenes/humus2.jpg  used on input line 662.
 (pdftex.def)             Requested size: 85.3423pt x 142.25475pt.
-<imagenes/cellado del reactor.jpg, id=550, 3083.52pt x 4095.3pt>
+<imagenes/cellado del reactor.jpg, id=546, 3083.52pt x 4095.3pt>
 File: imagenes/cellado del reactor.jpg Graphic file (type jpg)
 <use imagenes/cellado del reactor.jpg>
 Package pdftex.def Info: imagenes/cellado del reactor.jpg  used on input line 6
-65.
+69.
 (pdftex.def)             Requested size: 85.3499pt x 142.22534pt.
-[16 <./imagenes/pesado2.jpg> <./imagenes/humus.jpg> <./imagenes/biologico5.jpg>
+[12 <./imagenes/pesado2.jpg> <./imagenes/humus.jpg> <./imagenes/biologico5.jpg>
 ]
 
 LaTeX Warning: Reference `Diseño factorial del pretratamiento Biológico' on p
-age 17 undefined on input line 672.
+age 13 undefined on input line 676.
 
-<imagenes/programa1.jpg, id=559, 4095.3pt x 3083.52pt>
+<imagenes/programa1.jpg, id=555, 4095.3pt x 3083.52pt>
 File: imagenes/programa1.jpg Graphic file (type jpg)
 <use imagenes/programa1.jpg>
-Package pdftex.def Info: imagenes/programa1.jpg  used on input line 678.
+Package pdftex.def Info: imagenes/programa1.jpg  used on input line 682.
 (pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
-<imagenes/programa2.jpg, id=560, 4095.3pt x 3083.52pt>
+<imagenes/programa2.jpg, id=556, 4095.3pt x 3083.52pt>
 File: imagenes/programa2.jpg Graphic file (type jpg)
 <use imagenes/programa2.jpg>
-Package pdftex.def Info: imagenes/programa2.jpg  used on input line 685.
+Package pdftex.def Info: imagenes/programa2.jpg  used on input line 689.
 (pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
 
-Overfull \hbox (6.6536pt too wide) in paragraph at lines 702--708
+Overfull \hbox (6.6536pt too wide) in paragraph at lines 706--712
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--708
+Underfull \hbox (badness 10000) in paragraph at lines 706--712
 
  []
 
 
-LaTeX Warning: Reference `biologico1' on page 17 undefined on input line 713.
+LaTeX Warning: Reference `biologico1' on page 13 undefined on input line 717.
 
-<imagenes/watimetro.jpg, id=562, 1284.8pt x 966.61125pt>
+<imagenes/watimetro.jpg, id=558, 1284.8pt x 966.61125pt>
 File: imagenes/watimetro.jpg Graphic file (type jpg)
 <use imagenes/watimetro.jpg>
-Package pdftex.def Info: imagenes/watimetro.jpg  used on input line 721.
+Package pdftex.def Info: imagenes/watimetro.jpg  used on input line 725.
 (pdftex.def)             Requested size: 142.24985pt x 85.35408pt.
-<imagenes/biologico1.jpg, id=563, 1208.515pt x 1606.0pt>
+<imagenes/biologico1.jpg, id=559, 1208.515pt x 1606.0pt>
 File: imagenes/biologico1.jpg Graphic file (type jpg)
 <use imagenes/biologico1.jpg>
-Package pdftex.def Info: imagenes/biologico1.jpg  used on input line 728.
+Package pdftex.def Info: imagenes/biologico1.jpg  used on input line 732.
 (pdftex.def)             Requested size: 113.79588pt x 85.35284pt.
-[17 <./imagenes/humus2.jpg> <./imagenes/cellado del reactor.jpg> <./imagenes/pr
+[13 <./imagenes/humus2.jpg> <./imagenes/cellado del reactor.jpg> <./imagenes/pr
 ograma1.jpg> <./imagenes/programa2.jpg>]
-<imagenes/biologico6.jpg, id=572, 4095.3pt x 3083.52pt>
+<imagenes/biologico6.jpg, id=568, 4095.3pt x 3083.52pt>
 File: imagenes/biologico6.jpg Graphic file (type jpg)
 <use imagenes/biologico6.jpg>
-Package pdftex.def Info: imagenes/biologico6.jpg  used on input line 741.
+Package pdftex.def Info: imagenes/biologico6.jpg  used on input line 745.
 (pdftex.def)             Requested size: 142.22534pt x 85.3499pt.
-<imagenes/bagazo_biologico_sacado.jpg, id=573, 1606.0pt x 1208.515pt>
+<imagenes/bagazo_biologico_sacado.jpg, id=569, 1606.0pt x 1208.515pt>
 File: imagenes/bagazo_biologico_sacado.jpg Graphic file (type jpg)
 <use imagenes/bagazo_biologico_sacado.jpg>
 Package pdftex.def Info: imagenes/bagazo_biologico_sacado.jpg  used on input li
-ne 748.
+ne 752.
 (pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
-<imagenes/biologico3.jpg, id=576, 877.02657pt x 890.5772pt>
+<imagenes/biologico3.jpg, id=572, 877.02657pt x 890.5772pt>
 File: imagenes/biologico3.jpg Graphic file (type jpg)
 <use imagenes/biologico3.jpg>
-Package pdftex.def Info: imagenes/biologico3.jpg  used on input line 767.
+Package pdftex.def Info: imagenes/biologico3.jpg  used on input line 771.
 (pdftex.def)             Requested size: 142.25417pt x 85.3531pt.
-<imagenes/secado2.jpg, id=577, 4095.3pt x 3083.52pt>
+<imagenes/secado2.jpg, id=573, 4095.3pt x 3083.52pt>
 File: imagenes/secado2.jpg Graphic file (type jpg)
 <use imagenes/secado2.jpg>
-Package pdftex.def Info: imagenes/secado2.jpg  used on input line 774.
+Package pdftex.def Info: imagenes/secado2.jpg  used on input line 778.
 (pdftex.def)             Requested size: 113.79277pt x 85.3499pt.
- [18 <./imagenes/watimetro.jpg> <./imagenes/biologico1.jpg> <./imagenes/biologi
+ [14 <./imagenes/watimetro.jpg> <./imagenes/biologico1.jpg> <./imagenes/biologi
 co6.jpg> <./imagenes/bagazo_biologico_sacado.jpg> <./imagenes/biologico3.jpg> <
 ./imagenes/secado2.jpg>]
-<imagenes/enjuagado.jpg, id=587, 1638.12pt x 1507.13063pt>
+<imagenes/enjuagado.jpg, id=583, 1638.12pt x 1507.13063pt>
 File: imagenes/enjuagado.jpg Graphic file (type jpg)
 <use imagenes/enjuagado.jpg>
-Package pdftex.def Info: imagenes/enjuagado.jpg  used on input line 793.
+Package pdftex.def Info: imagenes/enjuagado.jpg  used on input line 797.
 (pdftex.def)             Requested size: 142.25034pt x 85.34161pt.
-<imagenes/secado6.jpg, id=588, 1443.14156pt x 1128.46594pt>
+<imagenes/secado6.jpg, id=584, 1443.14156pt x 1128.46594pt>
 File: imagenes/secado6.jpg Graphic file (type jpg)
 <use imagenes/secado6.jpg>
-Package pdftex.def Info: imagenes/secado6.jpg  used on input line 800.
+Package pdftex.def Info: imagenes/secado6.jpg  used on input line 804.
 (pdftex.def)             Requested size: 113.80214pt x 85.35449pt.
 
 
-LaTeX Warning: Reference `biologico6' on page 19 undefined on input line 810.
+LaTeX Warning: Reference `biologico6' on page 15 undefined on input line 814.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--819
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
+Underfull \hbox (badness 10000) in paragraph at lines 828--828
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Agua des-mi-ne-ra-li-za-da
  []
 
 
-Overfull \hbox (6.6536pt too wide) in paragraph at lines 823--830
+Overfull \hbox (6.6536pt too wide) in paragraph at lines 827--834
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--830
+Underfull \hbox (badness 10000) in paragraph at lines 827--834
 
  []
 
-<imagenes/agua.jpg, id=590, 569.87906pt x 754.31813pt>
+<imagenes/agua.jpg, id=586, 569.87906pt x 754.31813pt>
 File: imagenes/agua.jpg Graphic file (type jpg)
 <use imagenes/agua.jpg>
-Package pdftex.def Info: imagenes/agua.jpg  used on input line 846.
+Package pdftex.def Info: imagenes/agua.jpg  used on input line 850.
 (pdftex.def)             Requested size: 85.35643pt x 85.3578pt.
-<imagenes/levadura y acido citrico.jpg, id=591, 2211.01031pt x 1623.81656pt>
+<imagenes/levadura y acido citrico.jpg, id=587, 2211.01031pt x 1623.81656pt>
 File: imagenes/levadura y acido citrico.jpg Graphic file (type jpg)
 <use imagenes/levadura y acido citrico.jpg>
 Package pdftex.def Info: imagenes/levadura y acido citrico.jpg  used on input l
-ine 853.
+ine 857.
 (pdftex.def)             Requested size: 113.79576pt x 85.35818pt.
-[19 <./imagenes/enjuagado.jpg> <./imagenes/secado6.jpg>]
-<imagenes/hidrolisis1.jpg, id=600, 835.62187pt x 916.1728pt>
+[15 <./imagenes/enjuagado.jpg> <./imagenes/secado6.jpg>]
+<imagenes/hidrolisis1.jpg, id=596, 835.62187pt x 916.1728pt>
 File: imagenes/hidrolisis1.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis1.jpg>
-Package pdftex.def Info: imagenes/hidrolisis1.jpg  used on input line 871.
+Package pdftex.def Info: imagenes/hidrolisis1.jpg  used on input line 875.
 (pdftex.def)             Requested size: 85.35216pt x 85.34578pt.
-<imagenes/hidrolisis4.jpg, id=601, 1208.515pt x 1606.0pt>
+<imagenes/hidrolisis4.jpg, id=597, 1208.515pt x 1606.0pt>
 File: imagenes/hidrolisis4.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis4.jpg>
-Package pdftex.def Info: imagenes/hidrolisis4.jpg  used on input line 878.
+Package pdftex.def Info: imagenes/hidrolisis4.jpg  used on input line 882.
 (pdftex.def)             Requested size: 113.79588pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--886
+Underfull \hbox (badness 10000) in paragraph at lines 889--890
 
  []
 
-<imagenes/hidrolisis9.jpg, id=604, 1208.515pt x 1606.0pt>
+<imagenes/hidrolisis9.jpg, id=600, 1208.515pt x 1606.0pt>
 File: imagenes/hidrolisis9.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis9.jpg>
-Package pdftex.def Info: imagenes/hidrolisis9.jpg  used on input line 896.
+Package pdftex.def Info: imagenes/hidrolisis9.jpg  used on input line 900.
 (pdftex.def)             Requested size: 142.24947pt x 85.35284pt.
-<imagenes/hidrolisis3.jpg, id=605, 1208.515pt x 1606.0pt>
+<imagenes/hidrolisis3.jpg, id=601, 1208.515pt x 1606.0pt>
 File: imagenes/hidrolisis3.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis3.jpg>
-Package pdftex.def Info: imagenes/hidrolisis3.jpg  used on input line 903.
+Package pdftex.def Info: imagenes/hidrolisis3.jpg  used on input line 907.
 (pdftex.def)             Requested size: 142.24947pt x 85.35284pt.
-[20 <./imagenes/agua.jpg> <./imagenes/levadura y acido citrico.jpg> <./imagenes
+[16 <./imagenes/agua.jpg> <./imagenes/levadura y acido citrico.jpg> <./imagenes
 /hidrolisis1.jpg> <./imagenes/hidrolisis4.jpg>]
-<imagenes/hidrolisis 6.jpg, id=615, 1606.0pt x 1208.515pt>
+<imagenes/hidrolisis 6.jpg, id=611, 1606.0pt x 1208.515pt>
 File: imagenes/hidrolisis 6.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis 6.jpg>
-Package pdftex.def Info: imagenes/hidrolisis 6.jpg  used on input line 919.
+Package pdftex.def Info: imagenes/hidrolisis 6.jpg  used on input line 923.
 (pdftex.def)             Requested size: 142.25475pt x 85.3423pt.
-<imagenes/conexion de hidrolisis.jpg, id=616, 3083.52pt x 4095.3pt>
+<imagenes/conexion de hidrolisis.jpg, id=612, 3083.52pt x 4095.3pt>
 File: imagenes/conexion de hidrolisis.jpg Graphic file (type jpg)
 <use imagenes/conexion de hidrolisis.jpg>
 Package pdftex.def Info: imagenes/conexion de hidrolisis.jpg  used on input lin
-e 926.
+e 930.
 (pdftex.def)             Requested size: 85.3499pt x 85.2977pt.
-<imagenes/hidrolisis7.jpg, id=618, 1284.8pt x 966.61125pt>
+<imagenes/hidrolisis7.jpg, id=614, 1284.8pt x 966.61125pt>
 File: imagenes/hidrolisis7.jpg Graphic file (type jpg)
 <use imagenes/hidrolisis7.jpg>
-Package pdftex.def Info: imagenes/hidrolisis7.jpg  used on input line 938.
+Package pdftex.def Info: imagenes/hidrolisis7.jpg  used on input line 942.
 (pdftex.def)             Requested size: 142.24985pt x 85.35408pt.
- [21 <./imagenes/hidrolisis9.jpg> <./imagenes/hidrolisis3.jpg> <./imagenes/hidr
+ [17 <./imagenes/hidrolisis9.jpg> <./imagenes/hidrolisis3.jpg> <./imagenes/hidr
 olisis 6.jpg> <./imagenes/conexion de hidrolisis.jpg> <./imagenes/hidrolisis7.j
-pg>] [22] [23] [24]
-Overfull \hbox (4.7761pt too wide) in paragraph at lines 1284--1285
+pg>] [18] [19] [20]
+Overfull \hbox (4.7761pt too wide) in paragraph at lines 1288--1289
 []\OT1/cmr/m/n/12 Para el pro-ce-so de pro-duc-ci^^Son de bio-eta-nol uti-li-za
 n-do el pre-tra-ta-mien-to biol^^Sogi-co, bas^^Sando-
  []
 
-[25] [26] [27]
+[21] [22] [23]
 
-LaTeX Warning: Citation `CFE2023' undefined on input line 1475.
+LaTeX Warning: Citation `CFE2023' undefined on input line 1479.
 
-[28] [29] [30] [31] [32] (document.bbl) [33]
-<imagenes/bagazo.png, id=721, 260.47313pt x 287.57437pt>
+[24] [25] [26]
+
+Package caption Warning: \label without proper reference on input line 1686.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `energi_fermentacion en biologico' on page 27 undefine
+d on input line 1678.
+
+[27] (document.bbl) [28]
+<imagenes/bagazo.png, id=717, 260.47313pt x 287.57437pt>
 File: imagenes/bagazo.png Graphic file (type png)
 <use imagenes/bagazo.png>
-Package pdftex.def Info: imagenes/bagazo.png  used on input line 1751.
+Package pdftex.def Info: imagenes/bagazo.png  used on input line 1755.
 (pdftex.def)             Requested size: 187.89914pt x 207.4483pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `portalproduccion' undefined on input line 1761.
+LaTeX Warning: Citation `portalproduccion' undefined on input line 1765.
 
-[34
+[29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1767
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1771
 
  []
 
-<imagenes/pretrata_1.png, id=733, 749.80125pt x 529.98pt>
+<imagenes/pretrata_1.png, id=729, 749.80125pt x 529.98pt>
 File: imagenes/pretrata_1.png Graphic file (type png)
 <use imagenes/pretrata_1.png>
-Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1770.
+Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1774.
 (pdftex.def)             Requested size: 187.89914pt x 132.81004pt.
-[35 <./imagenes/bagazo.png> <./imagenes/pretrata_1.png>]
+[30 <./imagenes/bagazo.png> <./imagenes/pretrata_1.png>]
 
-LaTeX Warning: Citation `Arturo2022' undefined on input line 1812.
+LaTeX Warning: Citation `Arturo2022' undefined on input line 1816.
 
-[36] [37] [38] [39] (document.aux (caratula.aux)
+[31] [32] [33] [34] (document.aux (caratula.aux)
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -1166,11 +1209,11 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E9D10DAA5C29A177661D6A9CF559120A;14138.
  ) 
 Here is how much of TeX's memory you used:
- 15735 strings out of 474486
- 267311 string characters out of 5750287
+ 15801 strings out of 474486
+ 268310 string characters out of 5750287
  1966542 words of memory out of 5000000
- 37637 multiletter control sequences out of 15000+600000
- 567470 words of font info for 67 fonts, out of 8000000 for 9000
+ 37699 multiletter control sequences out of 15000+600000
+ 569483 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,913b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1185,21 +1228,24 @@ pdfTeX warning (dest): name{cite.portalproduccion} has been referenced but does
 pdfTeX warning (dest): name{cite.CFE2023} has been referenced but does not exis
 t, replaced by a fixed one
 
- <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx12
+ <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx09
 00.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1095.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1200.pk><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+tcbx1200.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\tcrm1095.pk> <C:\Users\elfhe\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\tcrm1200.pk><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cme
 x10.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.p
 fb><D:/Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:
 /Archivos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Archi
 vos de programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Archivos de
  programa/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Archivos de progra
-ma/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programa/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (40 pages, 20757485 bytes).
+ma/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Archivos de programa/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programa/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on document.pdf (39 pages, 20784778 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
- 176 named destinations out of 1000 (max. 500000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
  691 words of extra memory for PDF output out of 10000 (max. 10000000)
 

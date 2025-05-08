@@ -21,12 +21,11 @@
 \bibliographystyle{apacite}
 %\graphicspath{{imagenes\}}
 
+
+\usepackage{array, etoolbox, tabularx}
+
 \makeindex
 
-
-%opening
-%\title{Reporte de resultados}
-%\author{Luis Enrique Hernandez Melendez}
 
 \begin{document}
 	
@@ -37,6 +36,11 @@
 	%\maketitle
 	\listoftables
 	\newpage
+	
+	
+	
+	\pagenumbering{arabic} % Cambia a números arábigos (1, 2, 3...)
+	\setcounter{page}{1} 
 		\section{Introducción}
 	
 		
@@ -1583,7 +1587,7 @@ De acuerdo con los resultados presentados en la Tabla \ref{tabla de energia}, se
 		\centering
 		\caption{Energía consumida para pretratamiento biológico  y su costo en pesos. }
 		\label{tabla de energia}
-		\resizebox{12cm}{!} {
+	{\fontsize{9}{10.8}\selectfont
 		\begin{tabular}{|c|c|c|c|}
 			\hline
 			\textbf{Temperatura} & \textbf{Tamaño }  & \textbf{
@@ -1645,7 +1649,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				\centering
 				\label{energi_}
 				\caption{Energía consumida }
-					\resizebox{12cm}{!} {
+					{\fontsize{9}{10.8}\selectfont
 				\begin{tabular}{|l|l|l|l|l|}
 					\hline
 		\textbf{Temperatura} & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía } & \textbf{Costos } \\ 
@@ -1671,13 +1675,13 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 
 	\textbf{ Consumo energético en hidrólisis y fermentación en pretratamiento Biológico }
 	
-	En el caso del consumo energético en el pretratamiento biológico se muestra en la Tabla 
-	
+	En el caso del consumo energético en el pretratamiento biológico se muestra en la Tabla 	\ref{energi_fermentacion en biologico}.
+	1
 	\begin{table}[H]
 		\centering
 			\label{energi_fermentacion en biologico}
 		\caption{El costo de la energía consumida para la etapa de hidrólisis y fermentación con bagazo pretratada mediante un proceso biológico . }
-	\resizebox{12 cm}{!} {
+            {\fontsize{9}{10.8}\selectfont % Ajusta el tamaño de letra a 12pt
 		\begin{tabular}{|l|l|l|l|}
 				\hline
 \textbf{Temperatura} & \textbf{Tamaño } & \textbf{Energía } & \textbf{Costos } \\ 
@@ -1690,8 +1694,8 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 			45 & varios tamaños & 2.8 & 3.7744  \\ \hline
 			40 & varios tamaños & 2.56 & 3.45088  \\ \hline
 			30 & varios tamaños & 2.7 & 3.6396  \\ \hline
-		\end{tabular}}
-
+		\end{tabular}
+}
 	\end{table}
 	
 	
