@@ -18,6 +18,7 @@
 \usepackage{enumitem,xcolor}
 \usepackage{tasks}
 \usepackage{apacite}  % Para estilo APA básico
+\usepackage{adjustbox}
 \bibliographystyle{apacite}
 %\graphicspath{{imagenes\}}
 
@@ -1297,8 +1298,7 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	
-	
-			
+
 			\subsection{Resultados experimentales del proceso de producción de bioetanol con pretratamiento Biológico}
 			Para el proceso de producción de bioetanol utilizando el pretratamiento biológico, basándose en el diseño de experimentos del apartado \ref{Diseño factorial del pretratamiento Biologico}
 			
@@ -1503,7 +1503,7 @@ En el proceso de pretratamiento alcalino descrito, se utilizaron los siguientes 
 				\centering
 				\caption{Tabla de costos para la producción de bioetanol con pretratamiento alcalino}
 				\label{Costo para pretratamiento alcalino}
-				\resizebox{16cm}{!} {
+					\begin{adjustbox}{center=\paperwidth, height=1.5cm}
 					\begin{tabular}{|c|c|c|c|c|c|c|c|}
 						\hline
 									& \textbf{Costo}& \textbf{Cantidad utilizada } &\textbf{Costo por }  &\textbf{Costo por }  & \textbf{Costo de lo }  &\textbf{Pruebas} & \textbf{Costo } \\
@@ -1512,7 +1512,8 @@ En el proceso de pretratamiento alcalino descrito, se utilizaron los siguientes 
 						Hidroxido de sodio&37.9& 120 g & 4.54& 4.3 & 5.06& 15 &76.0\\ \hline
 						Bagazo de caña 	  &0.95& 240 g  &0.23 & 0.95 & 0.25 & 15  &3.80 \\ \hline
 						Agua desmineralizada&0.68& 6000 ml& 4.08& 4.3 & 5.38 & 15 & 80.75 \\ \hline
-				\end{tabular} }
+				\end{tabular} 
+			\end{adjustbox}
 				
 			\end{table}
      De acuerdo con los datos obtenidos, se determinó el costo asociado a los materiales utilizados en cada prueba experimental. Los resultados se presentan en la columna 4 de la Tabla \ref{Costo para pretratamiento alcalino} correspondiente. Adicionalmente, se consideró el costo de envío de cada insumo, el cual fue prorrateado en función de la cantidad empleada específicamente en el pretratamiento. Este valor se adicionó al costo del material utilizado por prueba, obteniéndose así los valores reflejados en la columna 6.
@@ -1715,7 +1716,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	
 	
 			
-		\section*{Conclusión}
+		\section{Conclusión}
 		%\begin{itemize}
 			%\item  Se podría proponer un sistema tolerante a fallas que tome en cuanta la variacion dentro del coeficiente de tranferencia de calor para saber cuando el equipoo se encuentra operando en optimas condiciones y cuando no lo esta haciendo. 
 			
@@ -1725,31 +1726,36 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		
 		\newpage
 	
-		\bibliographystyle{apalike} 
-		\bibliography{library}
-		\addcontentsline{toc}{chapter}{Bibliografía}
-	
 
 
-	   \newpage
+	  	\bibliographystyle{apalike} 
+	   \bibliography{library}
+	   
+	   
 		%\begin{appendix}
 		%\section{Anexos}
 
 
 % Anexos
-\cleardoublepage
+%\cleardoublepage
 
 
 %\begin{appendix}
 %\section{Anexos}
+
+\section*{Anexos} % El asterisco (*) evita numeración
+\addcontentsline{toc}{section}{Anexos} %
+
+
 \begin{appendix}
+		
 	\phantomsection
 	\addcontentsline{toc}{chapter}{Anexos}
 
 
 
-
 		\section{Marco conceptual}
+		los anexos son los siguientes \newpage
 		\label{marco conceptual}
 		\subsection{Bioetanol de segunda generación}
 		La producción de bioetanol de segunda generación utiliza como materia prima residuos agrícolas o desechos orgánicos, dependiendo asi de la infraestructura adecuada para obtener la producción de bioetanol. El proceso de producción de bioetanol de segunda generación no tiene una ruta estandarizada, por lo que debe adaptarse a la naturaleza de la materia prima \cite{melendez2022biotecnologia} (Melendez, J. R. 2022). El bioetanol de segunda generación se puede obtener con diferentes configuraciones: Sacarificación enzimática de la biomasa pretratada y la fermentación separadas, Sacarificación y fermentación simultáneas, sacarificación y co-fermentación simultáneas y bioproceso consolidado (gonzalez202)
@@ -1777,7 +1783,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		Proveniente de la fotosíntesis, la lignocelulosa es uno de los componentes más abundante y principal de la biomasa, esta forma la pared celular de las plantas. Entre las plantas, la composición y porcentajes de lignocelulosa varían, dependiendo de la edad y etapa de crecimiento de las plantas \cite{cuervo2009lignocelulosa}.
 		Es viable utilizar este material por su bajo costo, su alta disponibilidad y aprovechamiento variado, un ejemplo es en la industria de los materiales compuestos \cite{jara2022principales}.
 		Ya que son viables, se han desarrollado usos alternativos para aprovechar este subproducto agroindustrial, utilizándolo en la creación de biocombustibles.
-		La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccion}. 
+		La lignocelulosa está conformada por celulosa, hemicelulosa y lignina, siendo una fuente de carbono y energía renovable \cite{portalproduccon}. 
 		
 		\subsubsection{Pretratamiento}
 		
@@ -1793,11 +1799,12 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		
 		
 		\subsubsection{Hidrólisis}
-		También llamado despolimerización del material lignocelulósico. La biomasa con la dificultad de transformase químicamente  o biológicamente tiene el requisito de realizar una hidrólisis, entre mayor concentración de monosacáridos, mejor sera el rendimiento.La hidrólisis es un proceso que ayuda la formación de azucares siendo muy importante en la producción de etanol y en la obtención de otros productos. Existen distintos tipos de hidrólisis en la tabla -- se puede obtener mas información  
+		También llamado despolimerización del material lignocelulósico. La biomasa con la dificultad de transformase químicamente  o biológicamente tiene el requisito de realizar una hidrólisis, entre mayor concentración de monosacáridos, mejor sera el rendimiento.La hidrólisis es un proceso que ayuda la formación de azucares siendo muy importante en la producción de etanol y en la obtención de otros productos. Existen distintos tipos de hidrólisis en la Tabla \ref{tipos de hidrolisis} se puede obtener mas información .
 		
 		\begin{table}[H]
 			\centering  
 			\caption{Tipos de hidrólisis }% \citep{ADITIYA2016631} }
+			\label{tipos de hidrolisis}
 		\begin{tabular}{  | c | c |}
 			\hline \textbf{Tipo de hidrólisis} &\textbf{ Proceso y concepto}\\ \hline 
 			Hidrólisis ácida   &   Explosión de CO2  \\ 
@@ -1828,7 +1835,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		\item  Carga enzimática
 		\end{itemize}
 		
-		Para la hidrólisis enzimática es necesario tomar la carga enzimática a utilizar en la prueba experimental, a carga enzimática se refiere a la cantidad de enzimas utilizadas en el momento de la experimentación, la cantidad de enzima esta dada en UPF (unidades papel filtro),  para obtener el valor en ml se utiliza la formula siguiente, obtenida de \cite{Arturo2022}, donde necesitamos los UPF a utilizar y la carga de bagazo pretratado.
+		Para la hidrólisis enzimática es necesario tomar la carga enzimática a utilizar en la prueba experimental, a carga enzimática se refiere a la cantidad de enzimas utilizadas en el momento de la experimentación, la cantidad de enzima esta dada en UPF (unidades papel filtro),  para obtener el valor en ml se utiliza la formula siguiente, obtenida de \cite{Arturo2022evaluacion}, donde necesitamos los UPF a utilizar y la carga de bagazo pretratado.
 		
 			\begin{equation}
 			 ml = \left( \frac{0.37}{\text{UPF}} \right) \times \textit{cantidad de bagazo} 
