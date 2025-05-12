@@ -23,11 +23,11 @@
 \contentsline {subsection}{\numberline {4.4}Resultados experimentales del proceso de producción de bioetanol en la etapa de hidrólisis y fermentación utilizando diferentes tipos de pretratamiento}{20}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1} Hidrólisis y fermentación para pretratamiento Alcalino}{20}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2} Hidrólisis y fermentación para pretratamiento Biológico}{21}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Comparativa de los resultados experimentales}{22}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Costos en la producción de bioetanol}{22}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Costos en la producción de bioetanol con pretratamiento Alcalino}{22}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}Costos en la producción de bioetanol solo para pretratamiento biológico}{24}{subsubsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Costos en la producción de bioetanol en la etapa de hidrólisis y fermentación}{25}{subsubsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.5}Costos en la producción de bioetanol}{22}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Costos en la producción de bioetanol con pretratamiento Alcalino}{22}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Costos en la producción de bioetanol solo para pretratamiento biológico}{23}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Costos en la producción de bioetanol en la etapa de hidrólisis y fermentación}{24}{subsubsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.6}Comparativa de los resultados experimentales}{25}{subsection.4.6}%
 \contentsline {section}{\numberline {5}Conclusión}{26}{section.5}%
 \contentsline {section}{Referencias}{27}{section*.44}%
 \contentsline {subsection}{A.1\ Bioetanol de segunda generación}{27}{section*.46}%

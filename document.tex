@@ -22,6 +22,9 @@
 \bibliographystyle{apacite}
 %\graphicspath{{imagenes\}}
 
+\usepackage[normalem]{ulem}
+
+
 
 \usepackage{array, etoolbox, tabularx}
 
@@ -62,15 +65,14 @@
 	\begin{itemize}
 		\item 
 		Analizar experimentalmente las configuraciones de producción de bioetanol.
-		\item \textcolor{red}{Análisis experimental de configuraciones de producción de bioetanol.}
-		\item 
-		Diseñar un sistema de control para las configuraciones de producción de bioetanol de segunda generación.
+		\item  \sout{Análisis experimental de configuraciones de producción de bioetanol.}
+		\item 	Diseñar un sistema de control para las configuraciones de producción de bioetanol de segunda generación.
 			
-		\item \textcolor{red}{Diseño de control para las configuraciones de producción.}
+		\item  \sout{Diseño de control para las configuraciones de producción.}
 		
 		\item 
        Evaluar los pretratamientos de la biomasa para identificar la relación más adecuada entre costo y producción.
-      \item \textcolor{red}{Pretratamientos de la biomasa, búsqueda de la mejor relación costo/producción.}
+      \item \sout{Pretratamientos de la biomasa, búsqueda de la mejor relación costo/producción.}
 	\end{itemize}
 	
 	\subsection{Metas}
@@ -979,9 +981,9 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 				
 	Para el pretratamiento alcalino se realizaron las pruebas que muestra la Tabla \ref{Pretratamiento Alcalino} para tamaño de bagazo de 1 cm, Donde se tomo en cuenta lo propuesto en el diseño de experimentos, sin embargo para una segunda prueba se modifico el tiempo cada una de las temperaturas, da que el tiempo designado anteriormente en el diseño de experimentos se observo que tenia muy poco de establecerse el control, obteniendo como resultado una prueba con un tiempo de 5400 y otra con la misma temperatura pero con un tiempo de 7870. 
 	Se busco monitorear la energía consumida en cada una de las pruebas, por lo que la columna 10 muestra mediante kwh la energía que fue leída de un watimetro.
-	Para el caso de pruebas con tamaño de bagazo desde 1 mm hasta 10 cm o tamaño no uniforme de bagazo (T.N.U.B), de las 3 pruebas propuesta por pretratamiento se realizaron 2, por falta de material y tiempo. 	
+	Para el caso de pruebas con tamaño de bagazo desde 1 mm hasta 10 cm o tamaño no uniforme de bagazo (TNUB), de las 3 pruebas propuesta por pretratamiento se realizaron 2, por falta de material y tiempo. 	
 	
-	En la Tabla \ref{Pretratamiento Alcalino} muestra las pruebas realizadas a un tiempo de 5400 s, utilizando bagazo que se encuentra en un rango de 1 mm hasta 10 cm aproximadamente, la columna de la energía consumida nos dice que se utiliza un promedio de 0.7 kwh, realizando esas pruebas.
+	En la Tabla \ref{Pretratamiento Alcalino} muestra las pruebas realizadas a un tiempo de 5400 s, utilizando bagazo que se encuentra en un rango de 1 mm hasta 10 cm aproximadamenteo tambien llamado tamaño no uniforme de bagazo de caña (TNUB), la columna de la energía consumida nos dice que se utiliza un promedio de 0.7 kwh, realizando esas pruebas.
 	
 	\begin{table}[!ht]
 		\centering
@@ -990,23 +992,23 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 			\hline
 			\textbf{Prueba} & \textbf{Temperatura} & \textbf{Tamaño de bagazo} & \textbf{Tiempo} & \textbf{Consumo } \\ 
 			&\textbf{ (°c)}& &(s)	&\textbf{ energético (kwh)}\\ \hline
-			1 & 95 & T.N.U.B & 5400 & 0.66  \\ \hline
-			2 & 95 & T.N.U.B & 7870 & 0.81  \\ \hline
+			1 & 95 & TNUB & 5400 & 0.66  \\ \hline
+			2 & 95 & TNUB & 7870 & 0.81  \\ \hline
 			3 & 95 & 1 cm & 5400 & 0.74 \\ \hline
 			4 & 95 & 1 cm & 7870 & 0.86 \\ \hline
-			5 & 90 & T.N.U.B & 5400 & 0.71  \\ \hline
-			6 & 90 & T.N.U.B & 7870 & 0.7  \\ \hline
+			5 & 90 & TNUB & 5400 & 0.71  \\ \hline
+			6 & 90 & TNUB & 7870 & 0.7  \\ \hline
 			7 & 90 & 1 cm & 5400 & 0.74 \\ \hline
 			8 & 90 & 1 cm & 7870 & 0.6 \\ \hline
-			9 & 80 & T.N.U.B & 5400 & 0.67  \\ \hline
-			10 & 80 & T.N.U.B & 7870 & 0.63  \\ \hline
+			9 & 80 & TNUB & 5400 & 0.67  \\ \hline
+			10 & 80 & TNUB & 7870 & 0.63  \\ \hline
 			11 & 80 & 1 cm & 5400 & 0.78 \\ \hline
 			12 & 80 & 1 cm & 7870 & 0.8 \\ \hline
 		\end{tabular}
 		\label{Pretratamiento Alcalino}
 	\end{table}
 
-	Ya que el tiempo de establecimiento del control dura menos se propuso modificar el tiempo como en las pruebas utilizando 1 cm de bagazo de caña por lo que a continuación se muestras las pruebas utilizando un tiempo de 7870 con bagazo de caña de 1 mm hasta 10 cm (tamaño no uniforme de bagazo), llevándose a cabo 3 pruebas experimentales, como se puede observar en la Tabla \ref{pruebas 7870}.
+	Ya que el tiempo de establecimiento del control dura menos se propuso modificar el tiempo como en las pruebas utilizando 1 cm de bagazo de caña por lo que a continuación se muestras las pruebas utilizando un tiempo de 7870 con bagazo de caña de 1 mm hasta 10 cm o tamaño no uniforme de bagazo(TNUB)), llevándose a cabo 3 pruebas experimentales, como se puede observar en la Tabla \ref{Pretratamiento Alcalino}.
 		
 	
 		
@@ -1022,11 +1024,11 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		\begin{tabular}{|c|c|c|c|}
 			\hline
 			Prueba & Temperatura (°c) & Tamaño de bagazo & Consumo energético (kwh) \\ \hline
-			1 & 45 & T.N.U.B & 4.55 \\ \hline
+			1 & 45 & TNUB & 4.55 \\ \hline
 			2 & 45 & 1 cm & 3.81 \\ \hline
-			3 & 40 & T.N.U.B & 2.77 \\ \hline
+			3 & 40 & TNUB & 2.77 \\ \hline
 			4 & 40 & 1 cm & 2.81 \\ \hline
-			5 & 30 & T.N.U.B & 4.55 \\ \hline
+			5 & 30 & TNUB & 4.55 \\ \hline
 			6 & 30 & 1 cm & 1.11 \\ \hline
 		\end{tabular}
 		\label{Pretratamiento Biológico}
@@ -1050,8 +1052,8 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 			\hline
 			\textbf{Prueba} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Porcentaje} \\
 				&\textbf{ (°c)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{ energético (kwh)}&\textbf{ de alcohol (\%)}\\ \hline
-			1 & 95 & T.N.U.B & 5400 & 1.95 & 13 \\ \hline
-			2 & 95 & T.N.U.B & 7870 & 2.74 & 13 \\ \hline
+			1 & 95 & TNUB & 5400 & 1.95 & 13 \\ \hline
+			2 & 95 & TNUB & 7870 & 2.74 & 13 \\ \hline
 			3 & 95 & 1 cm & 5400 & 1.41 & 10 \\ \hline
 			4 & 95 & 1 cm & 7870 & 2.78 & 17 \\ \hline
 			5 & 90 & T.N.U.B & 5400 & 1.87 & 12 \\ \hline
@@ -1118,28 +1120,8 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 
  	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  	
-			\subsection{Comparativa de los resultados experimentales}
-			
-			Para obtener un panorama general de las experimentación a continuación en la Tabla se presenta una comparativa de precios y costos en cada pretratamiento
 		
-		
-	\begin{table}[H]
-		\centering
-		\resizebox{16cm}{!} {
-		\begin{tabular}{|l|l|l|l|l|}
-			\hline
-			Prueba & Total por todos los  & Gasto  & Gasto total & \% promedio de  \\ \hline
-			~ &  pretratamientos mas envio &  energetico (\$) &   (\$) &  alcohol obtenido  \\ \hline
-			
-			Pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
-			Pretratamiento Alcalino & ~ & ~ & ~ &   \\ \hline
-			Acondicionamiento & ~ & ~ & ~ &   \\ \hline
-			Hidrolisis y fermentación  & ~ & ~ & ~ &   \\ \hline
-			para pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
-			Hidrolisis y fermentación  & ~ & ~ & ~ &   \\ \hline
-			para pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
-		\end{tabular}	}
-	\end{table}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
 			\subsection{Costos en la producción de bioetanol}
 	Para conocer cuanto nos cuesta realizar las pruebas para la producción de bioetanol mediante los pretratamientos biológicos y alcalinos, se realizaron tablas comparativas.
@@ -1152,20 +1134,20 @@ En el proceso de pretratamiento alcalino descrito, se utilizaron los siguientes 
 
 			
 				\begin{table}[H]
-				\centering
+				
 				\caption{Tabla de costos para la producción de bioetanol con pretratamiento alcalino}
 				\label{Costo para pretratamiento alcalino}
-					\begin{adjustbox}{center=\paperwidth, height=1.5cm}
-					\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					
+					\begin{tabular}{|c|c|c|c|}
 						\hline
-									& \textbf{Costo}& \textbf{Cantidad utilizada } &\textbf{Costo por }  &\textbf{Costo por }  & \textbf{Costo de lo }  &\textbf{Pruebas} & \textbf{Costo } \\
-					\textbf{Material}&	\textbf{kg/L} & 	\textbf{por pretratamiento} & \textbf{pretratamiento} & \textbf{envió} & \textbf{utilizado mas }  & \textbf{realizadas } & \textbf{total }  \\
-								 	& 			(\$ USD)		& \textbf{(g/ml)} &\textbf{	(\$ USD) } &\textbf{(\$ USD)}  & \textbf{envió (\$ USD)} & & \textbf{de las pruebas}\\ \hline		
-						Hidroxido de sodio&37.9& 120 g & 4.54& 4.3 & 5.06& 15 &76.0\\ \hline
-						Bagazo de caña 	  &0.95& 240 g  &0.23 & 0.95 & 0.25 & 15  &3.80 \\ \hline
-						Agua desmineralizada&0.68& 6000 ml& 4.08& 4.3 & 5.38 & 15 & 80.75 \\ \hline
+									& \textbf{Costo}& \textbf{Cantidad utilizada }  & \textbf{ Costo por pretratamiento} \\
+				   	\textbf{Material}&	\textbf{kg/L} & 	\textbf{por pretratamiento}& \\ 
+						\textbf{(\$ USD) }		& \textbf{(g/ml)} &\textbf{	(\$ USD) }& \textbf{	(\$ USD) }\\ \hline		
+						Hidroxido de sodio&37.9& 120 g&5.067178503 \\ \hline
+						Bagazo de caña 	  &0.95& 240 g &  0.253358925 \\ \hline
+						Agua desmineralizada&0.68& 6000 ml  &4.73 \\ \hline
 				\end{tabular} 
-			\end{adjustbox}
+		
 				
 			\end{table}
      De acuerdo con los datos obtenidos, se determinó el costo asociado a los materiales utilizados en cada prueba experimental. Los resultados se presentan en la columna 4 de la Tabla \ref{Costo para pretratamiento alcalino} correspondiente. Adicionalmente, se consideró el costo de envío de cada insumo, el cual fue prorrateado en función de la cantidad empleada específicamente en el pretratamiento. Este valor se adicionó al costo del material utilizado por prueba, obteniéndose así los valores reflejados en la columna 6.
@@ -1285,8 +1267,6 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	
 			
 			
-			
-			
 			\begin{table}[H]
 				\centering
 				\caption{Energía consumida }
@@ -1365,6 +1345,31 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		\end{tabular}
 }
 	\end{table}
+	
+	
+		\subsection{Comparativa de los resultados experimentales}
+	
+	Para obtener un panorama general de las experimentación a continuación en la Tabla se presenta una comparativa de precios y costos en cada pretratamiento
+	
+	
+	\begin{table}[H]
+		\centering
+		\resizebox{16cm}{!} {
+			\begin{tabular}{|l|l|l|l|l|}
+				\hline
+				Prueba & Total por todos los  & Gasto  & Gasto total & \% promedio de  \\ \hline
+				~ &  pretratamientos mas envio &  energetico (\$) &   (\$) &  alcohol obtenido  \\ \hline
+				
+				Pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
+				Pretratamiento Alcalino & ~ & ~ & ~ &   \\ \hline
+				Acondicionamiento & ~ & ~ & ~ &   \\ \hline
+				Hidrolisis y fermentación  & ~ & ~ & ~ &   \\ \hline
+				para pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
+				Hidrolisis y fermentación  & ~ & ~ & ~ &   \\ \hline
+				para pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
+		\end{tabular}	}
+	\end{table}
+	
 	
 	
 			
