@@ -23,7 +23,7 @@
 %\graphicspath{{imagenes\}}
 
 \usepackage[normalem]{ulem}
-
+\usepackage{multirow}
 
 
 \usepackage{array, etoolbox, tabularx}
@@ -48,8 +48,15 @@
 	\pagestyle{plain}
 	\pagenumbering{arabic} % Cambia a números arábigos (1, 2, 3...)
 	\setcounter{page}{1} 
+	
 		\section{Introducción}
 	
+	
+	\section{Planteamiento del problema}
+		
+		Este proyecto se basa en la producción de bioetanol de segunda generación la cual tiene como base la producción de biocombustible a partir de basura orgánica, el problema principal que aborda es la utilización de diferentes pretratamientos que ayuden a romper la barrera de la lignina y así poder producir mayor bioetanol. Estas técnicas de pretratamiento buscan modificar y controlar las variables para obtener la configuración que de mejores resultados.
+		
+		
 		
 		%\item Desarrollo de pruebas experimentales.
 		
@@ -147,28 +154,28 @@
 		
 		Para este experimento se plantea modificar las temperaturas en el pretratamiento biológico, como primer experimento se acondicionara a temperatura ambiente en distintas temporadas tomando el comportamiento de las temperaturas, posteriormente realizando un control a temperaturas de 30 °c , 40°c ,45 °c. Posteriormente se realizaran cambios en las temperaturas  en la hidrólisis y fermentación de: 35 °C , 40 °c y 45°c. Se puede observar las variables a modificar en la Tabla \ref{tab:Variables a modificar en pretratamiento Biologico}.
 		
-\begin{table}[h!]
+
+
+\begin{table}[H]
 	\centering
-	\caption{Cargas y temperaturas para pruebas experimentales para pretratamiento biológico con un tiempo de 15 dias }
+	\caption{Cargas y temperaturas para pruebas experimentales para pretratamiento biológico con un tiempo de 15 días}
 	\label{tab:VariablesBiologico}
-	\resizebox{\textwidth}{!}{   % Ajusta al ancho del documento (textwidth)
+	\resizebox{\textwidth}{!}{
 		\begin{tabular}{| c | c | c | c | c | c | c | c |}
 			\hline
-		\textbf{Biomasa} & \textbf{Carga de biomasa} & \textbf{ Pretratamiento} & \textbf{Carga de humus} & \textbf{ Volumen} & \textbf{Tamaño } & \textbf{Temperatura}  \\  
+			\textbf{Biomasa} & \textbf{Carga de biomasa} & \textbf{Pretratamiento} & \textbf{Carga de humus} & \textbf{Volumen} & \textbf{Tamaño} & \textbf{Temperatura} \\  
 			\hline
-			& & & & & & \textcolor{blue}{30°C}  \\
-			Bagazo de caña & Carga de 3\% & Biológico & 5\% p/v & 6 l & Varios tamaños & \textcolor{blue}{40°C}   \\
-		 & & & & & & \textcolor{blue}{45°C}  \\
-			\hline
-			& & & & &  & 30°C  \\
-			Bagazo de caña & Carga de 3\% & Biológico & 5\% p/v & 6 l & \textcolor{red}{1 cm} & 40°C  \\
-			 & & & & & & 45°C   \\
+			\multirow{6}{*}{Bagazo de caña} & \multirow{6}{*}{Carga de 3\%}  & \multirow{6}{*}{Biológico} &\multirow{6}{*}{5\% p/v}  &\multirow{6}{*}{6 l}  & \multirow{3}{*}{Varios tamaños} & \textcolor{blue}{30°C} \\ \cline{7-7}
+			& & & & & & \textcolor{blue}{40°C} \\ \cline{7-7}
+			& & & & & & \textcolor{blue}{45°C} \\ \cline{7-7}
+			\cline{6-7}
+			&  &  &  &  & \multirow{3}{*}{1 cm}& 30°C \\ \cline{7-7}
+			& & & & & & 40°C \\ \cline{7-7}
+			& & & & & & 45°C \\ \cline{7-7}
 			\hline
 		\end{tabular}
-	} % Cierre de \resizebox
-
+	}
 \end{table}
-
 
 
 
@@ -188,20 +195,19 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 	\resizebox{\textwidth}{!}{   % Ajusta al ancho del documento (textwidth)
 		\begin{tabular}{| c | c | c | c | c | c|c|c|}
 			\hline
-			\textbf{Biomasa}  & \textbf{Carga de} & \textbf{Pretratamiento} & \textbf{Carga de } & \textbf{Volumen} & \textbf{Tamaño} & \textbf{Temperatura} \\  
-				& \textbf{ biomasa}& &\textbf{hidróxido de sodio }& & & \textcolor{blue}{80°C} \\
+			\textbf{Biomasa}  & \textbf{Carga de} & \textbf{Pretratamiento} & \textbf{Carga de } & \textbf{Volumen} && \textbf{Tamaño} & \textbf{Temperatura} \\  
+				& \textbf{ biomasa}& &\textbf{hidróxido de sodio }& &\textbf{Tiempo}& &  \\
 			
 			\hline
-			& & & & & & \textcolor{blue}{80°C} \\
-			Bagazo  & 4\%  & Alcalino & 2\% p/v & 6 l  & Varios tamaños & \textcolor{blue}{90°C}   \\  
-			de caña &  & & & & & \textcolor{blue}{95°C}\\ 
-			& & & & & &  \\ 	\hline
+			\multirow{6}{*}{Bagazo de caña}& \multirow{6}{*}{4\%}& \multirow{6}{*}{Alcalino}& \multirow{6}{*}{2\% p/v } & \multirow{6}{*}{6 L}&&\multirow{3}{*}{Varios tamaños} & \textcolor{blue}{80°C}  \\
+			  &   &  &  &   & 5400 && \textcolor{blue}{90°C}   \\  
+			 &  & & & & && \textcolor{blue}{95°C}\\ 
+		
+				\cline{6-8}
 			
-			&   & & & & & 80°C\\
-			Bagazo  &   4\% & Alcalino & 2\% p/v & 6 l   & \textcolor{red}{1 cm} & 90°C  \\ 
-			de caña & &  & & & & 95°C \\ 
-			& & & & & &\\
-			
+			&   & & & & && 80°C\\
+			  &   &  & & &7870 &\multirow{2}{*}{ 1 cm} & 90°C  \\ 
+			 & &  & & & && 95°C \\ 
 			\hline
 		\end{tabular}
 	} % Cierre de \resizebox
@@ -221,30 +227,32 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		
 %		\onehalfspacing
 		
-		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los elementos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el ph de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis, la temperatura que tomando en cuenta la tesis antes mencionada es de 43 °C. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, muestran los valores de cada uno de los elementos a tomar en considereción para la la configuración de etapas juntas (SSF). 
-		
+		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los elementos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el ph de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis, la temperatura que tomando en cuenta la tesis antes mencionada es de 43 °C. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, muestran los valores de cada uno de los elementos a tomar en considereción para la la configuración de etapas juntas (SSF). \\[0.5em]
 		
 		\begin{table} [h!]
 			\centering
 			\caption{Variables a modificar en la hidrólisis y fermentación}
 			\label{tab:Variables a modificar para la hidrolisis y fermentacion}
 			\small
-			\begin{tabular}{|p{1.3cm}|p{1.5cm}|p{1.15cm}|p{1.5cm}|p{1.5cm}|p{.5cm}|p{2 cm}|p{1.2cm}|p{1.5cm}|}
+			\resizebox{17cm}{!} {
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 				\hline
-				Biomasa  & Volumen  & Carga de biomasa  & Carga enzimática  & Inoculo (levadura)  & Ph  & Temperatura  & Tiempo & Agitación  \\
+				Biomasa  & Volumen  & Carga de  & Carga  & Inoculo  & Ph  & Temperatura  & Tiempo   \\
+				 &   &  biomasa  & enzimática  & de levadura  & &  &     \\
 				
 				\hline
-				Bagazo de caña   & 3.6 L & 5\% & 20 UPF/g  & 10\%  & 5 & ambiente & 48h   & S.A\\
-
-				
+			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43 °c} & \multirow{2}{*}{48h }   \\
+			  &   & & &  &  & &     \\		
 				\hline
-				Bagazo de caña  & 4.8 L  & 5\%  & 20 UPF/g  & 10\%  & 5 & 43°C & 48h     & 1725 rpm\\
-
-				
-				\hline
-			\end{tabular}
-		
+			\end{tabular}}
 		\end{table}
+		
+		
+		
+		
+		
+		
+
 		
 		Se puede observar que se utilizan dos volumen, ya que uno 3600 ml es utilizando biomasa pretratada con humus de lombriz, es decir realizando un pretratamiento biológico, y para el caso del volumen de 5.5 l es utilizando biomasa pretratada con hidróxido de sodio, también llamado pretratamiento alcalino.
 		
@@ -271,7 +279,72 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		
 		
 		\subsubsection{Diseño Factorial de los pretratamientos}
-		\label{diseño factorial}	
+		\label{diseño factorial}
+		El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos : temperatura y tamaño de bagazo de caña. En el caso del pretratamiento alcalino se modifico el tiempo.
+		Los niveles son cuantas veces modificaremos esa variable, en este caso se están modificando de 2 a 3 niveles.
+		Para el pretratamiento biológico se realiza la misma clasificación, tomando como factor A ( tamaño de bagazo de caña), para observar a detalle como se clasifican tenemos el diagrama de la Figura \ref{Diagrama biologico}, donde la diferencia entre el pretratamiento alcalino y el biológico es la temperatura con la que se puede realizar el pretratamiento, ademas de los compuestos necesarios.
+		
+		\begin{figure} [h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{imagenes/diagrama biologico}
+			\caption{Diagrama de los pretratamientos}
+			\label{Diagrama biologico}
+		\end{figure}
+		
+		
+		Obsevamos del cuenta con 2 factores el primero de tamaño de bagazo con dos niveles, los cuales son: tamaño mo uniforme de bagazo y 1 cm, y el segundo factor o factor B con 3 niveles los cuales son: 30 °c, 40 °c y 45 °c.
+		Teniendo en total 6 experimentaciones.
+		
+		
+		
+		
+		En caso del pretratamiento biológico se presentan las pruebas que se llevaran a cabo, en la primera columna se presenta el numero de prueba, en la segunda el tamaño de bagazo que según la Figura \ref{Diagrama biologico} el factor A, así como la temperatura de la columna 7. Para la tercera columna se toma en cuenta la carga de bagazo de caña así como el volumen total de la mezcla, un dato a considerar es el tiempo de pretratamiento también se considera el tiempo en de encendido del motor, es decir el tiempo que se estará mezclando la sustancia. Por ultimo en la columna 10 se muestran el número de repeticiones que se llevaran acabo.   \ref{biologico2}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento biológico. Diseño de experimentos}
+			\label{biologico2}
+			\resizebox{16cm}{!} {
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|  }
+					\hline
+					\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Humus} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} \\
+					& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de lombriz} & \textbf{(días)} & \textbf{peratura}&  \textbf{ $/$encendido}&   \\
+					
+					& &  \textbf{ de caña} & &  &  &  &\textbf{ apagado} &  \\
+					
+					
+					\hline
+					1 & \multirow{6}{*}{TNUB} & \multirow{12}{*}{180 g} & \multirow{12}{*}{6 L}  & \multirow{12}{*}{300 g }& \multirow{12}{*}{2}  & 45 & \multirow{12}{*}{10 s}  & \multirow{12}{*}{333 RPM}   \\
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
+					
+					
+					2 &  &  & &  &  & 40 &  &  \\
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
+					
+					
+					3 &  &  &  &  & & 30 &  & \\
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{2-2}\cline{7-7}
+					
+					
+					
+					4 & \multirow{6}{*}{1 cm} &  &  &  &  & 45 &  &    \\
+					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
+					
+					
+					5 &  &  &  &  &  & 40 & &   \\  
+					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
+					
+					6 &  &  &  &  &  & 30 & &    \\  
+					& & &  & &  &   &  & \\	\cline{1-1}\cline{7-7}
+					\hline
+				\end{tabular}
+			}
+			
+		\end{table}
+		
+		
+		
+			
 		
 		Como punto de partida, se debe tener en cuenta que los experimentos variaran dependiendo de las condiciones, para observar el comportamiento de los resultados de la producción de bioetanol se realizaran 3 experimentos por temperatura, obteniendo como resultado 18 experimentaciones por pretratamiento, sin tomar en cuenta los de temperatura ambiente.
 		A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver figura  \ref{Diagrama1}.
@@ -280,111 +353,63 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		
 		\begin{figure} [h!]
 			\centering
-			\includegraphics[width=0.7\linewidth]{imagenes/diagrama}
+			\includegraphics[width=0.9\linewidth]{imagenes/Diagrama alcalino}
 			\caption{Diagrama de los pretratamientos}
 			\label{Diagrama1}
 		\end{figure}
 		
-		Para el pretratamiento biológico se realiza la misma clasificación, tomando como factor A el tamaño de bagazo, para observar a detalle como se clasifican tenemos el diagrama \ref{Diagrama biologico}, donde la diferencia entre el pretratamiento alcalino y el biológico es la temperatura con la que se puede realizar el pretratamiento, ademas de los compuestos necesarios.
 		
-		\begin{figure} [h!]
-			\centering
-			\includegraphics[width=0.7\linewidth]{imagenes/diagrama biologico}
-			\caption{Diagrama de los pretratamientos}
-			\label{Diagrama biologico}
-		\end{figure}
-		\newpage
-		De la misma forma cada pretratamiento sera realizado tres veces teniendo en total 18 experimentos por pretratamiento como se muestra en la Tabla \ref{datos experimentales}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación; en la tercera columna se muestra el volumen a utilizar, para este caso es 6 l , esto se tomo dado que el volumen máximo del reactor son 10 l, sin embargo  la resistencia que se encuentra alrededor del reactor se encuentran en una altura de un volumen de 6 l, para el caso de la cuarta columna se tomo el porcentaje de hidróxido de sodio que se utiliza para el volumen especificado.
 		
-		\begin{table}[h!]
+		
+		
+		De la misma forma cada pretratamiento sera realizado con 3 factores donde el primer factor es de 2 niveles, es decir el tamaño de bagazo de caña, para el segundo factor es la temperatura donde tiene tres niveles y por ultimo el factor c o el tercero factor que tiene 3 niveles, en total se realizaran 12 experimentaciones para el pretratamiento alcalino  pretratamiento como se muestra en la Tabla \ref{datos experimentales}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación; en la tercera columna se muestra el volumen a utilizar, para este caso es 6 l , esto se tomo dado que el volumen máximo del reactor son 10 l, sin embargo  la resistencia que se encuentra alrededor del reactor se encuentran en una altura de un volumen de 6 l, para el caso de la cuarta columna se tomo el porcentaje de hidróxido de sodio que se utiliza para el volumen especificado.
+		
+	
+		
+		
+		
+			\begin{table}[H]
 			\centering
-			\caption{Datos experimentales de mezclado con bagazo de caña con pretratamiento alcalino}
+			\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento alcalino.}
 			\label{datos experimentales}
 			\resizebox{16cm}{!} {
-				\begin{tabular}{|c|c|c|c|c|c|c|c|c| c| }
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|  }
 					\hline
-					\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Hidróxido} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} & \textbf{Repeticiones}\\
-					& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de sodio} & \textbf{(s)} & \textbf{peratura}&  \textbf{ $/$encendido}& &  \\
+					\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Humus} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} \\
+					& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de lombriz} & \textbf{(S)} & \textbf{peratura}&  \textbf{ $/$encendido}&   \\
 					
-					& &  & &  &  &  &\textbf{ apagado} & & \\
+					& &  \textbf{ de caña} & &  &  &  &\textbf{ apagado} &  \\
 					
 					
 					\hline
-					1 & Varios & 240 g & 6 L & 120 g & 5400 & 95 & 10 &  333 & 3 \\
-					& tamaños & &  & &  &   &  & & \\	\hline
+					1 & \multirow{6}{*}{TNUB} & \multirow{12}{*}{240 g} & \multirow{12}{*}{6 L}  & \multirow{12}{*}{120 g }& \multirow{3}{*}{5400}  & 95 & \multirow{12}{*}{10 s}  & \multirow{12}{*}{333 RPM}   \\
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
 					
 					
-					2 & Varios & 240 g & 6 L & 120 g & 5400 & 90 & 10 & 333 & 3 \\
-					& tamaños & &  & &  &   &  & & \\	\hline
+					2 &  &  & &  &  & 90 &  &  \\\cline{6-6}
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
 					
 					
-					3 & Varios & 240 g & 6 L & 120 g & 5400 & 80 & 10 & 333& 3 \\
-					& tamaños & &  & &  &   &  & & \\	\hline
+					3 &  &  &  &  &\multirow{3}{*}{7870} & 80 &  & \\
+					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{2-2}\cline{6-6}\cline{7-7}
 					
 					
 					
-					4 & 1 cm & 240 g & 6 L & 120 g & 5400 & 95 & 10 &   333& 3 \\
-					& & &  & &  &   &  & & \\	\hline
+					4 & \multirow{6}{*}{1 cm} &  &  &  &  \multirow{3}{*}{5400} & 95 &  &    \\
+					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
 					
 					
-					5 & 1 cm & 240 g & 6 L & 120 g & 5400 & 90 & 10 &  333 & 3 \\  
-					& & &  & &  &   &  & & \\	\hline
+					5 &  &  &  &  &  & 90 & &   \\  \cline{6-6}
+					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
 					
-					6 & 1 cm & 240 g & 6 L & 120 g & 5400 & 80 & 10 &  333 & 3 \\  
-					& & &  & &  &   &  & & \\	
+					6 &  &  &  &  &\multirow{3}{*}{7870}  & 80 & &    \\  
+					& & &  & &  &   &  & \\	\cline{1-1}\cline{7-7}
 					\hline
 				\end{tabular}
 			}
 			
 		\end{table}
-		
-		
 
-	En caso del pretratamiento biológico se presentan las pruebas que se llevaran a cabo, en la primera columna se presenta el numero de prueba, en la segunda el tamaño de bagazo que según la Figura \ref{Diagrama biologico} el factor A, así como la temperatura de la columna 7. Para la tercera columna se toma en cuenta la carga de bagazo de caña así como el volumen total de la mezcla, un dato a considerar es el tiempo de pretratamiento también se considera el tiempo en de encendido del motor, es decir el tiempo que se estará mezclando la sustancia. Por ultimo en la columna 10 se muestran el número de repeticiones que se llevaran acabo.   \ref{biologico2}
-	
-		\begin{table}[H]
-		\centering
-		\caption{Datos experimentales de mezclado con bagazo de caña con pretratamiento biológico}
-		\label{biologico2}
-		\resizebox{16cm}{!} {
-			\begin{tabular}{|c|c|c|c|c|c|c|c|c| c| }
-				\hline
-				\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Humus} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} & \textbf{Repeticiones}\\
-				& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de lombriz} & \textbf{(días)} & \textbf{peratura}&  \textbf{ $/$encendido}& &  \\
-				
-				& &  \textbf{ de caña} & &  &  &  &\textbf{ apagado} & & \\
-				
-				
-				\hline
-				1 & Varios & 180 g & 6 L & 300 g & 2 & 45 & 10 &  333 & 3 \\
-				& tamaños & &  & &  &   &  & & \\	\hline
-				
-				
-				2 & Varios & 180 g & 6 L & 300 g & 2 & 40 & 10 & 333 & 3 \\
-				& tamaños & &  & &  &   &  & & \\	\hline
-				
-				
-				3 & Varios & 180 g & 6 L & 300 g & 2 & 30 & 10 & 333& 3 \\
-				& tamaños & &  & &  &   &  & & \\	\hline
-				
-				
-				
-				4 & 1 cm & 180 g & 6 L & 300 g & 2 & 45 & 10 &   333& 3 \\
-				& & &  & &  &   &  & & \\	\hline
-				
-				
-				5 & 1 cm & 180 g & 6 L & 300 g & 2 & 40 & 10 &  333 & 3 \\  
-				& & &  & &  &   &  & & \\	\hline
-				
-				6 & 1 cm & 180 g & 6 L & 300 g & 2 & 30 & 10 &  333 & 3 \\  
-				& & &  & &  &   &  & & \\	
-				\hline
-			\end{tabular}
-		}
-		
-	\end{table}
-	
-	
 	\newpage
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
@@ -992,18 +1017,18 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 			\hline
 			\textbf{Prueba} & \textbf{Temperatura} & \textbf{Tamaño de bagazo} & \textbf{Tiempo} & \textbf{Consumo } \\ 
 			&\textbf{ (°c)}& &(s)	&\textbf{ energético (kwh)}\\ \hline
-			1 & 95 & TNUB & 5400 & 0.66  \\ \hline
-			2 & 95 & TNUB & 7870 & 0.81  \\ \hline
-			3 & 95 & 1 cm & 5400 & 0.74 \\ \hline
-			4 & 95 & 1 cm & 7870 & 0.86 \\ \hline
-			5 & 90 & TNUB & 5400 & 0.71  \\ \hline
-			6 & 90 & TNUB & 7870 & 0.7  \\ \hline
-			7 & 90 & 1 cm & 5400 & 0.74 \\ \hline
-			8 & 90 & 1 cm & 7870 & 0.6 \\ \hline
-			9 & 80 & TNUB & 5400 & 0.67  \\ \hline
-			10 & 80 & TNUB & 7870 & 0.63  \\ \hline
-			11 & 80 & 1 cm & 5400 & 0.78 \\ \hline
-			12 & 80 & 1 cm & 7870 & 0.8 \\ \hline
+			1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 0.66  \\ \cline{1-1} \cline{4-5}
+			2 &  &  & 7870 & 0.81  \\ \cline{3-5}  \cline{1-1} 
+			3 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\  \cline{1-1} \cline{4-5}
+			4 &  &  & 7870 & 0.86 \\ \cline{1-1}  \hline
+			5 & \multirow{4}{*}{90}& \multirow{2}{*}{TNUB} & 5400 & 0.71  \\ \cline{1-1}  \cline{4-5}
+			6 &  &  & 7870 & 0.7  \\ \cline{1-1} \cline{3-5}
+			7 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\ \cline{1-1}\cline{4-5}
+			8 &  &  & 7870 & 0.6 \\ \hline
+			9 & \multirow{4}{*}{80} & \multirow{2}{*}{TNUB} & 5400 & 0.67  \\ \cline{1-1}\cline{4-5}
+			10 &  &  & 7870 & 0.63  \\ \cline{1-1} \cline{3-5}
+			11 &  &\multirow{2}{*}{1 cm} & 5400 & 0.78 \\ \cline{1-1}\cline{4-5}
+			12 &  &  & 7870 & 0.8 \\ \hline
 		\end{tabular}
 		\label{Pretratamiento Alcalino}
 	\end{table}
@@ -1024,12 +1049,12 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		\begin{tabular}{|c|c|c|c|}
 			\hline
 			Prueba & Temperatura (°c) & Tamaño de bagazo & Consumo energético (kwh) \\ \hline
-			1 & 45 & TNUB & 4.55 \\ \hline
-			2 & 45 & 1 cm & 3.81 \\ \hline
-			3 & 40 & TNUB & 2.77 \\ \hline
-			4 & 40 & 1 cm & 2.81 \\ \hline
-			5 & 30 & TNUB & 4.55 \\ \hline
-			6 & 30 & 1 cm & 1.11 \\ \hline
+			1 & \multirow{2}{*}{45} & TNUB & 4.55 \\ \cline{1-1} \cline{3-4}
+			2 &  & 1 cm & 3.81 \\ \hline
+			3 &\multirow{2}{*}{ 40} & TNUB & 2.77 \\ \cline{3-4} \cline{1-1}
+			4 &  & 1 cm & 2.81 \\ \hline
+			5 &\multirow{2}{*}{ 30} & TNUB & 4.55 \\ \cline{3-4}\cline{1-1}
+			6 &  & 1 cm & 1.11 \\ \hline
 		\end{tabular}
 		\label{Pretratamiento Biológico}
 	\end{table}
@@ -1052,16 +1077,16 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 			\hline
 			\textbf{Prueba} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Porcentaje} \\
 				&\textbf{ (°c)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{ energético (kwh)}&\textbf{ de alcohol (\%)}\\ \hline
-			1 & 95 & TNUB & 5400 & 1.95 & 13 \\ \hline
-			2 & 95 & TNUB & 7870 & 2.74 & 13 \\ \hline
-			3 & 95 & 1 cm & 5400 & 1.41 & 10 \\ \hline
-			4 & 95 & 1 cm & 7870 & 2.78 & 17 \\ \hline
-			5 & 90 & T.N.U.B & 5400 & 1.87 & 12 \\ \hline
-			6 & 90 & T.N.U.B & 7870 & 1.88 & 13 \\ \hline
-			7 & 90 & 1 cm & 5400 & 2.63 & 13 \\ \hline
-			8 & 90 & 1 cm & 7870 & 2.88 & 11 \\ \hline
-			9 & 80 & T.N.U.B & 5400 & 1.84 & 13 \\ \hline
-			10 & 80 & 1 cm & 7870 & 2.58 & 13 \\ \hline
+			1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 1.95 & 13 \\ \cline{1-1} \cline{4-6}
+			2 &  &  & 7870 & 2.74 & 13 \\ \cline{3-6}  \cline{1-1}
+			3 &  &\multirow{2}{*}{1 cm} & 5400 & 1.41 & 10 \\ \cline{4-6}  \cline{1-1}
+			4 & &  & 7870 & 2.78 & 17 \\ \hline
+			5 & \multirow{4}{*}{90} & \multirow{2}{*}{T.N.U.B} & 5400 & 1.87 & 12 \\  \cline{1-1} \cline{4-6}
+			6 &  &  & 7870 & 1.88 & 13 \\ \cline{1-1} \cline{3-6}
+			7 &  & \multirow{2}{*}{1 cm} & 5400 & 2.63 & 13 \\ \cline{1-1} \cline{4-6}
+			8 &  &  & 7870 & 2.88 & 11 \\ \hline
+			9 &\multirow{2}{*}{80 } & T.N.U.B & 5400 & 1.84 & 13 \\ \cline{1-1} \cline{3-6}
+			10 & & 1 cm & 7870 & 2.58 & 13 \\ \hline
 		\end{tabular}
 		\label{ssf con Pretratamiento Alcalino}
 	\end{table}
@@ -1094,12 +1119,12 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
  			\hline
  			Prueba & Temperatura  & Tamaño de bagazo & Consumo energético  & Porcentaje \\ 
  			&(°c)&&(kwh)&de alcohol (\%)\\ \hline
- 			1 & 45 & T.N.U.B & 2.8 & 11.5 \\ \hline
- 			2 & 45 & 1 cm & 2.7  & 14 \\ \hline
- 			3 & 40 & T.N.U.B &  2.56 & 11 \\ \hline
- 			4 & 40 & 1 cm & 1.74  & 11 \\ \hline
- 			5 & 30 & T.N.U.B & 2.7 & 11 \\ \hline
- 			6 & 30 & 1 cm & 3.01 & 11 \\ \hline
+ 			1 & \multirow{2}{*}{45} & T.N.U.B & 2.8 & 11.5 \\ \cline{1-1} \cline{3-5}
+ 			2 &  & 1 cm & 2.7  & 14 \\ \hline
+ 			3 & \multirow{2}{*}{40} & T.N.U.B &  2.56 & 11 \\ \cline{1-1} \cline{3-5}
+ 			4 &  & 1 cm & 1.74  & 11 \\  \hline
+ 			5 & \multirow{2}{*}{30} & T.N.U.B & 2.7 & 11 \\ \cline{1-1} \cline{3-5}
+ 			6 &  & 1 cm & 3.01 & 11 \\ \hline
  		\end{tabular}
  		\label{ssf Pretratamiento Biológico}
  	\end{table}
@@ -1158,53 +1183,39 @@ En el proceso de pretratamiento alcalino descrito, se utilizaron los siguientes 
 			
 La Tabla \ref{tabla costo 1 cm} documenta el consumo energético promedio de 0.744 kWh (equivalente a \$0.048 USD por prueba) en pretratamientos alcalinos con bagazo de 1 cm, acumulando un costo total de \$0.24 USD al extrapolarse a las cinco pruebas experimentales realizadas bajo condiciones controladas.
 			
-			
+
+
 \begin{table}[H]
 	\centering
-	\caption{Energía consumida para pretratamiento alcalino para bagazo de 1cm y su costo en pesos. }
-	\label{tabla costo 1 cm}
-	\resizebox{12cm}{!} {
-	\begin{tabular}{|l|l|l|l|l|}
+\caption{Energía consumida para pretratamiento alcalino para bagazo de 1cm y su costo en pesos. }
+\label{tabla costo 1 cm}
+\resizebox{13cm}{!} {
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\textbf{Temperatura} & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energia consumida} & \textbf{Costos } \\ 
 		\textbf{del pretratamiento} &	\textbf{ de bagazo}  &	\textbf{ (s)} & 	\textbf{(kwh) }& 	\textbf{(\$ USD)} \\ \hline
-		95 & 1 cm & 5400 & 0.74 & 0.04786  \\ \hline
-		95 & 1 cm & 7870 & 0.86 & 0.055  \\ \hline
-		90 & 1 cm & 7870 & 0.74 & 0.047865  \\ \hline
-		90 & 1 cm & 5400 & 0.6 & 0.0388 \\ \hline
-		80 & 1 cm & 7870 & 0.78 & 0.05045  \\ \hline
-		
+		\multirow{5}{*}{95} & \multirow{3}{*}{Varios tamaños} & 5400 & 0.66 & 0.88968  \\  \cline{3-5}
+		&  & 5400 & 0.67 & 0.90316  \\  \cline{3-5}
+		&  & 7870 & 0.81 & 1.09188  \\ \cline{2-5}
+			& \multirow{3}{*}{1 cm} & 5400 & 0.74 & 0.04786  \\  \cline{3-5}
+		&  & 7870 & 0.86 & 0.055  \\  \hline
 	
-	\end{tabular}}
-		
+	 \multirow{5}{*}{90} & \multirow{3}{*}{Varios tamaños} & 5400 & 0.66 & 0.88968  \\  \cline{3-5}
+	    &  & 5400 & 0.71 & 0.95708  \\  \cline{3-5}
+	    &  & 7870 & 0.7  & 0.9436  \\ 	\cline{2-5}
+		 & \multirow{2}{*}{1 cm} & 7870 & 0.74 & 0.047865  \\  \cline{3-5}
+		&  & 5400 & 0.6 & 0.0388 \\   \hline
+	\multirow{5}{*}{80}	 & varios & 5400 & 0.67 & 0.90316  \\  \cline{3-5}
+	&  & 5400 & 0.81 & 1.09188  \\  \cline{3-5}
+	&  & 5400 & 0.4  & 0.5392  \\ \cline{2-5}
+	 & 1 cm & 7870 & 0.78 & 0.05045 \\ \hline
+\end{tabular}}
+
 \end{table}
 ..................................................................................
 
 La Tabla \ref{tabla costo varios} integra el consumo energético (kWh) y su costo equivalente en pesos mexicanos para el pretratamiento de bagazo de caña con granulometrías entre 1 mm y 10 cm, calculados mediante la tarifa industrial de \$1.348 MXN/kWh establecida por la Comisión Federal de Electricidad (CFE, \cite{CFE2023}) para media tensión en Cuernavaca, Morelos. El consumo promedio para pretratamiento utilizando bagazo de 1 mm hasta 10 cm de bagazo, según las pruebas realizadas que se muestran es de 0.67 kwh, y el costo promedio por prueba es de \$0.914 MXN, el costo total de la energía utilizada en las nueve pruebas es de \$10.58 MXN.
 
-\begin{table}[H]
-	\centering
-	\caption{Energía consumida para pretratamiento alcalino para bagazo de 1 mm hasta 10 cm y su costo en pesos. }
-	\label{tabla costo varios}
-	\resizebox{12cm}{!} {
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		\textbf{Temperatura} & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energia consumida} & \textbf{Costos } \\ 
-		\textbf{del pretratamiento} &	\textbf{ de bagazo}  &	\textbf{ (s)} & 	\textbf{(kwh) }& 	\textbf{(\$)} \\ \hline
-	95 & Varios tamaños & 5400 & 0.66 & 0.88968  \\ \hline
-	95 & Varios tamaños & 5400 & 0.67 & 0.90316  \\ \hline
-	95 & Varios tamaños & 7870 & 0.81 & 1.09188  \\ \hline
-	90 & Varios tamaños & 5400 & 0.66 & 0.88968  \\ \hline
-	90 & Varios tamaños & 5400 & 0.71 & 0.95708  \\ \hline
-	90 & Varios tamaños & 7870 & 0.7  & 0.9436  \\ \hline
-	80 & Varios tamaños & 5400 & 0.67 & 0.90316  \\ \hline
-	80 & Varios tamaños & 5400 & 0.81 & 1.09188  \\ \hline
-	80 & Varios tamaños & 5400 & 0.4  & 0.5392  \\ \hline
-		
-		
-	\end{tabular}}
-
-\end{table}
 
 
 
@@ -1243,24 +1254,26 @@ De acuerdo con los resultados presentados en la Tabla \ref{tabla de energia}, se
 			\textbf{Temperatura} & \textbf{Tamaño }  & \textbf{
 			} & \textbf{Costos } \\ 
 			\textbf{del pretratamiento} &	\textbf{ de bagazo}  & 	\textbf{(kwh) }& 	\textbf{(\$ )} \\ \hline
-        95 & Varios tamaños & 4.55 & 6.1334  \\ \hline
-	90 & Varios tamaños & 2.77 & 3.73396  \\ \hline
-	80 & Varios tamaños & 0.75 & 1.011  \\ \hline
-	95 & 1cm & 3.81 & 5.13588  \\ \hline
-	95 & 1cm & 4 & 5.392  \\ \hline
-	90 & 1cm & 2.81 & 3.78788  \\ \hline
-	90 & 1cm & 1.53 & 2.06244  \\ \hline
-	80 & 1cm & 1.11 & 1.49628  \\ \hline
-	80 & 1cm & 0.62 & 0.83576  \\ \hline
-			
-			
+       \multirow{2}{*}{95} & TNUB & 4.55 & 6.1334  \\ \cline{2-4}
+	 & 1cm & 3.81 & 5.13588  \\ \hline
+\multirow{2}{*}{90} & TNUB & 2.77 & 3.73396  \\ \cline{2-4}
+	 & 1cm & 2.81 & 3.78788  \\ \hline
+\multirow{2}{*}{80}	 & TNUB & 0.75 & 1.011  \\ \cline{2-4}
+	 & 1cm & 1.11 & 1.49628  \\ 	\hline		
 		\end{tabular}}
 	
 	\end{table}
 	
 	
 De los resultados obtenidos se desprende que el consumo energético promedio requerido para el pretratamiento biológico asciende a 2.43 kWh, lo que representa un costo promedio de \$3.28 MXN (tres pesos con veintiocho centavos) por prueba experimental. Los valores de consumo energético reportados en este estudio fueron obtenidos de fuentes oficiales de la Comisión Federal de Electricidad (CFE), correspondientes a las tarifas para el municipio de Cuernavaca, Morelos. El análisis de los datos revela que el costo total del consumo energético para la realización de las nueve pruebas experimentales ascendió a \$29.58 MXN (veintinueve pesos con cincuenta y ocho centavos).
+	El consumo energético en promedio se puede observar mejor en la siguiente grafica.
 	
+	\begin{figure} [H]
+		\centering
+		\includegraphics[width=7cm, height=5cm]{imagenes/grafico_alcalino}
+		\caption{Reactor previamente enjuagado con agua desmineralizada}
+		\label{grafica}
+	\end{figure}
 	\subsubsection{Costos en la producción de bioetanol en la etapa de hidrólisis y fermentación}
 	
 	En la producción de bioetanol de segunda generación se tomaron los costos en la producción, en la Tabla \ref{hidrolisis costos} se consideraron los insumos necesarios para esta etapa, desde el costo por prueba hasta el costo del envió. Tomando en cuenta los materiales mencionados, el costo total por prueba es de \$269.16 MXN, dado que se llevaron a cabo 18 pruebas de hidrólisis y fermentación ( 12 con pretratamiento alcalino y 6 con pretratamiento biológico ) se tuvo un costo total de \$4844.88 MXN.
