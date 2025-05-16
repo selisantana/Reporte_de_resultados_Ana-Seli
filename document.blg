@@ -5,7 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apacite.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: caratula.aux
-Illegal, another \bibstyle command---line 209 of file document.aux
+Illegal, another \bibstyle command---line 172 of file document.aux
  : \bibstyle
  :          {apalike}
 I'm skipping whatever remains of this command
@@ -21,12 +21,11 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: library.bib
 Warning--I didn't find a database entry for "CFE2023"
-Warning--I didn't find a database entry for "portalproduccion"
-Warning--I didn't find a database entry for "Arturo2022"
+Warning--I didn't find a database entry for "portalproduccon"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 10 entries,
             6951 wiz_defined-function locations,
-            1343 strings with 13576 characters,
+            1341 strings with 13555 characters,
 and the built_in function-call counts, 24962 in all, are:
 = -- 3129
 > -- 195

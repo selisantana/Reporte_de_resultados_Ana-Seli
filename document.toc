@@ -9,9 +9,8 @@
 \contentsline {subsection}{\numberline {5.1}Diseño de experimentos}{2}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Variables}{3}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Diseño factorial del pretratamiento Biológico}{3}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Diseño factorial del pretratamiento Alcalino}{3}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Diseño de experimentos para la configuración: sacarificación y fermentación simultaneas (SSF)}{4}{subsubsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.5}Diseño Factorial de los pretratamientos}{5}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.3}Diseño factorial del pretratamiento Alcalino}{5}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Diseño de experimentos para la configuración: sacarificación y fermentación simultaneas (SSF)}{7}{subsubsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.2}Implementación}{8}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Pre-Pretratamiento}{8}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Pretratamiento Alcalino}{9}{subsubsection.5.2.2}%

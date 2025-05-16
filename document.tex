@@ -71,9 +71,9 @@
 	
 	\begin{itemize}
 		\item 
-		Analizar experimentalmente las configuraciones de producción de bioetanol.
+		Analizar experimentalmente las configuraciones de producción de bioetanol que incluyen el pretratamiento, la hidrolisis y fermenteción en etapa simultanea.
 		\item  \sout{Análisis experimental de configuraciones de producción de bioetanol.}
-		\item 	Diseñar un sistema de control para las configuraciones de producción de bioetanol de segunda generación.
+		\item 	Diseñar e implementar un sistema de control de temperatura para las etapas de pretratamiento e hidolisis y fermentación en simultaneo, para la producción de bioetanol de segunda generación.
 			
 		\item  \sout{Diseño de control para las configuraciones de producción.}
 		
@@ -101,7 +101,7 @@
 	
 	\section{Marco conceptual}
 	
-	El marco conceptual lo podemos observar a mas detalle en el anexo 	\ref{marco conceptual} , en donde se observara conceptos que nos ayudaran a entender los realizado en el siguiente reporte de resultados.
+	El marco conceptual esta reportado en el anexo	\ref{marco conceptual} , en donde se observara conceptos que nos ayudaran a entender los realizado en el siguiente reporte de resultados.
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,33 +152,92 @@
 		\label{Diseño factorial del pretratamiento Biologico}
 		
 		
-		Para este experimento se plantea modificar las temperaturas en el pretratamiento biológico, como primer experimento se acondicionara a temperatura ambiente en distintas temporadas tomando el comportamiento de las temperaturas, posteriormente realizando un control a temperaturas de 30 °c , 40°c ,45 °c. Posteriormente se realizaran cambios en las temperaturas  en la hidrólisis y fermentación de: 35 °C , 40 °c y 45°c. Se puede observar las variables a modificar en la Tabla \ref{tab:Variables a modificar en pretratamiento Biologico}.
+		Para este experimento se plantea modificar las temperaturas en el pretratamiento biológico, como primer experimento se acondicionara a temperatura ambiente en distintas temporadas tomando el comportamiento de las temperaturas, posteriormente realizando un control a temperaturas de 30 °c , 40°c ,45 °c. Posteriormente se realizaran cambios en las temperaturas  en la hidrólisis y fermentación de: 35 °C , 40 °c y 45°c.
 		
-
+		
+		
+		
+		\begin{table}[H]
+			\centering
+			\caption{Condiciones de operación fijas del reactor  para el pretratamiento biologico del bagazo de caña.}
+			\label{tab:VariablesBiologico}
+			\resizebox{\textwidth}{!}{
+			\begin{tabular}{| c | c | c | c | c |      }
+				\hline
+				\textbf{Cantidad de} & \textbf{Cantidad de} & \textbf{Volumen de la carga} & \textbf{Tiempo del pretratamiento} &  \textbf{Condiciones de agitación}  \\  
+				\textbf{bagazo de caña} & \textbf{humus de lombriz} & \textbf{ } & \textbf{Carga de humus} & \textbf{ agitación}   \\  
+				\hline
+				
+				\multirow{5}{*}{3\% p/v } & \multirow{5}{*}{5\% p/v }  & \multirow{6}{*}{6 l} &\multirow{6}{*}{5 dias}  &  \multirow{3}{*}{10 s encendido/apagado} \\ 
+				& & & &    \\ 
+				& & & &    \\ 
+				\cline{5-5}
+				180 g& 300 g &  &  &   \multirow{3}{*}{142 RPM}  \\
+				& & & &    \\
+				& & & &    \\ 
+				\hline
+			\end{tabular}
+		}
+		\end{table}
+		
+		
+		
+		
+		
 
 \begin{table}[H]
 	\centering
-	\caption{Cargas y temperaturas para pruebas experimentales para pretratamiento biológico con un tiempo de 15 días}
-	\label{tab:VariablesBiologico}
-	\resizebox{\textwidth}{!}{
-		\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento biológico. Diseño de experimentos}
+	\label{biologico2}
+		\begin{tabular}{|c|c|c|  }
 			\hline
-			\textbf{Biomasa} & \textbf{Carga de biomasa} & \textbf{Pretratamiento} & \textbf{Carga de humus} & \textbf{Volumen} & \textbf{Tamaño} & \textbf{Temperatura} \\  
+			\textbf{Num} & \textbf{Tamaño de particula } & \textbf{Temperatura} \\
+			& \textbf{ del bagazo de caña} &     \\		
 			\hline
-			\multirow{6}{*}{Bagazo de caña} & \multirow{6}{*}{Carga de 3\%}  & \multirow{6}{*}{Biológico} &\multirow{6}{*}{5\% p/v}  &\multirow{6}{*}{6 l}  & \multirow{3}{*}{Varios tamaños} & \textcolor{blue}{30°C} \\ \cline{7-7}
-			& & & & & & \textcolor{blue}{40°C} \\ \cline{7-7}
-			& & & & & & \textcolor{blue}{45°C} \\ \cline{7-7}
-			\cline{6-7}
-			&  &  &  &  & \multirow{3}{*}{1 cm}& 30°C \\ \cline{7-7}
-			& & & & & & 40°C \\ \cline{7-7}
-			& & & & & & 45°C \\ \cline{7-7}
+			1   & \multirow{3}{*}{TNUB *} & 45  \\	\cline{1-1}	
+			2 &  & 40 \\ \cline{1-1} 						
+			3 &  & 30 \\ \cline{1-3}			
+			4 &\multirow{3}{*}{1 cm} & 45    \\\cline{1-1}			
+			5 &  & 40   \\  \cline{1-1}				
+			6 &  & 30     \\  \cline{1-1}		
 			\hline
 		\end{tabular}
-	}
+	\\[3pt] % Espacio adicional
+	\footnotesize{$^{*}$  Tamaño no uniforme de bagazo.}
+	
 \end{table}
-
-
-
+		
+		El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos : temperatura y tamaño de bagazo de caña. En el caso del pretratamiento alcalino se modifico el tiempo.
+		Los niveles son cuantas veces modificaremos esa variable, en este caso se están modificando de 2 a 3 niveles.
+		Para el pretratamiento biológico se realiza la misma clasificación, tomando como factor A ( tamaño de bagazo de caña), para observar a detalle como se clasifican tenemos el diagrama de la Figura \ref{Diagrama biologico}, donde la diferencia entre el pretratamiento alcalino y el biológico es la temperatura con la que se puede realizar el pretratamiento, ademas de los compuestos necesarios.
+		
+		\begin{figure} [h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{imagenes/diagrama biologico}
+			\caption{Diagrama de los pretratamientos}
+			\label{Diagrama biologico}
+		\end{figure}
+		
+		
+		Obsevamos del cuenta con 2 factores el primero de tamaño de bagazo con dos niveles, los cuales son: tamaño mo uniforme de bagazo y 1 cm, y el segundo factor o factor B con 3 niveles los cuales son: 30 °c, 40 °c y 45 °c.
+		Teniendo en total 6 experimentaciones.
+		
+		
+		
+		
+		En caso del pretratamiento biológico se presentan las pruebas que se llevaran a cabo, en la primera columna se presenta el numero de prueba, en la segunda el tamaño de bagazo que según la Figura \ref{Diagrama biologico} el factor A, así como la temperatura de la columna 7. Para la tercera columna se toma en cuenta la carga de bagazo de caña así como el volumen total de la mezcla, un dato a considerar es el tiempo de pretratamiento también se considera el tiempo en de encendido del motor, es decir el tiempo que se estará mezclando la sustancia. Por ultimo en la columna 10 se muestran el número de repeticiones que se llevaran acabo.   \ref{biologico2}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	
 		
@@ -188,31 +247,78 @@
 Para el caso del pretratamiento alcalino con hidróxido de sodio, tomando como referencia la tesis \cite{Arturo2022evaluacion}, donde menciona que las temperaturas con mayor producción de bioetanol son temperaturas de 97 grados; en consecuencia se modifican las temperaturas en que se puede experimentar manejándolas en ese rango.
 Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar el comportamiento del porcentaje de bioetanol si trabajamos con valores cercanos al mencionado, así como modificar el tamaño de bagazo, esto para saber el impacto del tamaño de biomasa al moverlo en el reactor tipo batch (por lotes).
 
-\begin{table}[h!]
+
+	\begin{table}[H]
 	\centering
-	\caption{Valores para pruebas experimentales para el pretratamiento alcalino en un tiempo de 5400 s}
+	\caption{Condiciones de operación fijas del reactor  para el pretratamiento biologico del bagazo de caña.}
 	\label{tab:Variablesalcalino}
-	\resizebox{\textwidth}{!}{   % Ajusta al ancho del documento (textwidth)
-		\begin{tabular}{| c | c | c | c | c | c|c|c|}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{| c | c | c | c | c | c |      }
 			\hline
-			\textbf{Biomasa}  & \textbf{Carga de} & \textbf{Pretratamiento} & \textbf{Carga de } & \textbf{Volumen} && \textbf{Tamaño} & \textbf{Temperatura} \\  
-				& \textbf{ biomasa}& &\textbf{hidróxido de sodio }& &\textbf{Tiempo}& &  \\
-			
+			\textbf{Cantidad de} & \textbf{Cantidad de} & \textbf{Volumen de la carga} & \textbf{Tiempo del pretratamiento} & \multicolumn{2}{c|}{ \textbf{Condiciones de agitación} } \\  
+			\textbf{bagazo de caña} & \textbf{humus de lombriz} & \textbf{ } & \textbf{Carga de humus} & \multicolumn{2}{c|}{  }  \\  
 			\hline
-			\multirow{6}{*}{Bagazo de caña}& \multirow{6}{*}{4\%}& \multirow{6}{*}{Alcalino}& \multirow{6}{*}{2\% p/v } & \multirow{6}{*}{6 L}&&\multirow{3}{*}{Varios tamaños} & \textcolor{blue}{80°C}  \\
-			  &   &  &  &   & 5400 && \textcolor{blue}{90°C}   \\  
-			 &  & & & & && \textcolor{blue}{95°C}\\ 
-		
-				\cline{6-8}
 			
-			&   & & & & && 80°C\\
-			  &   &  & & &7870 &\multirow{2}{*}{ 1 cm} & 90°C  \\ 
-			 & &  & & & && 95°C \\ 
+			\multirow{5}{*}{4 \% p/v } & \multirow{5}{*}{2\% p/v }  & \multirow{6}{*}{6 l} & \multirow{3}{*}{5400} & \multirow{6}{*}{ 10 s encendido/apagado} & \multirow{6}{*}{142 RPM}  \\ 
+			& & & &  &  \\ 
+			& & & &  &   \\ 
+			\cline{4-4}
+			180 g& 300 g &  & \multirow{3}{*}{7870} &  & \\
+			& & & & &   \\
+			& & & &  &  \\ 
 			\hline
 		\end{tabular}
-	} % Cierre de \resizebox
-
+	}
 \end{table}
+
+
+
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento biológico. Diseño de experimentos}
+	\label{alcalino}
+	\begin{tabular}{|c|c|c|  }
+		\hline
+		\textbf{Num} & \textbf{Tamaño de particula } & \textbf{Temperatura} \\
+		& \textbf{ del bagazo de caña} &     \\		
+		\hline
+		1   & \multirow{3}{*}{TNUB*} & 95  \\	\cline{1-1}	
+		2 &  & 90 \\ \cline{1-1} 						
+		3 &  & 80 \\ \cline{1-3}			
+		4 &\multirow{3}{*}{1 cm} & 95    \\\cline{1-1}			
+		5 &  & 90   \\  \cline{1-1}				
+		6 &  & 80     \\  \cline{1-1}		
+		\hline
+	\end{tabular}
+		\\[3 pt] % Espacio adicional
+% {\raggedright \footnotesize $^{*}$Tamaño no uniforme de bagazo. \par}
+\footnotesize{$^{*}$  Tamaño no uniforme de bagazo.}
+\end{table}
+
+
+
+
+
+Como punto de partida, se debe tener en cuenta que los experimentos variaran dependiendo de las condiciones, para observar el comportamiento de los resultados de la producción de bioetanol se realizaran 3 experimentos por temperatura, obteniendo como resultado 18 experimentaciones por pretratamiento, sin tomar en cuenta los de temperatura ambiente.
+A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver figura  \ref{Diagrama1}.
+
+
+
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{imagenes/Diagrama alcalino}
+	\caption{Diagrama de los pretratamientos}
+	\label{Diagrama1}
+\end{figure}
+
+
+
+
+
+De la misma forma cada pretratamiento sera realizado con 3 factores donde el primer factor es de 2 niveles, es decir el tamaño de bagazo de caña, para el segundo factor es la temperatura donde tiene tres niveles y por ultimo el factor c o el tercero factor que tiene 3 niveles, en total se realizaran 12 experimentaciones para el pretratamiento alcalino  pretratamiento como se muestra en la Tabla \ref{datos experimentales}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación; en la tercera columna se muestra el volumen a utilizar, para este caso es 6 l , esto se tomo dado que el volumen máximo del reactor son 10 l, sin embargo  la resistencia que se encuentra alrededor del reactor se encuentran en una altura de un volumen de 6 l, para el caso de la cuarta columna se tomo el porcentaje de hidróxido de sodio que se utiliza para el volumen especificado.
 
 
 
@@ -278,138 +384,6 @@ Las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar e
 		
 		
 		
-		\subsubsection{Diseño Factorial de los pretratamientos}
-		\label{diseño factorial}
-		El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos : temperatura y tamaño de bagazo de caña. En el caso del pretratamiento alcalino se modifico el tiempo.
-		Los niveles son cuantas veces modificaremos esa variable, en este caso se están modificando de 2 a 3 niveles.
-		Para el pretratamiento biológico se realiza la misma clasificación, tomando como factor A ( tamaño de bagazo de caña), para observar a detalle como se clasifican tenemos el diagrama de la Figura \ref{Diagrama biologico}, donde la diferencia entre el pretratamiento alcalino y el biológico es la temperatura con la que se puede realizar el pretratamiento, ademas de los compuestos necesarios.
-		
-		\begin{figure} [h!]
-			\centering
-			\includegraphics[width=0.7\linewidth]{imagenes/diagrama biologico}
-			\caption{Diagrama de los pretratamientos}
-			\label{Diagrama biologico}
-		\end{figure}
-		
-		
-		Obsevamos del cuenta con 2 factores el primero de tamaño de bagazo con dos niveles, los cuales son: tamaño mo uniforme de bagazo y 1 cm, y el segundo factor o factor B con 3 niveles los cuales son: 30 °c, 40 °c y 45 °c.
-		Teniendo en total 6 experimentaciones.
-		
-		
-		
-		
-		En caso del pretratamiento biológico se presentan las pruebas que se llevaran a cabo, en la primera columna se presenta el numero de prueba, en la segunda el tamaño de bagazo que según la Figura \ref{Diagrama biologico} el factor A, así como la temperatura de la columna 7. Para la tercera columna se toma en cuenta la carga de bagazo de caña así como el volumen total de la mezcla, un dato a considerar es el tiempo de pretratamiento también se considera el tiempo en de encendido del motor, es decir el tiempo que se estará mezclando la sustancia. Por ultimo en la columna 10 se muestran el número de repeticiones que se llevaran acabo.   \ref{biologico2}
-		
-		\begin{table}[H]
-			\centering
-			\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento biológico. Diseño de experimentos}
-			\label{biologico2}
-			\resizebox{16cm}{!} {
-				\begin{tabular}{|c|c|c|c|c|c|c|c|c|  }
-					\hline
-					\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Humus} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} \\
-					& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de lombriz} & \textbf{(días)} & \textbf{peratura}&  \textbf{ $/$encendido}&   \\
-					
-					& &  \textbf{ de caña} & &  &  &  &\textbf{ apagado} &  \\
-					
-					
-					\hline
-					1 & \multirow{6}{*}{TNUB} & \multirow{12}{*}{180 g} & \multirow{12}{*}{6 L}  & \multirow{12}{*}{300 g }& \multirow{12}{*}{2}  & 45 & \multirow{12}{*}{10 s}  & \multirow{12}{*}{333 RPM}   \\
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					2 &  &  & &  &  & 40 &  &  \\
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					3 &  &  &  &  & & 30 &  & \\
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{2-2}\cline{7-7}
-					
-					
-					
-					4 & \multirow{6}{*}{1 cm} &  &  &  &  & 45 &  &    \\
-					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					5 &  &  &  &  &  & 40 & &   \\  
-					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					6 &  &  &  &  &  & 30 & &    \\  
-					& & &  & &  &   &  & \\	\cline{1-1}\cline{7-7}
-					\hline
-				\end{tabular}
-			}
-			
-		\end{table}
-		
-		
-		
-			
-		
-		Como punto de partida, se debe tener en cuenta que los experimentos variaran dependiendo de las condiciones, para observar el comportamiento de los resultados de la producción de bioetanol se realizaran 3 experimentos por temperatura, obteniendo como resultado 18 experimentaciones por pretratamiento, sin tomar en cuenta los de temperatura ambiente.
-		A continuación se presenta un diagrama donde se clasifica por factores cada variable a considerar, esto solo para el caso del pretratamiento alcalino, ver figura  \ref{Diagrama1}.
-		
-		
-		
-		\begin{figure} [h!]
-			\centering
-			\includegraphics[width=0.9\linewidth]{imagenes/Diagrama alcalino}
-			\caption{Diagrama de los pretratamientos}
-			\label{Diagrama1}
-		\end{figure}
-		
-		
-		
-		
-		
-		De la misma forma cada pretratamiento sera realizado con 3 factores donde el primer factor es de 2 niveles, es decir el tamaño de bagazo de caña, para el segundo factor es la temperatura donde tiene tres niveles y por ultimo el factor c o el tercero factor que tiene 3 niveles, en total se realizaran 12 experimentaciones para el pretratamiento alcalino  pretratamiento como se muestra en la Tabla \ref{datos experimentales}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación; en la tercera columna se muestra el volumen a utilizar, para este caso es 6 l , esto se tomo dado que el volumen máximo del reactor son 10 l, sin embargo  la resistencia que se encuentra alrededor del reactor se encuentran en una altura de un volumen de 6 l, para el caso de la cuarta columna se tomo el porcentaje de hidróxido de sodio que se utiliza para el volumen especificado.
-		
-	
-		
-		
-		
-			\begin{table}[H]
-			\centering
-			\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento alcalino.}
-			\label{datos experimentales}
-			\resizebox{16cm}{!} {
-				\begin{tabular}{|c|c|c|c|c|c|c|c|c|  }
-					\hline
-					\textbf{Num} & \textbf{Tamaño } & \textbf{Cantidad } & \textbf{Volumen} & \textbf{Humus} & \textbf{Tiempo} & \textbf{Tem-} & \textbf{Tiempo} & \textbf{RPM} \\
-					& \textbf{ de bagazo} & \textbf{ bagazo} & & \textbf{de lombriz} & \textbf{(S)} & \textbf{peratura}&  \textbf{ $/$encendido}&   \\
-					
-					& &  \textbf{ de caña} & &  &  &  &\textbf{ apagado} &  \\
-					
-					
-					\hline
-					1 & \multirow{6}{*}{TNUB} & \multirow{12}{*}{240 g} & \multirow{12}{*}{6 L}  & \multirow{12}{*}{120 g }& \multirow{3}{*}{5400}  & 95 & \multirow{12}{*}{10 s}  & \multirow{12}{*}{333 RPM}   \\
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					2 &  &  & &  &  & 90 &  &  \\\cline{6-6}
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					3 &  &  &  &  &\multirow{3}{*}{7870} & 80 &  & \\
-					&  & &  & &  &   &  &  \\	\cline{1-1}\cline{2-2}\cline{6-6}\cline{7-7}
-					
-					
-					
-					4 & \multirow{6}{*}{1 cm} &  &  &  &  \multirow{3}{*}{5400} & 95 &  &    \\
-					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					
-					5 &  &  &  &  &  & 90 & &   \\  \cline{6-6}
-					& & &  & &  &   &  &  \\	\cline{1-1}\cline{7-7}
-					
-					6 &  &  &  &  &\multirow{3}{*}{7870}  & 80 & &    \\  
-					& & &  & &  &   &  & \\	\cline{1-1}\cline{7-7}
-					\hline
-				\end{tabular}
-			}
-			
-		\end{table}
-
 	\newpage
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
