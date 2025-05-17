@@ -54,11 +54,8 @@
 	
 	\section{Planteamiento del problema}
 		
-		El problema de este proyecto se tratade la producción de bioetanol de segunda generación,
-		
-		
-		Este proyecto se basa en la producción de bioetanol de segunda generación la cual tiene como base la producción de biocombustible a partir de basura orgánica, el problema principal que aborda es la utilización de diferentes pretratamientos que ayuden a romper la barrera de la lignina y así poder producir mayor bioetanol. Estas técnicas de pretratamiento buscan modificar y controlar las variables para obtener la configuración que de mejores resultados.
-		
+		El problema de este proyecto se trata de la configuración de condiciones en el pretratamiento para obtener un bioetanol con mejores rendimientos. Para la configuración de estas condiciones se toma como base el articulo de \cite{Arturo2022evaluacion}, el cual menciona algunas de las variables a utilizar para la producción de biocombustible. Así mismo se comparan dos diferentes tipos de pretratamientos, cada uno con sus variables a considerar, posteriormente se realizar una hidrólisis y fermentación en etapas simultaneas, se busca encontrar las mejores condiciones y compararlas entre si para conocer los valores que den la mayor producción de biocombustible. El problema esta en mejorar el rendimiento, analizando los pretratamientos biológico y alcalino, el efecto de las variables, el rendimiento y los costos de producción.		
+	
 		
 		
 		%\item Desarrollo de pruebas experimentales.
@@ -74,9 +71,9 @@
 	
 	\begin{itemize}
 		\item 
-		Analizar experimentalmente las configuraciones de producción de bioetanol que incluyen el pretratamiento, la hidrolisis y fermenteción en etapa simultanea.
+		Analizar experimentalmente las configuraciones de producción de bioetanol que incluyen el pretratamiento, la hidrólisis y fermentación en etapa simultanea.
 		\item  \sout{Análisis experimental de configuraciones de producción de bioetanol.}
-		\item 	Diseñar e implementar un sistema de control de temperatura para las etapas de pretratamiento e hidolisis y fermentación en simultaneo, para la producción de bioetanol de segunda generación.
+		\item 	Diseñar e implementar un sistema de control de temperatura para las etapas de pretratamiento e hidrólisis y fermentación en simultaneo, para la producción de bioetanol de segunda generación.
 			
 		\item  \sout{Diseño de control para las configuraciones de producción.}
 		
@@ -89,13 +86,15 @@
 	
 	\begin{itemize}
 
+		\item 
+		Desarrollar un prototipo de laboratorio para la producción de bioetanol a partir de bagazo de caña.
 		
 		\item 
 		Conjunto de experimentos con el propósito de realizar configuraciones en pretratamientos para la producción de bioetanol. 
 		
 		
 		\item 
-		Se evalúan resultados obtenidos de experimentaciones con configuración en variables del proceso, como: el costo, tiempo y porcentaje de bioetanol.
+		Análisis de experimentaciones con configuración en variables del proceso, como el costo, tiempo y porcentaje de bioetanol, así como la comparación de los resultados en diferentes tipos de pretratamientos.
 		
 	
 		
@@ -104,6 +103,9 @@
 	
 	\section{Marco conceptual}
 	
+
+	
+	
 	El marco conceptual esta reportado en el anexo	\ref{marco conceptual} , en donde se observara conceptos que nos ayudaran a entender los realizado en el siguiente reporte de resultados.
 	
 	
@@ -111,9 +113,9 @@
 
 	\section{Estado del arte}
 
-	El estado del arte es un apartado donde podemos observar lo realizado anterioridad referente a la producción de bioetanol de segunda generación, en el anexo \ref{Estado del arte} podemos observar a mas detalle lo antes descrito.
+	El estado del arte se reporta en el anexo \ref{Estado del arte}, esta revisión incluye lo referente a la producción de bioetanol de segunda generación.
 	
-	El pretratamiento es un paso muy importante para la producción de bioetanol de segunda generación, algunos de los pretratamientos que existen son: Ácido, Térmico, Biológico, alcalino, Químico, Mecánico (\cite{ADITIYA2016631}).
+	El pretratamiento es un paso critico para la producción de bioetanol de segunda generación y el tema principal de este trabajo, algunos de los pretratamientos que existen son Ácido, Térmico, Biológico, alcalino, Químico, Mecánico (\cite{ADITIYA2016631}).
 	El pretratamiento con NaOH es uno de los más utilizados como pretratamientos alcalinos, este promueve la hidrólisis \cite{espinosa2021pretratamiento}. Una desventaja de este es la pérdida de celulosa y hemicelulosa, y la reducción de azúcares y bioetanol.
 	En general, el pretratamiento alcalino genera menos inhibidores y favorece la deslignificación, en comparación con tratamiento con ácidos, según \cite{valles2022estudio}. 
 	
@@ -123,7 +125,8 @@
 	\section{Resultados}
 	
 	\subsection{Diseño de experimentos}
-	Un diseño de experimentos es un apartado donde muestra los cambios que se planean realizar en las pruebas experimentales, así como el numero de pruebas planeadas. El diseño de experimentos nos ayudara a observar de manera general las pruebas que se realizaran.
+	
+	Un diseño de experimentos es un apartado donde muestra 	el diseño de pruebas experimentales para estudiar el efecto de las variables de operación de la etapa de pretratamiento. En esta sección se describe el diseño de experimentos para pretratar el bagazo de caña a diferentes condiciones.
 	
 	La producción de bioetanol de segunda generación involucra distintos procesos y variables. Las variables que se tienen consideradas a modificar se presentaran en el apartado \ref{variables}. En el caso del pretratamiento biológico en el apartado \ref{Diseño factorial del pretratamiento Biologico} se muestran los valores a utilizar en las  pruebas, así como las variables a cambiar en cada caso. En el apartado \ref{Diseño factorial del pretratamiento alcalino} se puede observar como en el aparado anterior una Tabla con las cantidades a tomar en cada una de las pruebas, sin embargo en este caso se utilizara un método distinto de pretratamiento.
 	
@@ -150,7 +153,7 @@
 
 		
 		
-		\subsubsection{Diseño factorial del pretratamiento Biológico}
+		\subsubsection{Diseño experimental del pretratamiento Biológico}
 		
 		\label{Diseño factorial del pretratamiento Biologico}
 		
@@ -162,7 +165,7 @@
 		
 		\begin{table}[H]
 			\centering
-			\caption{Condiciones de operación fijas del reactor  para el pretratamiento biologico del bagazo de caña.}
+			\caption{Condiciones de operación fijas del reactor  para el pretratamiento biológico del bagazo de caña.}
 			\label{tab:VariablesBiologico}
 			\resizebox{\textwidth}{!}{
 			\begin{tabular}{| c | c | c | c | c |      }
@@ -244,7 +247,7 @@
 		
 	
 		
-	\subsubsection{Diseño factorial del pretratamiento Alcalino}
+	\subsubsection{ Diseño experimental del pretratamiento Alcalino}
 	\label{Diseño factorial del pretratamiento alcalino}
 
 Para el caso del pretratamiento alcalino con hidróxido de sodio, tomando como referencia la tesis \cite{Arturo2022evaluacion}, donde menciona que las temperaturas con mayor producción de bioetanol son temperaturas de 97 grados; en consecuencia se modifican las temperaturas en que se puede experimentar manejándolas en ese rango.
@@ -588,7 +591,7 @@ De la misma forma cada pretratamiento sera realizado con 3 factores donde el pri
 			\end{minipage}
 		\end{figure}
 			
-		
+		\textbf{7.} El diseño del control de la temperatura podemos observarla en el anexo \ref{diseño del control de temp}
 			
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			\subsubsection{Pretratamiento Biológico}
@@ -686,7 +689,7 @@ De la misma forma cada pretratamiento sera realizado con 3 factores donde el pri
 		\end{figure}
 		
 			
-			\textbf{7} Se procede a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectan los contactos múltiples necesarios, se configuran los dispositivos y se programa el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{Diseño factorial del pretratamiento Biológico}. El proceso se mantiene durante el tiempo estipulado para el pretratamiento. Ver Figuras \ref{progra 1} y \ref{progra 2}.
+			\textbf{7. } Se procede a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectan los contactos múltiples necesarios, se configuran los dispositivos y se programa el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{Diseño factorial del pretratamiento Biológico}. El proceso se mantiene durante el tiempo estipulado para el pretratamiento, el diseño del control del control de temperatura, ver anexo \ref{diseño del control de temp}. Las Figuras \ref{progra 1} y \ref{progra 2} muestran las pantallas con el control en funcionamiento.
 			
 			\begin{figure}[H]
 				\centering
@@ -711,7 +714,7 @@ De la misma forma cada pretratamiento sera realizado con 3 factores donde el pri
 			
 			
 			
-			\subsubsection{Acondicionamiento para el pretratamiento}
+			\subsubsection{Acondicionamiento para el material pretratado}
 			
 			 \textbf{Materiales}
 			\\[0.5em]
@@ -1623,6 +1626,147 @@ Actualmente la producción de bioetanol de segunda generación
 %	\end{appendix}
 	
 	
+	\section{Diseño del control de temperatura}
+	
+	\label{diseño del control de temp}
+	
+	
+	
+	\subsection{Respuesta de la planta aplicando una Señal PRBS}
+	
+	
+	La señal PRBS entra  mediante la salida PWM del arduino a un convertidor, pasando después a la resistencia como se muestra en el diagrama de la Figura \ref{ diagrama_prbs}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=.4\linewidth]{imagenes/diagrama_PRBS}
+		\caption{Señal PRBS. }
+		\label{ diagrama_prbs}
+	\end{figure}
+	
+	En el reactor se mide mediante los sensores termopar k  la temperatura, esta temperatura ingresando la señal PWM tiene la forma siguiente como lo muestra la Figura \ref{ Temperatura_con PRBS}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=.8\linewidth]{imagenes/temperatura con prbs}
+		\caption{Comportamiento de la temperatura dentro del reactor con señal de entrada PRBS }
+		\label{ Temperatura_con PRBS}
+	\end{figure}
+	
+	
+	Como se puede observar en la imagen la temperatura sufre de variaciones,  sin embargo dichas variaciones ayudaran a obtener la identificación del sistema con mayor precisión de la planta.
+	Para obtener la temperatura neta del sistema , es decir la temperatura sin la influencia de la temperatura ambiente se resta la temperatura ambiente dentro del laboratorio menos la temperatura dentro del biorreactor.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=.7\linewidth]{imagenes/temp_neta}
+		\caption{Comportamiento de la temperatura sin la temperatura ambiente dentro del laboratorio. }
+		\label{ Temperatura neta_con PRBS}
+	\end{figure}
+	
+	La gráfica de la Figura \ref{ Temperatura neta_con PRBS} muestrala temperatura dentro del reactor 
+	
+	
+	
+	\subsection{Identificación del sistema de la planta}	
+	
+	Se necesita un sistema que modele el comportamiento de la temperatura de la planta, por lo que se realizaron técnicas de identificación, como es el caso de la técnica OE donde se obtiene el sistema 
+	
+	
+	\begin{equation}
+		G(s) = \frac{0.0005369 \, s^2 + 0.0003022 \, s + 8.207 \times 10^{-5}}{s^3 + 0.3314 \, s^2 + 0.0002728 \, s + 2.707 \times 10^{-7}}
+	\end{equation}
+	
+	Esta función de transferencia tiene respuesta como se muestra en la siguiente figura \ref{fig:identificacion}, este sistema es de tercer orden
+	
+	
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[width=0.8\linewidth]{imagenes/identificacion}
+		\caption{}
+		\label{fig:identificacion}
+	\end{figure}
+	Para observar el comportamiento del sistema se puede ver los polos y ceros del sistema en la figura \ref{polos y ceros}
+	
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[width=1\linewidth]{imagenes/Polos y ceros}
+		\caption{}
+		\label{polos y ceros}
+	\end{figure}
+	\newpage
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\subsection{Control PID}
+	
+	
+	
+	Un control PID puede ser calculado con la siguiente ecuación 
+	
+	\begin{equation}
+		C(t) = K_p \, e(t) + K_i \int e(t) \, dt + K_d \frac{d e(t)}{dt}
+	\end{equation}
+	Para el control PID se utilizo la herramienta de MATLAB que tiene por nombre PID TUNER (Transfer function Based)
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{imagenes/pid tuner}
+		\caption{Ventana de la herramienta PID Tuner}
+		\label{fig:pid-tuner}
+	\end{figure}
+	
+	Obteniendo como resultado los valores de cada variable del controldador PID:
+	\begin{equation}
+		P=0.00724555643948787 
+	\end{equation}
+	
+	\begin{equation}
+		I=9.60342545392904 X 10^{-07}
+	\end{equation}
+	
+	\begin{equation}
+		D=5.63241452981354
+	\end{equation}
+	
+	Realizando un ajuste a los valores de la planta obteniendo como nuevos valores lo siguiente
+	
+	\begin{equation}
+		P=0.19779
+	\end{equation}
+	
+	\begin{equation}
+		I=2.835 X 10^{-04}
+	\end{equation}
+	
+	\begin{equation}
+		D=-1.72
+	\end{equation}
+	
+	Con estos valores se observa el control en las variables en el reactor, utilizando la herramienta MATLAB como lo muestra la figura \ref{sistema simulado}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{imagenes/sistema_controlado}
+		\caption{Sistema simulado con control a 90 °C}
+		\label{sistema simulado}
+	\end{figure}
+	
+	
+	De acuerdo a lo anterior se configuraron los controles para cada etapa, a continuación se mencionan en la Tabla los datos para cada prueba
+	
+	
+	\begin{table}[!ht]
+		\centering
+		\caption{Valores para el control de temperatura en pretratamiento y SSF}
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			Variables & Pretratamiento Bilógico & Pretratamiento alcalino & SSF \\ \hline
+			p & 0.19779 & 0.19779 & 0.19779 \\ \hline
+		
+			D & -1.72 & -1.72 & -1.72 \\ \hline
+\end{tabular}
+\label{tabla_control}
+\end{table}
 	
 	
 	
