@@ -67,6 +67,36 @@ Arturo, F\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Comisión Federal de Electricidad (CFE)}%
+}{%
+{Comisión Federal de Electricidad (CFE)}%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+CFE2023}
+\APACinsertmetastar {%
+CFE2023}%
+\begin{APACrefauthors}%
+{Comisión Federal de Electricidad (CFE)}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {{Tarifas para Gran Demanda en Media Tensión Ordinaria}.}
+  {{Tarifas para Gran Demanda en Media Tensión Ordinaria}.}
+\newblock
+\APAChowpublished
+  {\url{https://app.cfe.mx/Aplicaciones/CCFE/Tarifas/TarifasCREIndustria/Tarifas/GranDemandaMTO.aspx}}.
+\newblock
+\begin{APACrefURL}
+  \url{https://app.cfe.mx/Aplicaciones/CCFE/Tarifas/TarifasCREIndustria/Tarifas/GranDemandaMTO.aspx}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado el 19-05-2025}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cuervo%
 , Folch%
 \BCBL {}\ \BBA {} Quiroz%

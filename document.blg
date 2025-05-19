@@ -5,7 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apacite.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: caratula.aux
-Illegal, another \bibstyle command---line 172 of file document.aux
+Illegal, another \bibstyle command---line 178 of file document.aux
  : \bibstyle
  :          {apalike}
 I'm skipping whatever remains of this command
@@ -20,48 +20,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "CFE2023"
 Warning--I didn't find a database entry for "portalproduccon"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 10 entries,
+You've used 11 entries,
             6951 wiz_defined-function locations,
-            1341 strings with 13555 characters,
-and the built_in function-call counts, 24962 in all, are:
-= -- 3129
-> -- 195
-< -- 1376
-+ -- 1518
-- -- 20
-* -- 1667
-:= -- 4864
-add.period$ -- 44
-call.type$ -- 10
-change.case$ -- 173
+            1347 strings with 13869 characters,
+and the built_in function-call counts, 26479 in all, are:
+= -- 3312
+> -- 205
+< -- 1448
++ -- 1578
+- -- 24
+* -- 1757
+:= -- 5144
+add.period$ -- 49
+call.type$ -- 11
+change.case$ -- 190
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 602
-empty$ -- 795
-format.name$ -- 328
-if$ -- 4491
+cite$ -- 22
+duplicate$ -- 636
+empty$ -- 866
+format.name$ -- 342
+if$ -- 4789
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 33
 missing$ -- 0
-newline$ -- 265
-num.names$ -- 80
-pop$ -- 318
+newline$ -- 291
+num.names$ -- 88
+pop$ -- 387
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 46
 quote$ -- 0
-skip$ -- 1531
+skip$ -- 1602
 stack$ -- 0
-substring$ -- 1641
-swap$ -- 342
-text.length$ -- 31
+substring$ -- 1705
+swap$ -- 357
+text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 992
+type$ -- 1072
 warning$ -- 0
-while$ -- 117
+while$ -- 122
 width$ -- 0
-write$ -- 339
+write$ -- 367
 (There was 1 error message)
