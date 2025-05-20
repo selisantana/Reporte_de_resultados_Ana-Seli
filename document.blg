@@ -5,7 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apacite.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: caratula.aux
-Illegal, another \bibstyle command---line 178 of file document.aux
+Illegal, another \bibstyle command---line 184 of file document.aux
  : \bibstyle
  :          {apalike}
 I'm skipping whatever remains of this command
@@ -22,45 +22,45 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: library.bib
 Warning--I didn't find a database entry for "portalproduccon"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 11 entries,
+You've used 17 entries,
             6951 wiz_defined-function locations,
-            1347 strings with 13869 characters,
-and the built_in function-call counts, 26479 in all, are:
-= -- 3312
-> -- 205
-< -- 1448
-+ -- 1578
-- -- 24
-* -- 1757
-:= -- 5144
-add.period$ -- 49
-call.type$ -- 11
-change.case$ -- 190
+            1393 strings with 15598 characters,
+and the built_in function-call counts, 41296 in all, are:
+= -- 5086
+> -- 325
+< -- 2315
++ -- 2510
+- -- 36
+* -- 2806
+:= -- 8113
+add.period$ -- 73
+call.type$ -- 17
+change.case$ -- 296
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 636
-empty$ -- 866
-format.name$ -- 342
-if$ -- 4789
+cite$ -- 34
+duplicate$ -- 1030
+empty$ -- 1342
+format.name$ -- 557
+if$ -- 7395
 int.to.chr$ -- 0
-int.to.str$ -- 33
+int.to.str$ -- 51
 missing$ -- 0
-newline$ -- 291
-num.names$ -- 88
-pop$ -- 387
+newline$ -- 457
+num.names$ -- 136
+pop$ -- 556
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 74
 quote$ -- 0
-skip$ -- 1602
+skip$ -- 2434
 stack$ -- 0
-substring$ -- 1705
-swap$ -- 357
-text.length$ -- 34
+substring$ -- 2697
+swap$ -- 571
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1072
+type$ -- 1552
 warning$ -- 0
-while$ -- 122
+while$ -- 197
 width$ -- 0
-write$ -- 367
+write$ -- 584
 (There was 1 error message)
