@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  19 MAY 2025 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  20 MAY 2025 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,7 +725,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...}Bagazo de caña}{28}{subsubsection.6.1.3}
+l.37 ...}Bagazo de caña}{29}{subsubsection.6.1.3}
                                                   % [1
 
 
@@ -1165,22 +1165,43 @@ Overfull \hbox (12.01715pt too wide) in paragraph at lines 1059--1075
 <imagenes/porcentajes.png, id=661, 362.007pt x 217.467pt>
 File: imagenes/porcentajes.png Graphic file (type png)
 <use imagenes/porcentajes.png>
-Package pdftex.def Info: imagenes/porcentajes.png  used on input line 1323.
+Package pdftex.def Info: imagenes/porcentajes.png  used on input line 1327.
 (pdftex.def)             Requested size: 189.45995pt x 113.81349pt.
 <imagenes/porcentaje_1cm_alcalino.png, id=662, 362.007pt x 217.467pt>
 File: imagenes/porcentaje_1cm_alcalino.png Graphic file (type png)
 <use imagenes/porcentaje_1cm_alcalino.png>
 Package pdftex.def Info: imagenes/porcentaje_1cm_alcalino.png  used on input li
-ne 1330.
+ne 1334.
 (pdftex.def)             Requested size: 189.45995pt x 113.81349pt.
 <imagenes/grafico_alcalino.jpg, id=663, 362.007pt x 217.467pt>
 File: imagenes/grafico_alcalino.jpg Graphic file (type jpg)
 <use imagenes/grafico_alcalino.jpg>
 Package pdftex.def Info: imagenes/grafico_alcalino.jpg  used on input line 1342
 .
-(pdftex.def)             Requested size: 199.17075pt x 142.27101pt.
- [25 <./imagenes/porcentajes.png> <./imagenes/porcentaje_1cm_alcalino.png>] [26
- <./imagenes/grafico_alcalino.jpg>] (document.bbl
+(pdftex.def)             Requested size: 199.17075pt x 199.17943pt.
+ [25 <./imagenes/porcentajes.png> <./imagenes/porcentaje_1cm_alcalino.png>]
+<imagenes/biologico_10.png, id=671, 1445.4pt x 697.10437pt>
+File: imagenes/biologico_10.png Graphic file (type png)
+<use imagenes/biologico_10.png>
+Package pdftex.def Info: imagenes/biologico_10.png  used on input line 1352.
+(pdftex.def)             Requested size: 512.13914pt x 199.1661pt.
+
+Overfull \hbox (42.38412pt too wide) in paragraph at lines 1352--1353
+ [][] 
+ []
+
+<imagenes/biologico_9.png, id=672, 1445.4pt x 697.10437pt>
+File: imagenes/biologico_9.png Graphic file (type png)
+<use imagenes/biologico_9.png>
+Package pdftex.def Info: imagenes/biologico_9.png  used on input line 1361.
+(pdftex.def)             Requested size: 512.13914pt x 199.1661pt.
+
+Overfull \hbox (42.38412pt too wide) in paragraph at lines 1361--1362
+ [][] 
+ []
+
+[26 <./imagenes/grafico_alcalino.jpg> <./imagenes/biologico_10.png (PNG copy)>]
+[27 <./imagenes/biologico_9.png (PNG copy)>] (document.bbl
 Underfull \hbox (badness 6001) in paragraph at lines 80--98
 []\OT1/cmr/m/n/12 Comisi^^Son Fe-de-ral de Elec-tri-ci-dad (CFE).  (2023).  \OT
 1/cmr/m/it/12 Ta-ri-fas pa-ra Gran De-
@@ -1192,93 +1213,93 @@ Underfull \hbox (badness 5446) in paragraph at lines 80--98
 2 https :// app [] .cfe [] .mx / Aplicaciones /
  []
 
-) [27]
+) [28]
 \c@anexo=\count333
-<imagenes/bagazo.png, id=697, 260.47313pt x 287.57437pt>
+<imagenes/bagazo.png, id=705, 260.47313pt x 287.57437pt>
 File: imagenes/bagazo.png Graphic file (type png)
 <use imagenes/bagazo.png>
-Package pdftex.def Info: imagenes/bagazo.png  used on input line 1411.
+Package pdftex.def Info: imagenes/bagazo.png  used on input line 1436.
 (pdftex.def)             Requested size: 187.89914pt x 207.4483pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `portalproduccon' undefined on input line 1421.
+LaTeX Warning: Citation `portalproduccon' undefined on input line 1446.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 1425--1427
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1450--1452
 
  []
 
-<imagenes/pretrata_1.png, id=710, 749.80125pt x 529.98pt>
+<imagenes/pretrata_1.png, id=718, 749.80125pt x 529.98pt>
 File: imagenes/pretrata_1.png Graphic file (type png)
 <use imagenes/pretrata_1.png>
-Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1430.
+Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1455.
 (pdftex.def)             Requested size: 187.89914pt x 132.81004pt.
-[29 <./imagenes/bagazo.png> <./imagenes/pretrata_1.png>] [30] [31] [32]
-[33]
-<imagenes/diagrama_PRBS.png, id=746, 340.27126pt x 614.295pt>
+[30 <./imagenes/bagazo.png> <./imagenes/pretrata_1.png>] [31] [32] [33]
+[34]
+<imagenes/diagrama_PRBS.png, id=754, 340.27126pt x 614.295pt>
 File: imagenes/diagrama_PRBS.png Graphic file (type png)
 <use imagenes/diagrama_PRBS.png>
-Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 1599.
+Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 1624.
 (pdftex.def)             Requested size: 187.89914pt x 339.21306pt.
-<imagenes/temperatura con prbs.png, id=748, 1445.4pt x 697.10437pt>
+<imagenes/temperatura con prbs.png, id=756, 1445.4pt x 697.10437pt>
 File: imagenes/temperatura con prbs.png Graphic file (type png)
 <use imagenes/temperatura con prbs.png>
 Package pdftex.def Info: imagenes/temperatura con prbs.png  used on input line 
-1608.
+1633.
 (pdftex.def)             Requested size: 375.80544pt x 181.24286pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/temp_neta.png, id=749, 1445.4pt x 697.10437pt>
+<imagenes/temp_neta.png, id=757, 1445.4pt x 697.10437pt>
 File: imagenes/temp_neta.png Graphic file (type png)
 <use imagenes/temp_neta.png>
-Package pdftex.def Info: imagenes/temp_neta.png  used on input line 1619.
+Package pdftex.def Info: imagenes/temp_neta.png  used on input line 1644.
 (pdftex.def)             Requested size: 328.82707pt x 158.58617pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34 <./imagenes/diagrama_PRBS.png>]
-<imagenes/identificacion.png, id=760, 473.6094pt x 247.6452pt>
+[35 <./imagenes/diagrama_PRBS.png>]
+<imagenes/identificacion.png, id=768, 473.6094pt x 247.6452pt>
 File: imagenes/identificacion.png Graphic file (type png)
 <use imagenes/identificacion.png>
-Package pdftex.def Info: imagenes/identificacion.png  used on input line 1642.
+Package pdftex.def Info: imagenes/identificacion.png  used on input line 1667.
 (pdftex.def)             Requested size: 375.80544pt x 196.51044pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/Polos y ceros.png, id=762, 1445.4pt x 697.10437pt>
+<imagenes/Polos y ceros.png, id=770, 1445.4pt x 697.10437pt>
 File: imagenes/Polos y ceros.png Graphic file (type png)
 <use imagenes/Polos y ceros.png>
-Package pdftex.def Info: imagenes/Polos y ceros.png  used on input line 1650.
+Package pdftex.def Info: imagenes/Polos y ceros.png  used on input line 1675.
 (pdftex.def)             Requested size: 469.75502pt x 226.55623pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35 <./imagenes/temperatura con prbs.png (PNG copy)> <./imagenes/temp_neta.png 
+[36 <./imagenes/temperatura con prbs.png (PNG copy)> <./imagenes/temp_neta.png 
 (PNG copy)>]
-<imagenes/pid tuner.png, id=771, 1445.4pt x 767.86874pt>
+<imagenes/pid tuner.png, id=779, 1445.4pt x 767.86874pt>
 File: imagenes/pid tuner.png Graphic file (type png)
 <use imagenes/pid tuner.png>
-Package pdftex.def Info: imagenes/pid tuner.png  used on input line 1670.
+Package pdftex.def Info: imagenes/pid tuner.png  used on input line 1695.
 (pdftex.def)             Requested size: 328.82707pt x 174.68456pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36 <./imagenes/identificacion.png> <./imagenes/Polos y ceros.png (PNG copy)>]
-<imagenes/sistema_controlado.png, id=781, 1445.4pt x 767.86874pt>
+[37 <./imagenes/identificacion.png> <./imagenes/Polos y ceros.png (PNG copy)>]
+<imagenes/sistema_controlado.png, id=789, 1445.4pt x 767.86874pt>
 File: imagenes/sistema_controlado.png Graphic file (type png)
 <use imagenes/sistema_controlado.png>
 Package pdftex.def Info: imagenes/sistema_controlado.png  used on input line 17
-06.
+31.
 (pdftex.def)             Requested size: 375.80544pt x 199.64116pt.
 
-[37 <./imagenes/pid tuner.png>] [38 <./imagenes/sistema_controlado.png>]
+[38 <./imagenes/pid tuner.png>] [39 <./imagenes/sistema_controlado.png>]
 (document.aux (caratula.aux)
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
@@ -1295,13 +1316,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 14BB87A57F668AA784EA48D9D2F182A3;15034.
+(rerunfilecheck)             Checksum: 5C6C78FEF98EEE9484EFF154E50708BE;15034.
  ) 
 Here is how much of TeX's memory you used:
- 17164 strings out of 474486
- 296348 string characters out of 5743755
+ 17191 strings out of 474486
+ 297088 string characters out of 5743755
  1950542 words of memory out of 5000000
- 39006 multiletter control sequences out of 15000+600000
+ 39030 multiletter control sequences out of 15000+600000
  571010 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,929b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1334,9 +1355,9 @@ ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/elfhe/AppData
 rs/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
 b><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb>
-Output written on document.pdf (42 pages, 21520706 bytes).
+Output written on document.pdf (43 pages, 21588242 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
- 757 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 944 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 767 words of extra memory for PDF output out of 10000 (max. 10000000)
 
