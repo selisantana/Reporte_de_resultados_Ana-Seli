@@ -14,12 +14,11 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{soul}
-\usepackage{xcolor}
 \usepackage{enumitem,xcolor}
 \usepackage{tasks}
-\usepackage{apacite}  % Para estilo APA básico
 \usepackage{adjustbox}
-\bibliographystyle{apacite}
+
+\usepackage{apacite}
 %\graphicspath{{imagenes\}}
 
 \usepackage[normalem]{ulem}
@@ -55,7 +54,7 @@
 	\section{Planteamiento del problema}
 		
  
-		El problema de este proyecto consiste  en encontrar de la configuración de condiciones en el pretratamiento para obtener un bioetanol de segunda generación con mejores rendimientos. Para la configuración de estas , el cual menciona algunas de las variables a utilizar para la producción de biocombustible. Así mismo se comparan dos diferentes tipos de pretratamientos, cada uno con sus variables a considerar, posteriormente se realizar una hidrólisis y fermentación en etapas simultaneas estas condiciones se toma como base el articulo de  \cite{Arturo2022evaluacion}, se busca encontrar las mejores condiciones y compararlas entre si para conocer los valores que den la mayor producción de biocombustible. El problema esta en mejorar el rendimiento, analizando los pretratamientos biológico y alcalino, el efecto de las variables, el rendimiento y los costos de producción.		   
+		El problema de este proyecto consiste  en encontrar de la configuración de condiciones en el pretratamiento para obtener un bioetanol de segunda generación utilizando materia lignocelulósica con mejores rendimientos. Así mismo se comparan dos diferentes tipos de pretratamientos, cada uno con sus variables a considerar, el problema radica en mejorar el rendimiento, analizando los pretratamientos biológico y alcalino, el efecto de las variables, el rendimiento y los costos de producción. Posteriormente se realizar una hidrólisis y fermentación en etapas simultaneas, utilizando valores fijos para los dos tipos de pretratamientos, tomando como base el articulo de  \cite{Arturo2022evaluacion}. Se considera una hidrólisis y fermentación en etapas en conjunto (SSF) dado que se reduce el tiempo del proceso y costos de producción. 		   
 	
 		
 		
@@ -1026,16 +1025,18 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
  	\begin{table}[H]
  		\centering
  		\caption{Hidrólisis y fermentación con pretratamiento biológico}
- 		\begin{tabular}{|c|c|c|c|c|}
+ 		\begin{tabular}{|c|c|c|c|c|c|}
  			\hline
- 			\textbf{Num de}& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo }  & \textbf{Producción} \\ 
- 			\textbf{experimento}&\textbf{(°c)} &\textbf{de bagazo} & \textbf{energético (kwh)} &\textbf{de alcohol (\%)}\\ \hline
- 			1 & \multirow{2}{*}{45} & TNUB & 2.8 & 11.5 \\ \cline{1-1} \cline{3-5}
- 			2 &  & 1 cm & 2.7  & 14 \\ \hline
- 			3 & \multirow{2}{*}{40} & TNUB &  2.56 & 11 \\ \cline{1-1} \cline{3-5}
- 			4 &  & 1 cm & 1.74  & 11 \\  \hline
- 			5 & \multirow{2}{*}{30} & TNUB & 2.7 & 11 \\ \cline{1-1} \cline{3-5}
- 			6 &  & 1 cm & 3.01 & 11 \\ \hline
+ 			\textbf{Num }& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo } & \textbf{Consumo }  & \textbf{Producción} \\ 
+ 			\textbf{de}&\textbf{(°c)} &\textbf{de bagazo} & \textbf{energético} & \textbf{energético }&\textbf{de alcohol}\\ 
+ 				\textbf{exp.}&& & \textbf{ pretrata (kwh)} & \textbf{ SSF (kwh)}&\textbf{(\%)}\\ \hline
+ 			
+ 			1 & \multirow{2}{*}{45} & TNUB & 4.55 & 2.8  & 11.5 \\ \cline{1-1} \cline{3-6}
+ 			2 &                     & 1 cm & 3.81 & 2.7  & 14 \\ \hline
+ 			3 & \multirow{2}{*}{40} & TNUB & 2.77 & 2.56 & 11 \\ \cline{1-1} \cline{3-6}
+ 			4 &                     & 1 cm & 2.81 & 1.74  & 11 \\  \hline
+ 			5 & \multirow{2}{*}{30} & TNUB & 4.55 &2.7  & 11 \\ \cline{1-1} \cline{3-6}
+ 			6 &                     & 1 cm & 1.11 &3.01 & 11 \\ \hline
  		\end{tabular}
  		\label{ssf Pretratamiento Biológico}
  	\end{table}
@@ -1055,20 +1056,23 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 		\begin{table}[H]
 			\centering
 			\caption{Hidrólisis y Fermentación con pretratamiento alcalino}
-			\begin{tabular}{|c|c|c|c|c|c|}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
 				\hline
-				\textbf{Num} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Producción } \\
-			\textbf{de exp}	&\textbf{ (°C)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{ energético (kwh)}&\textbf{ de alcohol (\%)}\\ \hline
-				1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 1.95 & 13 \\ \cline{1-1} \cline{4-6}
-				2 &  &  & 7870 & 2.74 & 13 \\ \cline{3-6}  \cline{1-1}
-				3 &  &\multirow{2}{*}{1 cm} & 5400 & 1.41 & 10 \\ \cline{4-6}  \cline{1-1}
-				4 & &  & 7870 & 2.78 & 17 \\ \hline
-				5 & \multirow{4}{*}{90} & \multirow{2}{*}{TNUB} & 5400 & 1.87 & 12 \\  \cline{1-1} \cline{4-6}
-				6 &  &  & 7870 & 1.88 & 13 \\ \cline{1-1} \cline{3-6}
-				7 &  & \multirow{2}{*}{1 cm} & 5400 & 2.63 & 13 \\ \cline{1-1} \cline{4-6}
-				8 &  &  & 7870 & 2.88 & 11 \\ \hline
-				9 &\multirow{2}{*}{80 } & TNUB & 5400 & 1.84 & 13 \\ \cline{1-1} \cline{3-6}
-				10 & & 1 cm & 7870 & 2.58 & 13 \\ \hline
+				\textbf{Num} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Consumo } & \textbf{Producción } \\
+			\textbf{de}	&\textbf{ (°C)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{de pretra. }&\textbf{ de SSF}&\textbf{ de alcohol}\\ 
+				\textbf{exp}	& & \textbf{bagazo}&	&\textbf{ (kwh)}&\textbf{ (kwh)}&\textbf{ (\%)}\\ \hline
+			
+			
+				1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 &0.66& 1.95 & 13 \\ \cline{1-1} \cline{4-6}
+				2 &                     &                       & 7870 &0.81& 2.74 & 13 \\ \cline{3-6}  \cline{1-1}
+				3 &                     &\multirow{2}{*}{1 cm}  & 5400 &0.74& 1.41 & 10 \\ \cline{4-6}  \cline{1-1}
+				4 &                     &                       & 7870 &0.86& 2.78 & 17 \\ \hline
+				5 & \multirow{4}{*}{90} & \multirow{2}{*}{TNUB} & 5400 &0.71& 1.87 & 12 \\  \cline{1-1} \cline{4-6}
+				6 &                     &                       & 7870 &0.7& 1.88 & 13 \\ \cline{1-1} \cline{3-6}
+				7 &                     & \multirow{2}{*}{1 cm} & 5400 &0.74& 2.63 & 13 \\ \cline{1-1} \cline{4-6}
+				8 &                     &                       & 7870 & 0.6&2.88 & 11 \\ \hline
+				9 &\multirow{2}{*}{80 } & TNUB                  & 5400 &0.67 &1.84 & 13 \\ \cline{1-1} \cline{3-6}
+				10 &                     & 1 cm                 & 7870 & 0.8&2.58 & 13 \\ \hline
 			\end{tabular}
 			\label{ssf con Pretratamiento Alcalino}
 		\end{table}
@@ -1124,8 +1128,8 @@ Dado que se regusto el consumo energético a continuación se presentan los prec
 	\setlength{\tabcolsep}{2.5pt}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-		\textbf{Num de}&\textbf{Temperatura del} & \textbf{Tamaño }  & \textbf{ Consumo energético} & \textbf{Costos } \\ 
-			&\textbf{ pretratamiento (°C)} &	\textbf{ de bagazo}  & 	\textbf{(kwh) }& 	\textbf{(\$ USD)} \\ \hline
+		\textbf{Num de}&\textbf{Temperatura del} & \textbf{Tamaño }  & \textbf{ Consumo } & \textbf{Costos } \\ 
+			&\textbf{ pretratamiento (°C)} &	\textbf{ de bagazo}  & 	\textbf{energético(kwh) }& 	\textbf{(\$ USD)} \\ \hline
      1  & \multirow{2}{*}{95} & TNUB & 4.55 & 0.294 \\ \cline{3-5} \cline{1-1}
 2	& & 1cm & 3.81 & 0.246 \\ \hline 
 3&\multirow{2}{*}{90} & TNUB & 2.77 & 0.179 \\ \cline{3-5} \cline{1-1}
@@ -1177,23 +1181,23 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		\caption{Energía consumida para pretratamiento alcalino para bagazo de caña y su costo en \$ USD. }
 		\label{tabla costo 1 cm}
 		\setlength{\tabcolsep}{2.5pt}
-			\begin{tabular}{|c|c|c|c|c|c|c|}
+			\begin{tabular}{|c|c|c|c|c|c|}
 				\hline
-				\textbf{Num}&\textbf{Temperatura } & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía} & \textbf{Energía}& \textbf{Costos } \\ 
-			\textbf{ de}	&\textbf{pretratamiento } &	\textbf{ de}  &	\textbf{ (s)} & 	\textbf{ consumida }& 	\textbf{ consumida }& 	\textbf{(\$ USD)} \\ 
-			\textbf{exp}	&\textbf{(°C)} &	\textbf{ bagazo}  &	 & 	\textbf{ (kwh) }& 	\textbf{ (kwh) }& 	 \\ \hline
+				\textbf{Num}&\textbf{Temperatura } & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía} & \textbf{Costos } \\ 
+			\textbf{ de}	&\textbf{pretratamiento } &	\textbf{ de}  &	\textbf{ (s)} & 	\textbf{ consumida }& 	\textbf{(\$ USD)} \\ 
+			\textbf{exp}	&\textbf{(°C)} &	\textbf{ bagazo}  &	 & 	\textbf{ Pretrata(kwh) }& 	 \\ \hline
 			
 			
-			1&	\multirow{5}{*}{95} & \multirow{3}{*}{TNUB} & 5400 & 0.66  & & 0.88968  \\  \cline{4-7} \cline{1-1}
-			2&	&  & 7870 & 0.81& & 1.09188  \\ \cline{3-6} \cline{1-1}
-			3&	& \multirow{3}{*}{1 cm} & 5400 & 0.74 && 0.04786  \\  \cline{4-7} \cline{1-1}
-			4&	&  & 7870 & 0.86& & 0.055  \\  \hline 
-			5&	\multirow{5}{*}{90} & \multirow{3}{*}{TNUB} & 5400 & 0.66 & &0.88968  \\  \cline{4-7} \cline{1-1}
-			6&	&  & 7870 & 0.7  & & 0.9436  \\ 	\cline{3-7} \cline{1-1}
-			7&	& \multirow{2}{*}{1 cm} & 5400 & 0.6 && 0.0388   \\  \cline{4-7} \cline{1-1}
-			8&	&  & 7870 & 0.74 && 0.047865\\   \hline
-			9&	\multirow{2}{*}{80}	 & TNUB & 5400 & 0.67 && 0.90316  \\  \cline{3-7} \cline{1-1}
-			10&	& 1 cm & 7870 & 0.78 && 0.05045 \\ \hline
+			1&	\multirow{5}{*}{95} & \multirow{3}{*}{TNUB} & 5400 &0.66  & 0.88968  \\  \cline{4-6} \cline{1-1}
+			2&                     	&                       & 7870 &0.81 & 1.09188  \\ \cline{3-6} \cline{1-1}
+			3&                     	& \multirow{3}{*}{1 cm} & 5400 &0.74 & 0.04786  \\  \cline{4-6} \cline{1-1}
+			4&                   	&                       & 7870 & 0.86 & 0.055  \\  \hline 
+			5&\multirow{5}{*}{90}   & \multirow{3}{*}{TNUB} & 5400 & 0.66  &0.88968  \\  \cline{4-6} \cline{1-1}
+			6&                  	&                       & 7870 & 0.7  &  0.9436  \\ 	\cline{3-6} \cline{1-1}
+			7&                  	& \multirow{2}{*}{1 cm} & 5400 & 0.6& 0.0388   \\  \cline{4-6} \cline{1-1}
+			8&	                    &                       & 7870 & 0.74 & 0.047865\\   \hline
+			9&	\multirow{2}{*}{80} & TNUB                  & 5400 &  0.67 & 0.90316  \\  \cline{3-6} \cline{1-1}
+			10&	                    & 1 cm                  & 7870 & 0.78 & 0.05045 \\ \hline
 		\end{tabular}
 		
 	\end{table}
@@ -1253,6 +1257,9 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	}
 \end{table}
 
+
+
+
 	%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -1276,7 +1283,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 		3	&	& \multirow{2}{*}{ 1 cm}& 5400  & 1.41 & 0.09  \\ \cline{4-6}\cline{1-1}
 		4	&	&   & 7870 & 2.78 & 0.17  \\ \hline
 		5	&	\multirow{5}{*}{90}	 & \multirow{2}{*}{TNUB} & 5400 & 1.87 & 0.12 \\ \cline{4-6}\cline{1-1}
-		6	&	 &  & 7870 & 1.88 & 0.121 \\ \cline{2-5}\cline{1-1}
+		6	&	 &  & 7870 & 1.88 & 0.121 \\ \cline{3-6}\cline{1-1}
 		7	&	 & \multirow{2}{*}{1 cm} & 5400 & 2.63 & 0.17 \\ \cline{4-6}\cline{1-1}
 		8	&	& & 7870 & 2.88 & 0.18  \\ \hline
 	9	&		\multirow{2}{*}{80}	 & TNUB & 5400 & 1.84 &0.11   \\ \cline{3-6}\cline{1-1}
@@ -1401,7 +1408,7 @@ En la etapa de hidrólisis y fermentación en simultanea el margen de cambio en 
 	
 
 
-	  	\bibliographystyle{apalike} 
+	  
 	   \bibliography{library}
 	   
 	   
@@ -1534,21 +1541,33 @@ En la etapa de hidrólisis y fermentación en simultanea el margen de cambio en 
 		\subsubsection{Sacarificación enzimática de la biomasa pretratada y la fermentación separadas}
 		
 		El proceso de sacarificación enzimática y fermentación (SHF) se realiza por separado debido a que las temperatura que se tienen en las distintas fases son diferentes, en el caso de las enzimas hidrolíticas se tiene un promedio de 50°c, y una temperatura mas baja en el caso de la fermentación de 30°C-32°C. 
-		La producción de biocombustible por etapas separadas es una de las técnicas mas antiguas, realizando un pretratado de enzimas para su hidrólisis y posteriormente una fermentación de la biomasa resultante % \cite{CHOUDHARY201682}.
+		La producción de biocombustible por etapas separadas es una de las técnicas mas antiguas, realizando un pretratado de enzimas para su hidrólisis y posteriormente una fermentación de la biomasa resultante  \cite{CHOUDHARY201682}.
 		
 		
 		
 		
 		\subsubsection{Sacarificación y fermentación simultáneas}
 		
-		En el artículo %\cite{CHOUDHARY201682}
-		menciona que la sacarificación se realiza simultáneamente con la fermentación.
+		En el artículo \cite{CHOUDHARY201682} menciona que la sacarificación se realiza simultáneamente con la fermentación.
 		La producción de etanol con microorganismo de importancia industrial como Saccharomyces cerevisiae (levaduras), no permite la utilización completa, este es incapaz de fermentar los azúcares. Se tiene la posibilidad de mantener la concentración de glucosa a un nivel bajo que permite una eficiente co-fermentación.
 		%%%%%
 		Este se lleva a acabo en un mismo contenedor, solucionando el problema de la utilización de productos para mayor producción de enzimas, siendo un problema limitante en la Sacarificación enzimática y fermentación (SHF). Mejorando la eficiencia de la sacarificación enzimática como el rendimiento de etanol. 
-		Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son importantes que se mantengan a temperatura ambiente %\cite{CHOUDHARY201682}.
+		Las enzimas hidrolíticas son adaptables al frío y las levaduras termófilas son importantes que se mantengan a temperatura ambiente \cite{CHOUDHARY201682}.
 		
-		\subsection{Proceso de obtención }		
+		\subsection{Proceso de obtención de bioetanol 2 G  utilizando una configuración SSF  }		
+		Para la producción de bioetanol de segunda generación utilizando una configuración de dos etapas en conjunto, utilizando materia lignocelulósica se utilizan los pasos que menciona el diagrama de la Figura \ref{fig:diagrama-produccionssf}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\linewidth]{imagenes/diagrama producciónssf}
+			\caption{Diagrama donde menciona el proceso de bioetanol 2G}
+			\label{fig:diagrama-produccionssf}
+		\end{figure}
+		
+		
+	Este diagrama menciona los pasos como el pre-pretratamiento, donde se realiza un clasificado de tamaño de materia lignocelulósico, así como una limpieza y un secado, posteriormente se realiza un pretratamiento donde rompe las barreras de la lignina y obteniendo como resultado una materia con azúcares fermentables . En cuanto a la hidrólisis y fermentación se toma la materia previamente pretratada y es puesta en una hidrólisis y fermentación y por ultimo se realiza una destilación.
+		
+		
 		
 		\subsection{Pretratamientos}
 		En la Tabla \ref{tipos de pretratamientos} se listan los principales pretratamientos, cuya aplicación se reporta en diferentes investigaciones sobre la producción de bioetanol de segunda generación.% \citet{ADITIYA2016631} y \citet{Nasution_2022}
@@ -1591,7 +1610,7 @@ El pretratamiento utiliza, hidróxido sódico, amoniaco o cal, generando menos i
 
 Existen pretratamientos biológicos en los que comúnmente se usan microorganismos, hongos, y enzimas que promueven la degradación de la lignina. El uso de hongos en este tipo de procesos ayuda a descomponer la lignina. En general, estos pretratamientos tienen bajo consumo energético en su implementación, %\citep{Gonzalez2018desarrollo}. 
 
-\subsection{Proceso de obtención }
+
 
 
 \subsection{Reactores tipo Batch }
