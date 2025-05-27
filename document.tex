@@ -1,11 +1,9 @@
-
-
 \documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage[spanish,es-tabla]{babel}
 \decimalpoint
-\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
@@ -14,12 +12,13 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{soul}
-\usepackage{enumitem,xcolor}
-\usepackage{tasks}
-\usepackage{adjustbox}
+\usepackage{pdfpages}                % incluir archivos pdf en el texto
+\usepackage{setspace}                % modificar interlineado
+\usepackage{bibentry}
+\usepackage{longtable}
 
-\usepackage{apacite}
-%\graphicspath{{imagenes\}}
+\usepackage{xcolor}
+\usepackage{enumitem}
 
 \usepackage[normalem]{ulem}
 \usepackage{multirow}
@@ -65,7 +64,7 @@
 	\subsection{Objetivos del trabajo de tesis}
 	{\large Objetivo general}
 	
-	Analizar experimentalmente los efectos del tamaño de partícula de biomasa, temperatura y tiempo de procesamiento para dos tipos de pretratamiento de bagazo de caña de azúcar, previos a la producción de bioetanol de segunda generación mediante una hidrólisis y fermentación simultáneas, para producir bioetanol de segunda generación. \newline \newline
+	Analizar experimentalmente los efectos del tamaño de partícula de biomasa, temperatura y tiempo de procesamiento para dos tipos de pretratamiento de bagazo de caña de azúcar, previos a la producción de bioetanol de segunda generación (2 G) mediante una hidrólisis y fermentación en etapas simultáneas (SSF). \newline \newline
 	
 	{\large Objetivos específicos}
 	
@@ -73,9 +72,9 @@
 		\item Diseñar los experimentos para analizar los tres factores considerados, con diferentes niveles, para modicar los pretratamientos.
 		\item Acondicionar e instrumentar un reactor tipo batch para llevar a cabo separadamente las etapas de pretratamiento y SSF.
 		\item Diseñar e implementar un control de temperatura para operar el reactor en etapas de pretratamiento y SSF.
-		\item Aplicar experimentalmente dos tipos de pretratamiento de biomasa, el primero de tipo biológico con humus de lombriz y el segundo de tipo alcalino usando hidroxido de sodio.
+		\item Aplicar experimentalmente dos tipos de pretratamiento de biomasa, el primero de tipo biológico con humus de lombriz y el segundo de tipo alcalino usando hidróxido de sodio.
 		\item Producir bioetanol de segunda generación por medio de una configuración SSF usando el bagazo pretatado con las condiciones definidas por el diseño de experimentos.
-		\item Evaluar y comparar los resultados de las etapas de pretratamiento de biomasa y producción de bioethanol mediante SSF, estableciando la relación entre rendimiento de bioetanol, consumo energético de los procesos y costo de producción.		
+		\item Evaluar y comparar los resultados de las etapas de pretratamiento de biomasa y producción de bioetanol mediante SSF, estableciendo la relación entre rendimiento de bioetanol, consumo energético de los procesos y costo de producción.		
 
 
 	\end{itemize}
@@ -94,9 +93,9 @@
 		
 		
 		\item 
-		Análisis de lo efectos de las variables en el proceso pretratamiento-SSF, en términos de rendimiento del producto, consumo energético y costo de producción.
+		Análisis de los efectos de las variables en el proceso pretratamiento-SSF, en términos de rendimiento del producto, consumo energético y costo de producción.
 		
-	   \item Definición de una configuración pretratamiento-ssf que establece la mejor relación costo-producción.
+	   \item Definición de una configuración pretratamiento-SSF que establece la mejor relación costo-producción.
 		
 	\end{itemize}
 	\newpage
@@ -106,18 +105,18 @@
 
 	
 	
-	El marco conceptual se reportado en el anexo	\ref{marco conceptual}. en esta sección se definen conceptos sobre la generación de bioetanol de segunda generación.
+	El marco conceptual se encuentra reportado en el anexo	\ref{marco conceptual} en esta sección se definen conceptos sobre la generación de bioetanol de segunda generación.
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\section{Estado del arte}
 	
-	El pretratamiento es un paso crítico para la producción de bioetanol de segunda generación y el tema principal de este trabajo. Algunos de los pretratamientos que existen son Ácido, Térmico, Biológico, alcalino, Químico, Mecánico \cite{ADITIYA2016631}.
+	El pretratamiento es un paso crítico para la producción de bioetanol de segunda generación y el tema principal de este trabajo. Algunos de los pretratamientos que existen son ácido, térmico, biológico, alcalino, químico, mecánico \cite{ADITIYA2016631}.
 	El  NaOH (hidróxido de sodio) es uno de los agentes más utilizados entre los pretratamientos alcalinos, este promueve la hidrólisis \cite{espinosa2021pretratamiento}. Una desventaja de este es la pérdida de celulosa y hemicelulosa, y la reducción de azúcares y bioetanol.
 	En general, el pretratamiento alcalino genera menos inhibidores y favorece la deslignificación, en comparación con tratamiento con ácidos, según \cite{valles2022estudio}. 
 	
-	También hay pretratamientos biológicos en los que comúnmente se usan microorganismos, hongos, y enzimas que promueven la degradación de la lignina. El uso de hongos en este tipo de procesos ayuda a descomponer la lignina. En general, estos pretratamientos tienen bajo consumo energético en su implementación, \cite{Gonzalez2018desarrollo}. 
+	También existen pretratamientos biológicos en los que comúnmente se usan microorganismos, hongos, y enzimas que promueven la degradación de la lignina. El uso de hongos en este tipo de procesos ayuda a descomponer la lignina. En general, estos pretratamientos tienen bajo consumo energético en su implementación, \cite{Gonzalez2018desarrollo}. 
 	
 	%El  trabajo se centra en estos pretratamientos poner que lo demas esta en el anexo
 	
@@ -130,14 +129,14 @@
 	
 	\subsection{Diseño de experimentos}
 	
-	El diseño de experimentos define las pruebas experimentales para estudiar el efecto de las variables de operación de la etapa de pretratamiento de la biomasa. En esta sección se describen los experimentos para pretratar el bagazo de caña a diferentes condiciones.
+	El diseño de experimentos define las pruebas experimentales para estudiar el efecto de las variables de operación de la etapa de pretratamiento de la biomasa para la producción de bioetanol de segunda generación utilizando biomasa lignocelulósica, específicamente bagazo de caña . En esta sección se describen los experimentos para pretratar el bagazo de caña a diferentes condiciones.
 	
 	La producción de bioetanol de segunda generación involucra distintos procesos y variables. Después de los pretratamientos se acondiciona la biomasa pretratada y con esta se realiza una hidrólisis y fermentación en etapas simultaneas.
 	
  		\subsubsection{Variables}
 		\label{variables}
 		
-En esta sección se describe el diseño experimental para evaluar el efecto de variables críticas en la etapa de pretratamiento de biomasa para la producción de bioetanol de segunda generación. Entre los múltiples factores que influyen en este proceso, este estudio se centra en tres factores principales, temperatura, tiempo de exposición y tamaño de partícula de la biomasa, analizadas bajo dos pretratamiento distintos.
+En esta sección se describe el diseño experimental para evaluar el efecto de variables críticas en la etapa de pretratamiento de biomasa para la producción de bioetanol de segunda generación. Entre los múltiples factores que influyen en este proceso, este estudio se centra en tres factores principales, temperatura, tiempo de pretratamiento y tamaño de partícula de la biomasa (bagazo de caña), analizadas bajo dos pretratamiento distintos.
 
 Temperatura: Es un factor crítico en el tratamiento de microorganismos, ya que estos pueden morir si se exponen fuera de su rango térmico tolerable. 
 
@@ -145,9 +144,9 @@ Tiempo de pretratamiento: Este factor afecta directamente la disponibilidad de a
 
 Tamaño de partícula: Se evaluarán dos tamaños de bagazo de caña con diferentes granulados, con el objetivo de observar su efecto tanto con la concentración final de bioetanol como con los costos de producción, buscando optimizar este último aspecto.
 
-El pretratamiento alcalino dado su menor tiempo de reacción en comparación al pretratamiento biologico dentro del reactor tipo batch, se prioriza el tiempo de pretratamiento, por lo que solo en este pretratamiento modificara este factor.
+El pretratamiento alcalino dado su menor tiempo de reacción en comparación al pretratamiento biologico dentro del reactor tipo batch, se prioriza el tiempo de pretratamiento, por lo que solo en este pretratamiento modificará este factor.
 
-Tras el pretratamiento, se procederá a una etapa de hidrólisis y fermentación bajo condiciones fijas para ambos métodos, siguiendo el como base el \cite{Arturo2022evaluacion}. Durante estas etapas, se monitoreará el pH (al inicio y al final de cada experimento), debido a su influencia directa en el rendimiento del bioetanol.
+Tras el pretratamiento, se procederá a una etapa de hidrólisis y fermentación bajo condiciones fijas para ambos métodos, siguiendo el artículo de  \cite{Arturo2022evaluacion} como base. Durante estas etapas, se monitoreará el pH (al inicio y al final de cada experimento), debido a su influencia directa en el rendimiento del bioetanol.
 
 
 		
@@ -184,9 +183,9 @@ Tras el pretratamiento, se procederá a una etapa de hidrólisis y fermentación
 		\end{table}
 		
 			
-	El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos( temperatura y tamaño de bagazo de caña).	Los niveles son los valores en que los factores serán utilizados en las experimentaciones, modificando de 1, 2 0 3 niveles.
+	El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos( temperatura y tamaño de bagazo de caña).	Los niveles son los valores en que los factores serán utilizados en las experimentaciones, modificando de 1, 2 o 3 niveles.
 	
-	Para el pretratamiento biológico específicamente se esta tomando un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizaran en 5 días, para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos TNUB y 1 cm, esto para saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B el cual es la temperatura (45°c ,40°c, 30°c), se plantearon 3 niveles para observar a detalle como se clasifican tenemos la Tabla \ref{biologico2}. Como resultado de los factores y los niveles tenemos 6 experimentaciones a realizar para el pretratamiento biológico.
+	Para el pretratamiento biológico específicamente se estará tomando un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizarán en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño no uniforme de bagazo (TNUB) y 1 cm, esto para saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B el cual es la temperatura (45°c ,40°c, 30°c), se plantearon 3 niveles para observar a detalle como se clasifican tenemos la Tabla \ref{biologico2}. Como resultado de los factores y los niveles tenemos 6 experimentaciones a realizar para el pretratamiento biológico.
 	
 
 		
@@ -218,7 +217,7 @@ En la Figura \ref{biologico2} se puede observar un diagrama que plantea a detall
 
 		\begin{figure} [h!]
 			\centering
-			\includegraphics[width=0.7\linewidth]{imagenes/diagrama biologico}
+			\includegraphics[width=0.7\linewidth]{imagenes/diagramabiologico}
 			\caption{Diagrama de los pretratamientos}
 			\label{Diagrama biologico}
 		\end{figure}
@@ -233,8 +232,8 @@ En la Figura \ref{biologico2} se puede observar un diagrama que plantea a detall
 	\subsubsection{ Diseño experimental del pretratamiento Alcalino}
 	\label{Diseño factorial del pretratamiento alcalino}
 
-Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas que se trabajaran son a 80 °C, 90 °C y 95 °C para observar el comportamiento del porcentaje de bioetanol si trabajamos con valores cercanos al mencionado, así como modificar el tamaño de bagazo, esto para saber el impacto del tamaño de biomasa al moverlo en el reactor tipo Batch (por lotes).
-En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo que se utilizaran para las pruebas con pretratamiento alcalino. Se menciona el tiempo de pretratamiento, siendo este una de las variables que se modificaran en las pruebas. El mezclado del reactivo es importante dado que nos ayuda a mantener la mezcla y la temperatura homogénea dentro del reactor tipo Batch, por lo que en la Tabla también menciona las condiciones de mezclado.
+Para el caso del pretratamiento alcalino con hidróxido de sodio las temperaturas que se trabajarán son a 80 °C, 90 °C y 95 °C para observar el comportamiento del porcentaje de bioetanol si trabajamos con valores cercanos al mencionado, así como modificar el tamaño de bagazo, esto para saber el impacto del tamaño de biomasa al moverlo en el reactor tipo Batch (por lotes).
+En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo que se utilizarán para las pruebas con pretratamiento alcalino. Se menciona el tiempo de pretratamiento, siendo este una de las variables que se modificaran en las pruebas. El mezclado del reactivo es importante dado que nos ayuda a mantener la mezcla y la temperatura homogénea dentro del reactor tipo Batch, por lo que también menciona las condiciones de mezclado.
 
 
 	\begin{table}[H]
@@ -263,7 +262,7 @@ En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo q
 
 
 
-De la misma forma cada pretratamiento sera realizado con tres factores, el factor A es el tamaño de partícula, es decir TNUB y 1 cm; para factor B es la temperatura donde tiene tres niveles modificando a 95°c , 90°c, 80°c, y por ultimo el factor c o el tercero factor que tiene dos niveles (5400 s o 7870 s). En total se realizaran 12 experimentaciones para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación, para la tercera columna se muestra la temperatura en las que se realizaran las experimentaciones, es decir el factor B.
+De la misma forma cada pretratamiento sera realizado con tres factores, el factor A es el tamaño de partícula, es decir TNUB y 1 cm; para factor B es la temperatura donde tiene tres niveles modificando a 95°c , 90°c, 80°c, y por ultimo el factor C o el tercer factor que tiene dos niveles (5400 s o 7870 s). En total se realizaran 12 experimentaciones para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación, para la tercera columna se muestra la temperatura en las que se realizaran las experimentaciones, es decir el factor B.
 
 \begin{table}[H]
 	\centering
@@ -315,7 +314,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 %		\onehalfspacing
 		
-		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los insumos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el ph de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis y por ultimo la temperatura del la hidrólisis y fermentación en etapas conjuntas. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, muestran los valores de cada uno de los elementos a tomar en consideración para la la configuración de etapas juntas (SSF). \\[0.5em]
+		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los insumos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis y por ultimo la temperatura del la hidrólisis y fermentación en etapas conjuntas. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en consideración para la la configuración de etapas juntas (SSF). \\[0.5em]
 		
 		\begin{table} [h!]
 			\centering
@@ -335,14 +334,9 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\end{tabular}}
 		\end{table}
 		
-		
-		
-		
-		
-		
 
 		
-		Se puede observar que se utilizan dos volumen, ya que uno 3600 ml es utilizando biomasa pretratada con humus de lombriz, es decir realizando un pretratamiento biológico, y para el caso del volumen de 5.5 l es utilizando biomasa pretratada con hidróxido de sodio, también llamado pretratamiento alcalino.
+		Se puede observar que se utilizan dos volúmenes, ya que uno 3600 ml es utilizando biomasa pretratada con humus de lombriz, es decir realizando un pretratamiento biológico, y para el caso del volumen de 5.5 l es utilizando biomasa pretratada con hidróxido de sodio, también llamado pretratamiento alcalino.
 		
 		
 			\begin{itemize}
@@ -350,7 +344,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	     	\end{itemize}
 		
 		
-	La carga enzimática se refiere a la relación de porcentaje entre el peso de soluto y volumen de solución. En la ecuación \ref{carga} se muestras la obtención de la carga enzimática en ml, donde utiliza las unidades de papel filtro (UPF) la cual es una medida de laboratorio para medir las enzimas y por ultimo utiliza el valor constante de 3.7 (\cite{Arturo2022evaluacion}).
+	La carga enzimática se refiere a la relación de porcentaje entre el peso de soluto y volumen de solución. En la ecuación \ref{carga} se muestra la obtención de la carga enzimática en ml, donde se utiliza las unidades de papel filtro (UPF) la cual es una medida de laboratorio para medir las enzimas y por ultimo utiliza el valor constante de 3.7 (\cite{Arturo2022evaluacion}).
 			
 	\begin{equation}
 		\label{carga}
@@ -367,13 +361,13 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 			\subsection{Implementación}
 
-			Para las pruebas experimentales tendremos en cuenta de primera instancia los materiales necesarios en cada pretratamiento, posteriormente se menciona los pasos que conlleva realizar cada prueba de experimentación.
+			Para las pruebas experimentales tendremos en cuenta de primera instancia los materiales necesarios en cada pretratamiento, posteriormente se mencionan los pasos que conlleva realizar cada prueba de experimentación.
 			
 
 			\subsubsection{Pre-Pretratamiento}
 
 			
-			El pre-pretratamiento ayuda clasificar el tamaño de bagazo que se va a utilizar, así como secar el bagazo en caso de tener humedad. El material y compuestos para poder limpiar y clasificar el tamaño de bagazo se menciona a continuación.
+			El pre-pretratamiento ayuda a clasificar el tamaño de bagazo que se va a utilizar, así como secar el bagazo en caso de tener humedad. El material y compuestos para poder limpiar y clasificar el tamaño de bagazo se menciona a continuación.
 			\\[0.5em]
 			\textbf{Compuestos} 
 			\begin{itemize}[label=\textcolor{blue}{$\bullet$}]
@@ -424,7 +418,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\textbf{3.}	El bagazo se somete a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de 1 cm), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permite obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
 			
 			
-			\textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se somete a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales.v	ER Figura \ref{cernir_bagazo_cedazo}.
+			\textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se somete a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales. Ver Figura \ref{cernir_bagazo_cedazo}.
 		
 		
 			\begin{figure}[H]
@@ -482,10 +476,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			\textbf{Procedimiento}
 			\\[0.5em]
-			\textbf{1.}	La dosificación del bagazo se realiza mediante pesaje con una báscula utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento aplica únicamente cuando no se emplea la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utiliza directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamaños}.
+			\textbf{1.}	La dosificación del bagazo se realiza mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento aplica únicamente cuando no se emplea la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utiliza directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamaños}.
 		
 			
-			\textbf{2.}	Mediante balanza analítica (±0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL), se pesan exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
+			\textbf{2.}	Mediante báscula digital (±0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL), se pesan exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
 			
 			
 				\begin{figure}[H]
@@ -602,9 +596,9 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\textbf{Procedimiento}
 			\\[0.5em]
 			
-			\textbf{1.}	La cantidad de bagazo se determina mediante pesaje con báscula (precisión ±0.2 g) usando una bolsa plástica de 30×40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se emplea la medida de 1 cm, se utiliza directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
+			\textbf{1.}	La cantidad de bagazo se determina mediante pesaje con báscula digital (precisión ±0.2 g) usando una bolsa plástica de 30×40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se emplea la medida de 1 cm, se utiliza directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
 			
-			\textbf{2.} Mediante una báscula analítica (precisión ±0.2 g) y vaso de precipitado de vidrio, se pesan exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
+			\textbf{2.} Mediante una báscula digital (precisión ±0.2 g) y vaso de precipitado de vidrio, se pesan exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
 			
 			
 			\begin{figure}[H]
@@ -661,7 +655,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			
 			
-			\textbf{7.} Finalmente, se activa el sistema de control automatizado (Figura \ref{programa}), implementando los perfiles programados de temperatura ambiente y tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}), con el objetivo de garantizar las condiciones óptimas para el proceso.
+			\textbf{7.} Finalmente, se activa el sistema de control automatizado (Figura \ref{programa}), implementando los perfiles programados de temperatura para dentro del reactor y el tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}), con el objetivo de garantizar las condiciones óptimas para el proceso.
 			
 			
 			\begin{figure}[H]
@@ -836,7 +830,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		 \textbf{1.}  El reactor tipo batch, previamente lavado, se desinfecta con agua desmineralizada y se procede a sellar herméticamente su base para garantizar condiciones estériles antes de iniciar el proceso, evitando así cualquier contaminación externa que pueda afectar la reacción.\\[0.5em]
 
 		 	
-		 \textbf{2.} Cada reactivo (ácido cítrico, levadura activa) se pesa individualmente usando una báscula calibrada y un vaso de precipitado estéril, mientras que el agua se mide volumétricamente, ajustando las cantidades según los parámetros establecidos en el diseño de experimentos para garantizar la reproducibilidad del proceso y la trazabilidad de los datos. Ver Figura\ref{pesado2}.
+		 \textbf{2.} Cada reactivo (ácido cítrico, levadura activa) se pesa individualmente usando una báscula digital calibrada y un vaso de precipitado estéril, mientras que el agua se mide volumétricamente, ajustando las cantidades según los parámetros establecidos en el diseño de experimentos para garantizar la reproducibilidad del proceso y la trazabilidad de los datos. Ver Figura\ref{pesado2}.
 		 
 	
 		 
@@ -952,7 +946,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 
 				\subsection{Resultados experimentales del proceso de producción de bioetanol 2 G con pretratamiento Alcalino  y Biológico}
-				Siguiendo el proceso para la producción de bioetanol de segunda generación se realizo un pretratamiento y posteriormente una hidrólisis y fermentación en una misma etapa, los resultados obtenidos se clasificaron con base a el diseño de experimentos del apartado \ref{Diseño factorial del pretratamiento alcalino}.
+				Siguiendo el proceso para la producción de bioetanol de segunda generación se realizó un pretratamiento y posteriormente una hidrólisis y fermentación en una misma etapa, los resultados obtenidos se clasificaron con base a el diseño de experimentos del apartado \ref{Diseño factorial del pretratamiento alcalino}.
 				
 				
 				
@@ -966,7 +960,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		\begin{tabular}{|c|c|c|c|}
 			\hline
 			\textbf{Num de} &\textbf{ Temperatura} & \textbf{Tamaño de bagazo} & \textbf{Consumo energético } \\ 
-			\textbf{de experimento} &\textbf{  (°c)} &  & \textbf{ (kwh)} \\ \hline
+			\textbf{de experimento} &\textbf{  (°c)} &  & \textbf{ (kWh)} \\ \hline
 			1 & \multirow{2}{*}{45} & TNUB & 4.55 \\ \cline{1-1} \cline{3-4}
 			2 &  & 1 cm & 3.81 \\ \hline
 			3 &\multirow{2}{*}{ 40} & TNUB & 2.77 \\ \cline{3-4} \cline{1-1}
@@ -983,8 +977,8 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		\subsubsection{Pretratamiento Alcalino}
 		
 		
-		Ya que el tiempo de establecimiento del control dura menos se propuso modificar el tiempo como en las pruebas utilizando 1 cm de bagazo de caña por lo que a continuación se muestras las pruebas utilizando un tiempo de 7870 con bagazo de caña de 1 mm hasta 10 cm o tamaño no uniforme de bagazo(TNUB)) y 1 cm, llevándose a cabo 6 pruebas experimentales para ese tiempo y 6 pruebas para 1 cm de bagazo, como se puede observar en la Tabla \ref{Pretratamiento Alcalino}. 
-		Se busco monitorear la energía consumida en cada una de las pruebas, por lo que la columna 10 muestra mediante kwh la energía que fue leída de un watimetro.
+		Ya que el tiempo de establecimiento del control dura menos se propuso modificar el tiempo como en las pruebas utilizando 1 cm de bagazo de caña por lo que a continuación se muestras las pruebas utilizando un tiempo de 7870 con bagazo de caña de 1 mm hasta 10 cm o tamaño no uniforme de bagazo (TNUB) y 1 cm, llevándose a cabo 6 pruebas experimentales para ese tiempo y 6 pruebas para 1 cm de bagazo, como se puede observar en la Tabla \ref{Pretratamiento Alcalino}. 
+		Se buscó monitorear la energía consumida en cada una de las pruebas, por lo que la columna 10 muestra mediante kWh la energía que fue leída de un watimetro.
 		
 		
 		\begin{table}[H]
@@ -993,7 +987,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
 				\textbf{Num de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} & \textbf{Consumo } \\ 
-			\textbf{de experimento}	&\textbf{ (°c)}&\textbf{ bagazo}  &\textbf{(s)}	&\textbf{ energético (kwh)}\\ \hline
+			\textbf{de experimento}	&\textbf{ (°c)}&\textbf{ bagazo}  &\textbf{(s)}	&\textbf{ energético (kWh)}\\ \hline
 				1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 & 0.66  \\ \cline{1-1} \cline{4-5}
 				2 &  &  & 7870 & 0.81  \\ \cline{3-5}  \cline{1-1} 
 				3 &  & \multirow{2}{*}{1 cm} & 5400 & 0.74 \\  \cline{1-1} \cline{4-5}
@@ -1020,7 +1014,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    	\subsubsection{ Hidrólisis y fermentación para pretratamiento Biológico}
    
-   Posteriormente según el proceso de producción de bioetanol se realiza una hidrólisis y fermentación en conjunto, para cada uno de los pretratamientos realizados en la Tabla \ref{ssf Pretratamiento Biológico} menciona las 6 pruebas realizadas a tres temperaturas diferentes con dos tamaños de partícula. Durante las pruebas se registraron la energía consumida, por lo que en la columna cuatro menciona el dato en kwh.
+   Posteriormente según el proceso de producción de bioetanol se realiza una hidrólisis y fermentación en conjunto, para cada uno de los pretratamientos realizados en la Tabla \ref{ssf Pretratamiento Biológico} menciona las 6 pruebas realizadas a tres temperaturas diferentes con dos tamaños de partícula. Durante las pruebas se registraron la energía consumida, por lo que en la columna cuatro menciona el dato en kWh.
 
  	\begin{table}[H]
  		\centering
@@ -1029,7 +1023,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
  			\hline
  			\textbf{Num }& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo } & \textbf{Consumo }  & \textbf{Producción} \\ 
  			\textbf{de}&\textbf{(°c)} &\textbf{de bagazo} & \textbf{energético} & \textbf{energético }&\textbf{de alcohol}\\ 
- 				\textbf{exp.}&& & \textbf{ pretrata (kwh)} & \textbf{ SSF (kwh)}&\textbf{(\%)}\\ \hline
+ 				\textbf{exp.}&& & \textbf{ pretrata (kWh)} & \textbf{ SSF (kWh)}&\textbf{(\%)}\\ \hline
  			
  			1 & \multirow{2}{*}{45} & TNUB & 4.55 & 2.8  & 11.5 \\ \cline{1-1} \cline{3-6}
  			2 &                     & 1 cm & 3.81 & 2.7  & 14 \\ \hline
@@ -1060,7 +1054,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 				\hline
 				\textbf{Num} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Consumo } & \textbf{Producción } \\
 			\textbf{de}	&\textbf{ (°C)}& \textbf{bagazo}&\textbf{(s)}	&\textbf{de pretra. }&\textbf{ de SSF}&\textbf{ de alcohol}\\ 
-				\textbf{exp}	& & \textbf{bagazo}&	&\textbf{ (kwh)}&\textbf{ (kwh)}&\textbf{ (\%)}\\ \hline
+				\textbf{exp}	& & \textbf{bagazo}&	&\textbf{ (kWh)}&\textbf{ (kWh)}&\textbf{ (\%)}\\ \hline
 			
 			
 				1 & \multirow{4}{*}{95} & \multirow{2}{*}{TNUB} & 5400 &0.66& 1.95 & 13 \\ \cline{1-1} \cline{4-6}
@@ -1078,7 +1072,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 		\end{table}
 		
 		
- Como podemos observar en la tabla se realizaron 10 purebas de las 12 planeadas debido a un problema con los insumos y el biorreactor, sin embargo podemos concluir que un tiempo de 7870 tiene mas variación en la producción de bioetanol.
+ Como podemos observar en la tabla se realizaron 10 pruebas de las 12 planeadas debido a un problema con los insumos y el biorreactor, sin embargo podemos concluir que un tiempo de 7870 tiene mas variación en la producción de bioetanol.
 				
 		
 		
@@ -1088,7 +1082,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 			
 			\subsection{Costos en la producción de bioetanol}
 	Para conocer cuanto nos cuesta realizar las pruebas para la producción de bioetanol mediante los pretratamientos biológicos y alcalinos, se realizaron tablas comparativas.
-	En cuanto al consumo energético para calcular el precio de kwh se realizo mediante la tarifa industrial de \$1.348 MXN/kWh o \$ 0.06 USD/kwh establecida por la Comisión Federal de Electricidad por sus siglas CFE  \cite{CFE2023}, para media tensión en Cuernavaca, Morelos. Este precio se aplico para todas las pruebas, desde los pretratamientos hasta la etapa de hidrólisis y fermentación. Los costos están dados en dólares, 1 dólar es equivalente a 20.84 pesos mexicanos.
+	En cuanto al consumo energético para calcular el precio de kWh se realizó mediante la tarifa industrial de \$1.348 MXN/kWh o \$ 0.06 USD/kWh establecida por la Comisión Federal de Electricidad por sus siglas CFE  \cite{CFE2023}, en media tensión en Cuernavaca, Morelos, se consideró como referencia el mes de abril de 2025. Este precio se aplicó a todas las etapas del proceso, desde los pretratamientos hasta la hidrólisis y fermentación. Los costos están expresados en dólares estadounidenses (USD), con una tasa de cambio de 1 USD = 20.84 MXN, vigente al 8 de abril de 2025.
 			
 		
 	 \subsubsection{Costos en la producción de bioetanol solo para pretratamiento biológico}
@@ -1118,7 +1112,7 @@ Para la producción de bioetanol utilizando un proceso de pretratamiento biológ
 	\end{tabular}
 \end{table}
 
-Dado que se regusto el consumo energético a continuación se presentan los precios en \$ USD para cada una de las pruebas experimentales realizadas para el pretratamiento biológico.
+Dado que se registro el consumo energético a continuación se presentan los precios en \$ USD para cada una de las pruebas experimentales realizadas para el pretratamiento biológico.
 	
 	
 	\begin{table}[H]
@@ -1129,7 +1123,7 @@ Dado que se regusto el consumo energético a continuación se presentan los prec
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 		\textbf{Num de}&\textbf{Temperatura del} & \textbf{Tamaño }  & \textbf{ Consumo } & \textbf{Costos } \\ 
-			&\textbf{ pretratamiento (°C)} &	\textbf{ de bagazo}  & 	\textbf{energético(kwh) }& 	\textbf{(\$ USD)} \\ \hline
+			&\textbf{ pretratamiento (°C)} &	\textbf{ de bagazo}  & 	\textbf{energético(kWh) }& 	\textbf{(\$ USD)} \\ \hline
      1  & \multirow{2}{*}{95} & TNUB & 4.55 & 0.294 \\ \cline{3-5} \cline{1-1}
 2	& & 1cm & 3.81 & 0.246 \\ \hline 
 3&\multirow{2}{*}{90} & TNUB & 2.77 & 0.179 \\ \cline{3-5} \cline{1-1}
@@ -1141,7 +1135,7 @@ Dado que se regusto el consumo energético a continuación se presentan los prec
 	\end{table}
 	
 	
-De los resultados obtenidos se desprende que el consumo energético promedio requerido para el pretratamiento biológico asciende a 2.43 kWh, lo que representa un costo promedio de \$0.157 USD (Cero punto ciento cincuenta y siete dólares) por prueba experimental. Los valores de consumo energético reportados en este estudio fueron obtenidos de fuentes oficiales de la Comisión Federal de Electricidad (CFE), correspondientes a las tarifas para el municipio de Cuernavaca, Morelos.
+De los resultados obtenidos se desprende que el consumo energético promedio requerido para el pretratamiento biológico asciende a 2.43 kWh, lo que representa un costo promedio de \$0.157 USD (Cero punto ciento cincuenta y siete dólares) por prueba experimental.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -1185,7 +1179,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				\hline
 				\textbf{Num}&\textbf{Temperatura } & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía} & \textbf{Costos } \\ 
 			\textbf{ de}	&\textbf{pretratamiento } &	\textbf{ de}  &	\textbf{ (s)} & 	\textbf{ consumida }& 	\textbf{(\$ USD)} \\ 
-			\textbf{exp}	&\textbf{(°C)} &	\textbf{ bagazo}  &	 & 	\textbf{ Pretrata(kwh) }& 	 \\ \hline
+			\textbf{exp}	&\textbf{(°C)} &	\textbf{ bagazo}  &	 & 	\textbf{ Pretrata(kWh) }& 	 \\ \hline
 			
 			
 			1&	\multirow{5}{*}{95} & \multirow{3}{*}{TNUB} & 5400 &0.66  & 0.88968  \\  \cline{4-6} \cline{1-1}
@@ -1203,7 +1197,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	\end{table}
 	
 	
-	La Tabla \ref{tabla costo 1 cm} integra el consumo energético (kWh) y su costo equivalente en pesos mexicanos para el pretratamiento de bagazo de caña con granulometrías entre 1 mm y 10 cm, calculados mediante la tarifa industrial de \$0.64 USD/kWh establecida por la Comisión Federal de Electricidad (CFE, \cite{CFE2023}) para media tensión en Cuernavaca, Morelos. El consumo promedio para pretratamiento utilizando bagazo de 1 mm hasta 10 cm de bagazo, según las pruebas realizadas que se muestran es de 0.67 kwh, y el costo promedio por prueba es de \$0.045 MXN.
+	La Tabla \ref{tabla costo 1 cm} integra el consumo energético (kWh) y su costo equivalente en pesos mexicanos para el pretratamiento de bagazo de caña con granulometrías entre 1 mm y 10 cm. El consumo promedio para pretratamiento utilizando bagazo de 1 mm hasta 10 cm de bagazo, según las pruebas realizadas que se muestran es de 0.67 kWh, y el costo promedio por prueba es de \$0.045 MXN.
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1245,7 +1239,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 			\hline
 			\textbf{Num de}&\textbf{Temperatura del} & \textbf{Tamaño } & \textbf{Energía } & \textbf{Costos } \\ 
 		\textbf{experimento}&\textbf{pretratamiento} &	\textbf{ de bagazo}   & 	\textbf{consumida  }& 	\textbf{ total} \\ 
-		&	\textbf{(°C)}  &    & \textbf{(kwh)} & \textbf{(\$ USD)} \\ \hline
+		&	\textbf{(°C)}  &    & \textbf{(kWh)} & \textbf{(\$ USD)} \\ \hline
 	1	&	\multirow{2}{*}{45}& TNUB & 2.8 & 0.18 \\  \cline{3-5} \cline{1-1}
 	2	&	& 1 cm & 2.7 & 0.17  \\ \hline 
 	3	&	\multirow{2}{*}{40} & TNUB & 2.56 & 0.16  \\ \cline{3-5}\cline{1-1}
@@ -1277,7 +1271,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				\hline
 				&\textbf{Temperatura del} & \textbf{Tamaño } & \textbf{Tiempo} & \textbf{Energía } & \textbf{Costos } \\ 
 				&\textbf{pretratamiento} &	\textbf{ de bagazo}  &	\textbf{ (s)} & 	\textbf{consumida  }& 	\textbf{(\$ USD)} \\ 
-				&\textbf{(°C)}  &  &  & \textbf{(kwh)} &  \\ \hline
+				&\textbf{(°C)}  &  &  & \textbf{(kWh)} &  \\ \hline
 			1	&\multirow{5}{*}{95} &\multirow{2}{*}{ TNUB} & 5400 & 1.95 & 0.12 \\ \cline{4-6}\cline{1-1}
 			2	&&  & 7870& 2.74 & 0.17  \\ \cline{3-6}\cline{1-1}
 		3	&	& \multirow{2}{*}{ 1 cm}& 5400  & 1.41 & 0.09  \\ \cline{4-6}\cline{1-1}
@@ -1299,7 +1293,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	
 		\subsection{Comparativa de los resultados experimentales}
 	
-	Para obtener un panorama general de las experimentación a continuación en la Tabla \ref{energi_2} se presenta una comparativa de precios y costos en cada pretratamiento
+	Para obtener un panorama general de las experimentación a continuación en la Tabla \ref{energi_2} se presenta una comparativa de precios, gasto energético y la producción de bioetanol 2G en cada pretratamiento. Esta comparación permite observar el costo de producción con su respectiva producción, dandonos un panorama general de que pretratamiento es mas conveniente en el margen costo-producción.
 	
 	
 	\begin{table}[H]
@@ -1314,11 +1308,12 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				
 				Pretratamiento Biológico & 5.74 & 0.17 & 5.9&   \\ \cline{1-4}
 				Hidrólisis y fermentación  & \multirow{2}{*}{13.53}& \multirow{2}{*}{0.16} & \multirow{2}{*}{13.68}  & \multirow{2}{*}{11.5}  \\ 
-				para pretratamiento Biológico & ~ & ~ & ~ &   \\ \hline
-			
+				para pretratamiento Biológico & ~ & ~ & ~ &   \\ \cline{1-4}
+			    Acondicionamiento para pretratamiento Biológico & 0.86 & 0& 0&   \\ \hline
 				Pretratamiento Alcalino & 10.70 & 0.04 & 10.74&   \\ \cline{1-4}
 				Hidrólisis y fermentación  &  \multirow{2}{*}{13.53} & \multirow{2}{*}{0.14} & \multirow{2}{*}{13.7}& \multirow{2}{*}{12.8}  \\  
-				para pretratamiento Alcalino & ~ & ~ & ~ &   \\ \hline
+				para pretratamiento Alcalino & ~ & ~ & ~ &   \\ \cline{1-4}
+				Acondicionamiento para pretratamiento Alcalino &0.86 & 0 & 0&   \\ \hline
 		\end{tabular}	}
 	\end{table}
 	
@@ -1327,9 +1322,9 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 
 	
 			
-			A continuación se presenta la producción de alcohol mediante graficas para el pretratamiento biológico, la primera grafica podemos observar un cambio significan de modificando la temperatura, en la segunda grafica podemos observar que no hay cambios en la producción, aun cambiando la temperatura. 
+		A continuación, se muestra la producción de alcohol obtenida mediante pretratamiento biológico. En la primera gráfica, se observa un cambio significativo en la producción al variar la temperatura, lo que indica una clara influencia de este parámetro. Por otro lado, en la segunda gráfica, no se detectan variaciones en la producción, a pesar de modificarse la temperatura, lo que sugiere que, bajo esas condiciones, este factor no afecta el rendimiento del proceso.
 			
-			\begin{figure}[ht]
+			\begin{figure}[H]
 				\centering
 				\begin{subfigure}[b]{0.49\textwidth}
 					\includegraphics[width=\linewidth]{imagenes/biologico_TNUB}
@@ -1350,10 +1345,10 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 			
 			
 		
-			Para el pretratamiento alcalino podemos observar que para un TNUB no hay cambios modificando la temperatura, sin embargo para 1 cm hay cambios significantes con una temperatura de 90°c
+		En el pretratamiento alcalino, se observa que al utilizar TNUB (tamaño no uniforme de biomasa), la variación de temperatura no genera cambios significativos en el proceso. Sin embargo, al emplear un tamaño de partícula de 1 cm, se detectan diferencias notables en el rendimiento, especialmente a una temperatura de 90 °C, donde se registra un impacto significativo en la producción de bioetanol 2G. Para ello podemos ver la Figura \ref{producción}.
 			
 		
-				\begin{figure}[ht]
+				\begin{figure}[h]
 				\centering
 				\begin{subfigure}[b]{0.49\textwidth}
 					\includegraphics[width=\linewidth]{imagenes/alcalino_TNUB}
@@ -1364,13 +1359,13 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				\begin{subfigure}[b]{0.49\textwidth}
 					\includegraphics[width=\linewidth]{imagenes/alcalino_1cm}
 					\caption{Producción de bioetanol con pretratamiento alcalino con bagazo de caña de 1 cm}
-					\label{fig:imagen2}
+					\label{fig:imagen11}
 				\end{subfigure}
 				\caption{Producción de bioetanol con pretratamiento alcalino.}
-				\label{fig:pareja}
+				\label{producción}
 			\end{figure}
 			
-			Se busca conocer cuanto consumo energético hubo en cada uno de los proceso por lo que a continuación se presenta mediante una grafica el promedio de la energia que se utilizo en esta etapa.
+Para analizar el consumo energético promedio en cada etapa del proceso, la Figura \ref{grafica} muestra un comparativo detallado entre los dos tipos de pretratamiento evaluados ( pretratamiento biológico,pretratamiento alcalino), además, se incluye a la vez una comparación entre los dos tamaños de partícula estudiados (TNUB y 1 cm).
 			
 						\begin{figure} [H]
 				\centering
@@ -1379,7 +1374,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				\label{grafica}
 			\end{figure}
 			
-			Gracias a la grafica podemos concluir que el pretratamiento biologico consume 3.7 veces mas energía que el pretratamiento biologico, sin embargo el costo por Kwh es muy pequeño, por lo que el impacto económico es menor.
+			Gracias a la gráfica podemos concluir que el pretratamiento biologico consume 3.7 veces mas energía que el pretratamiento biologico, sin embargo el costo por kWh es muy pequeño, por lo que el impacto económico es menor.
 
 
 \begin{figure} [H]
@@ -1390,11 +1385,22 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 \end{figure}
 
 
-En la etapa de hidrólisis y fermentación en simultanea el margen de cambio en promedio del consumo energético es pequeño, esto puede deberse a la temperatura en el lugar
+Los resultados indican que, durante la hidrólisis y fermentación simultánea (SSF), el consumo energético en promedio presenta variaciones mínimas. Este comportamiento podría atribuirse a la influencia de la temperatura ambiental en el proceso, ya que las condiciones del lugar posiblemente generan un consumo mayor en la demanda de energía.
+En cuanto al costo de producción en la Figura podemos observar el costo total de producción de bioetanol 2G por pretratamiento.
+
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=16cm, height=7cm]{imagenes/costos}
+	\caption{Consumo energético para SSF. }
+	\label{grafica}
+\end{figure}
+
 		\section{Conclusión}
 		%\begin{itemize}
 		Con respecto a lo mencionado anteriormente podemos concluir que en el pretratamiento biologico existe un cambio modificando el tamaño de partícula, así como la temperatura con mayor producción es de 45°.
-		Para el pretratamiento alcalino podemos observar que un tiempo de  5400 s no presenta cambios en la producción de bioetanol, aun modificando el tamaño de partícula y la temperatura. Sin embargo un tamaño de partícula de 1 cm .
+		Para el pretratamiento alcalino podemos observar que un tiempo de  5400 s no presenta cambios en la producción de bioetanol, aun modificando el tamaño de partícula y la temperatura. En general podemos concluir que en promedio se obtiene mayor producción de bioetanol con bagazo pretratado con hidróxido de sodio, que con humus de lombriz, sin embargo el costo de producción me dice que con 5 dólares menos yo puedo obtener casi la misma producción de bioetanol. La producción de bioetanol con pretratamiento biológico también tiene la ventaja de no contaminar de la misma manera que el hidróxido de sodio.
+		Por lo tanto el pretratamiento biologico es una alternativa favorable para la producción de bioetanol 2G. Comparando las variables podemos observar que a 1 cm de bagazo tenemos la producción más alta de bioetanol.
 		
 		
 		
@@ -1407,14 +1413,10 @@ En la etapa de hidrólisis y fermentación en simultanea el margen de cambio en 
 		\newpage
 	
 
-
-	  
-	   \bibliography{library}
-	   
-	   
-		%\begin{appendix}
-		%\section{Anexos}
-	\newpage
+\bibliographystyle{apalike} 
+\bibliography{library}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\newpage
 
 % Anexos
 %\cleardoublepage
@@ -1453,6 +1455,7 @@ En la etapa de hidrólisis y fermentación en simultanea el margen de cambio en 
 		El etanol es un tipo de alcohol que en su mayoría es producido a partir de la  fermentación de las azucares fermentables, que se obtienen por microorganismos productores de etanol \cite{} (gonzales,2021).Considerado como un combustible ecológico, tipo de alcohol $\text{C}_2\text{H}_5\text{OH}$ (Alcohol etílico), que es obtenido a partir de materia lignocelulosa, puede ser utilizado como sustituto de gasolina por sus propiedades (Ballesteros, 2002).
 		
 		\subsubsection{Biomasa}
+	Es un recurso natural, el cual abunda en el planeta, un ejemplo de ello son las plantas, los arboles, el bagazo de caña, entre otros.
 		
 		\subsubsection{Bagazo de caña}
 		El material es recuperado de la producción de azúcar, se obtiene después de un triturado después de obtener el jugo de la caña, este tipo de biomasa no es aprovechada. Esta biomasa tiene un 28\% en peso de la caña, y también, un 45\% de fibra, 2-3\% de sólidos insolubles y otro mismo porcentaje de sólidos solubles, finalmente la mitad de este material está conformado de agua \cite{olmo2015bagazo}.
@@ -1613,7 +1616,7 @@ Existen pretratamientos biológicos en los que comúnmente se usan microorganism
 
 
 
-\subsection{Reactores tipo Batch }
+%\subsection{Reactores tipo Batch }
 
 
 
@@ -1663,7 +1666,7 @@ En un estudio afin, \cite{Arturo2022evaluacion} utilizó como biomasa bagazo de 
 
 
 
-\subsubsection{Pretratamiento Biológico}
+%\subsubsection{Pretratamiento Biológico}
 
 
 
@@ -1703,9 +1706,9 @@ El trabajo de \cite{MOONSAMY2022115675} tuvo como objetivo lograr una producció
 %%% otros
 En el artículo de \cite{Gomes2022analisis} se analizaron tres configuraciones para fermentación de bagazo de caña, ante diferentes condiciones de operación en modo por etapas separadas. Con un primer análisis se evaluó la influencia de la humedad, comparando la efectividad del proceso para humedades de la biomasa del 40\% y 60\%. Se concluyó que con menor humedad, el rendimiento de bioetanol aumenta. En un segundo análisis se evaluó el efecto de la velocidad de dilución durante la fermentación. El resultado fue que a mayor velocidad, el producto tiene mayor concentración de etanol. Por último se implementó una SSF, en la que se alcanzó un rendimiento bioetanol/bagazo del 12.5\%. 
 
-\subsubsection{Sacarificación y fermentación simultáneas} 
+%\subsubsection{Sacarificación y fermentación simultáneas} 
 
-\subsection{Producción de bioetanol de segunda generación en reactores tipo Batch}
+%\subsection{Producción de bioetanol de segunda generación en reactores tipo Batch}
 
 
 
