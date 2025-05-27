@@ -136,7 +136,7 @@ El objetivo es obtener la configuración que proporcione la mayor producción de
 	
 	El diseño de experimentos define las pruebas experimentales para estudiar el efecto de las variables de operación de la etapa de pretratamiento de la biomasa para la producción de bioetanol de segunda generación utilizando biomasa lignocelulósica, específicamente bagazo de caña . En esta sección se describen los experimentos para pretratar el bagazo de caña a diferentes condiciones.
 	
-	La producción de bioetanol de segunda generación involucra distintos procesos y variables. Después de los pretratamientos se acondiciona la biomasa pretratada y con esta se realiza una hidrólisis y fermentación en etapas simultaneas.
+	La producción de bioetanol de segunda generación involucra distintos procesos y variables. Después de los pretratamientos se acondiciona la biomasa pretratada y con esta se realiza una SSF.
 	
  		\subsubsection{Variables}
 		\label{variables}
@@ -151,7 +151,7 @@ Tamaño de partícula: Se evaluarán dos tamaños de bagazo de caña con diferen
 
 El pretratamiento alcalino dado su menor tiempo de reacción en comparación al pretratamiento biologico dentro del reactor tipo batch, se prioriza el tiempo de pretratamiento, por lo que solo en este pretratamiento modificará este factor.
 
-Tras el pretratamiento, se procederá a una etapa de hidrólisis y fermentación bajo condiciones fijas para ambos métodos, siguiendo el artículo de  \cite{Arturo2022evaluacion} como base. Durante estas etapas, se monitoreará el pH (al inicio y al final de cada experimento), debido a su influencia directa en el rendimiento del bioetanol.
+Tras el pretratamiento, se procederá a una etapa de SSF bajo condiciones fijas para ambos métodos, siguiendo el artículo de  \cite{Arturo2022evaluacion} como base. Durante estas etapas, se monitoreará el pH (al inicio y al final de cada experimento), debido a su influencia directa en el rendimiento del bioetanol.
 
 
 		
@@ -190,7 +190,7 @@ Tras el pretratamiento, se procederá a una etapa de hidrólisis y fermentación
 			
 	El diseño de experimentos contempla los factores que son importantes para la configuración en la producción de bioetanol 2 G ( de segunda generación). Los factores en este caso son las variables que modificaremos( temperatura y tamaño de bagazo de caña).	Los niveles son los valores en que los factores serán utilizados en las experimentaciones, modificando de 1, 2 o 3 niveles.
 	
-	Para el pretratamiento biológico específicamente se estará tomando un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizarán en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño no uniforme de bagazo (TNUB) y 1 cm, esto para saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B el cual es la temperatura (45°c ,40°c, 30°c), se plantearon 3 niveles para observar a detalle como se clasifican tenemos la Tabla \ref{biologico2}. Como resultado de los factores y los niveles tenemos 6 experimentaciones a realizar para el pretratamiento biológico.
+	Para el pretratamiento biológico específicamente se estará tomando un nivel 1 de tiempo de pretratamiento, es decir las experimentaciones se realizarán en 5 días. Para el factor A ( tamaño de bagazo de caña), se plantearon dos niveles siendo estos Tamaño no uniforme de bagazo (TNUB) y 1 cm, esto para saber que impacto tiene modificar el tamaño de partícula, en el caso del factor B el cual es la temperatura (45 °C ,40 °C, 30 °C), se plantearon 3 niveles para observar a detalle como se clasifican tenemos la Tabla \ref{biologico2}. Como resultado de los factores y los niveles tenemos 6 experimentaciones a realizar para el pretratamiento biológico.
 	
 
 		
@@ -267,7 +267,7 @@ En la Tabla \ref{tab:Variablesalcalino} se mencionan las cantidades por insumo q
 
 
 
-De la misma forma cada pretratamiento sera realizado con tres factores, el factor A es el tamaño de partícula, es decir TNUB y 1 cm; para factor B es la temperatura donde tiene tres niveles modificando a 95°c , 90°c, 80°c, y por ultimo el factor C o el tercer factor que tiene dos niveles (5400 s o 7870 s). En total se realizaran 12 experimentaciones para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación, para la tercera columna se muestra la temperatura en las que se realizaran las experimentaciones, es decir el factor B.
+De la misma forma cada pretratamiento sera realizado con tres factores, el factor A es el tamaño de partícula, es decir TNUB y 1 cm; para factor B es la temperatura donde tiene tres niveles modificando a 95 °C , 90 °C, 80 °C, y por ultimo el factor C o el tercer factor que tiene dos niveles (5400 s o 7870 s). En total se realizaran 12 experimentaciones para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. Esta presenta en la segunda columna el factor A, es decir el tamaño de bagazo a considerar en la experimentación, para la tercera columna se muestra la temperatura en las que se realizaran las experimentaciones, es decir el factor B.
 
 \begin{table}[H]
 	\centering
@@ -319,11 +319,11 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 %		\onehalfspacing
 		
-		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los insumos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis y por ultimo la temperatura del la hidrólisis y fermentación en etapas conjuntas. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en consideración para la la configuración de etapas juntas (SSF). \\[0.5em]
+		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los insumos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis y por ultimo la temperatura de la SSF. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en consideración para la SSF. \\[0.5em]
 		
 		\begin{table} [h!]
 			\centering
-			\caption{Variables a modificar en la hidrólisis y fermentación}
+			\caption{Variables a modificar en la SSF}
 			\label{tab:Variables a modificar para la hidrolisis y fermentacion}
 			\small
 			\resizebox{17cm}{!} {
@@ -801,15 +801,15 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 	
 	
-	 \textbf{8.} Una vez completado el secado, el bagazo se almacena en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de hidrólisis y fermentación, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch es lavado con agua desmineralizada. \\[0.5em]
+	 \textbf{8.} Una vez completado el secado, el bagazo se almacena en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de la SSF, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch es lavado con agua desmineralizada. \\[0.5em]
 	
 	\textbf{9.} En el anexo \ref{diseño del control de temp} podemos observar el diseño del control de temperatura.
 	
 
 			
-				\subsubsection{Hidrólisis y fermentación}
+				\subsubsection{Hidrólisis y fermentación en etapas simultaneas}
 				
-			Para la hidrólisis y fermentación se consideraron los datos del apartado del diseño factorial, a continuación se presenta la lista de materiales.
+			Para la SSF se consideraron los datos del apartado del diseño factorial, a continuación se presenta la lista de materiales.
 			\\
 					 \textbf{Compuestos} \\[0.5em]
 					 
@@ -909,7 +909,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	      \textbf{7.} El reactor tipo batch se sella herméticamente utilizando algodón y papel aluminio (ver Figura \ref{hidrolisis 6}), y se instala una trampa de aire compuesta por una manguera insertada en uno de los orificios de la tapa del reactor tipo batch. Para garantizar un cierre seguro y evitar fugas, se refuerza la conexión entre la manguera y la tapa con cinta adhesiva. El extremo libre de la manguera se sumerge en una cubeta con agua, permitiendo la liberación controlada del dióxido de carbono generado durante la reacción, al mismo tiempo que impide la entrada de oxígeno al sistema. Este diseño asegura un ambiente anaeróbico adecuado para el proceso.
 	      \\[0.5em]
 	     
-	     	\textbf{8.} Se inicia el sistema de control para la hidrólisis y fermentación, ajustando los parámetros de tiempo y temperatura según las condiciones predefinidas en el diseño experimental (ver apartado \ref{SacariSF}), garantizando así las condiciones óptimas para el proceso. Ver Figura \ref{hidrolisis 8} para observar la estructura y conexiones.
+	     	\textbf{8.} Se inicia el sistema de control para la SSF, ajustando los parámetros de tiempo y temperatura según las condiciones predefinidas en el diseño experimental (ver apartado \ref{SacariSF}), garantizando así las condiciones óptimas para el proceso. Ver Figura \ref{hidrolisis 8} para observar la estructura y conexiones.
 	     	
 	 
 	     		     \begin{figure}[H]
@@ -917,26 +917,26 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	     		\begin{minipage}{0.46\textwidth}
 	     			\centering
 	     			\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis 6} % Cambia "imagen1.jpg" por el nombre de tu archivo
-	     			\caption{ El algodón es colocado entre la tapa para tratar de que el reactor sea lo mas hermético posible }
+	     			\caption{ El algodón es colocado entre la tapa para tratar de que el reactor sea lo mas hermético posible. }
 	     			\label{hidrolisis  6}
 	     		\end{minipage}
 	     		\hfill
 	     		\begin{minipage}{0.48\textwidth}
 	     			\centering
 	     			\includegraphics[width=3cm, height=3cm]{imagenes/conexion de hidrolisis } % Cambia "imagen2.jpg" por el nombre de tu archivo
-	     			\caption{ Puesta en marcha del control en la etapa de hidrólisis y fermentación en un reactor tipo batch}
+	     			\caption{ Puesta en marcha del control en la etapa de SSF en un reactor tipo batch.}
 	     			\label{hidrolisis 8}
 	     		\end{minipage}
 	     	\end{figure}
 	     	
 	     	
-	     	\textbf{9.} Finalizado el proceso de hidrólisis y fermentación, se determina el pH final del producto (Figura \ref{hidrolisis 7}) y se transfiere a recipientes herméticos, los cuales se almacenan a temperaturas inferiores a 30°C para preservar las muestras hasta la cuantificación del contenido alcohólico con ayuda de un refractometro manual. Finalmente el reactor tipo batch es lavado con agua desmineralizada.
+	     	\textbf{9.} Finalizado el proceso de SSF, se determina el pH final del producto (Figura \ref{hidrolisis 7}) y se transfiere a recipientes herméticos, los cuales se almacenan a temperaturas inferiores a 30 °C para preservar las muestras hasta la cuantificación del contenido alcohólico con ayuda de un refractometro manual. Finalmente el reactor tipo batch es lavado con agua desmineralizada.
 	     	
 	     	
 	     		   	\begin{figure}[H]
 	     		\centering
 	     		\includegraphics[width=5cm, height=3cm]{imagenes/hidrolisis7}
-	     		\caption{ Medición del ph de la mezcla después de la hidrólisis y fermentación}
+	     		\caption{ Medición del ph de la mezcla después de la SSF.}
 	     		\label{hidrolisis 7}
 	     	\end{figure}
 	     	
@@ -951,7 +951,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 
 				\subsection{Resultados experimentales del proceso de producción de bioetanol 2 G con pretratamiento Alcalino  y Biológico}
-				Siguiendo el proceso para la producción de bioetanol de segunda generación se realizó un pretratamiento y posteriormente una hidrólisis y fermentación en una misma etapa, los resultados obtenidos se clasificaron con base a el diseño de experimentos del apartado \ref{Diseño factorial del pretratamiento alcalino}.
+				Siguiendo el proceso para la producción de bioetanol de segunda generación se realizó un pretratamiento y posteriormente una SSF en una misma etapa, los resultados obtenidos se clasificaron con base a el diseño de experimentos del apartado \ref{Diseño factorial del pretratamiento alcalino}.
 				
 				
 				
@@ -1015,7 +1015,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsection{Resultados experimentales del proceso de producción de bioetanol en la etapa de hidrólisis y fermentación utilizando diferentes tipos de pretratamiento}
-A continuación se presentan los resultados de las pruebas experimentales después de realizar la etapa de hidrólisis y fermentación en conjunto. Los datos a considerar son la cantidad de alcohol obtenida, así como el consumo energético en las etapas en conjunto.
+A continuación se presentan los resultados de las pruebas experimentales después de realizar la etapa de la SSF. Los datos a considerar son la cantidad de alcohol obtenida, así como el consumo energético en las etapas en conjunto.
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    	\subsubsection{ Hidrólisis y fermentación para pretratamiento Biológico}
    
@@ -1023,7 +1023,7 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
 
  	\begin{table}[H]
  		\centering
- 		\caption{Hidrólisis y fermentación con pretratamiento biológico}
+ 		\caption{SSF con pretratamiento biológico}
  		\begin{tabular}{|c|c|c|c|c|c|}
  			\hline
  			\textbf{Num }& \textbf{Temperatura}  & \textbf{Tamaño} & \textbf{Consumo } & \textbf{Consumo }  & \textbf{Producción} \\ 
@@ -1049,12 +1049,12 @@ A continuación se presentan los resultados de las pruebas experimentales despu�
  	
 		\subsubsection{ Hidrólisis y fermentación para pretratamiento Alcalino}
 		
-		Para las pruebas de hidrólisis y fermentación se utiliza lo reportado en el diseño de experimentos en el apartado \ref{SacariSF}, la Tabla \ref{ssf con Pretratamiento Alcalino}  muestra los de las pruebas con bagazo de 1 mm hasta 10 cm y 1 cm como tamaño de partícula, podemos observar que el cambio de temperatura del pretratamiento si influye en el resultado de la producción de bioetanol.
+		Para las pruebas de SSF se utiliza lo reportado en el diseño de experimentos en el apartado \ref{SacariSF}, la Tabla \ref{ssf con Pretratamiento Alcalino}  muestra los de las pruebas con bagazo de 1 mm hasta 10 cm y 1 cm como tamaño de partícula, podemos observar que el cambio de temperatura del pretratamiento si influye en el resultado de la producción de bioetanol.
 		
 		
 		\begin{table}[H]
 			\centering
-			\caption{Hidrólisis y Fermentación con pretratamiento alcalino}
+			\caption{SSF con pretratamiento alcalino}
 			\begin{tabular}{|c|c|c|c|c|c|c|}
 				\hline
 				\textbf{Num} & \textbf{Temperatura} & \textbf{Tamaño} & \textbf{Tiempo} & \textbf{Consumo } & \textbf{Consumo } & \textbf{Producción } \\
@@ -1232,12 +1232,12 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\textbf{ Consumo energético en hidrólisis y fermentación con bagazo de caña pretratado Biológicamente }
 	
-	En los pruebas experimentales con hidrólisis y fermentación utilizando bagazo pretratado con humus de lombriz se tomaron lecturas de consumo energético, en la Tabla \ref{pruebbio} se presentan estos datos con y el costo que representan este consumo en (\$ USD).
+	En los pruebas experimentales con SSF utilizando bagazo pretratado con humus de lombriz se tomaron lecturas de consumo energético, en la Tabla \ref{pruebbio} se presentan estos datos con y el costo que representan este consumo en (\$ USD).
 	
 
 	\begin{table}[H]
 	\centering
-	\caption{El costo de la energía consumida para la etapa de hidrólisis y fermentación con bagazo pretratada mediante un proceso biológico . }
+	\caption{El costo de la energía consumida para la etapa de SSF con bagazo pretratada mediante un proceso biológico . }
 	\label{pruebbio}
 	{\fontsize{9}{10.8}\selectfont % Ajusta el tamaño de letra a 12pt
 		\begin{tabular}{|c|c|c|c|c|}
@@ -1264,7 +1264,7 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 	
 		\textbf{ Consumo energético en hidrólisis y fermentación en pretratamiento Alcalino }
 	
-	Clasificando las pruebas experimentales en pretratamientos realizados anteriormente, se puede observar el consumo energetico y su costo en la etapa de hidrólisis y fermentación utilizando pretratamiento alcalino, obteniendo un consumo promedio de las 10 pruebas
+	Clasificando las pruebas experimentales en pretratamientos realizados anteriormente, se puede observar el consumo energetico y su costo en la etapa de SSF utilizando pretratamiento alcalino, obteniendo un consumo promedio de las 10 pruebas
 	
 	
 	\begin{table}[H]
@@ -1312,11 +1312,12 @@ De los resultados obtenidos se desprende que el consumo energético promedio req
 				~ &  \textbf{pretratamiento} & \textbf{ energético promedio (\$ USD)} & \textbf{  (\$ USD)} &\textbf{  alcohol obtenido (\%)  }\\ \hline
 				
 				Pretratamiento Biológico & 5.74 & 0.17 & 5.9&   \\ \cline{1-4}
-				Hidrólisis y fermentación  & \multirow{2}{*}{13.53}& \multirow{2}{*}{0.16} & \multirow{2}{*}{13.68}  & \multirow{2}{*}{11.5}  \\ 
+				SSF & \multirow{2}{*}{13.53}& \multirow{2}{*}{0.16} & \multirow{2}{*}{13.68}  & \multirow{2}{*}{11.5}  \\ 
 				para pretratamiento Biológico & ~ & ~ & ~ &   \\ \cline{1-4}
-			    Acondicionamiento para pretratamiento Biológico & 0.86 & 0& 0&   \\ \hline
+			    Acondicionamiento para &  \multirow{2}{*}{0.86} & \multirow{2}{*}{0}&\multirow{2}{*}{0} &   \\ 
+			     pretratamiento Biológico &  &&&   \\ \hline
 				Pretratamiento Alcalino & 10.70 & 0.04 & 10.74&   \\ \cline{1-4}
-				Hidrólisis y fermentación  &  \multirow{2}{*}{13.53} & \multirow{2}{*}{0.14} & \multirow{2}{*}{13.7}& \multirow{2}{*}{12.8}  \\  
+				SSF  &  \multirow{2}{*}{13.53} & \multirow{2}{*}{0.14} & \multirow{2}{*}{13.7}& \multirow{2}{*}{12.8}  \\  
 				para pretratamiento Alcalino & ~ & ~ & ~ &   \\ \cline{1-4}
 				Acondicionamiento para pretratamiento Alcalino &0.86 & 0 & 0&   \\ \hline
 		\end{tabular}	}
@@ -1389,7 +1390,7 @@ Para analizar el consumo energético promedio en cada etapa del proceso, la Figu
 \end{figure}
 
 
-Los resultados indican que, durante la hidrólisis y fermentación simultánea (SSF), el consumo energético en promedio presenta variaciones mínimas. Este comportamiento podría atribuirse a la influencia de la temperatura ambiental en el proceso, ya que las condiciones del lugar posiblemente generan un consumo mayor en la demanda de energía.
+Los resultados indican que, durante la SSF, el consumo energético en promedio presenta variaciones mínimas. Este comportamiento podría atribuirse a la influencia de la temperatura ambiental en el proceso, ya que las condiciones del lugar posiblemente generan un consumo mayor en la demanda de energía.
 En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el costo total de producción de bioetanol 2G clasificado por el pretratamiento utilizado, sumando el costo del insumo, el consumo energético promedio y el costo del acondicionamiento del pretratamiento y la SSF.
 
 
@@ -1438,11 +1439,11 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 
 % Para cada anexo:
 \stepcounter{anexo}
-\subsection*{A.\theanexo\ Bioetanol de segunda generación}
+\subsection*{A.\theanexo\ Marco conceptual}
+\subsubsection*{A.\theanexo\ Bioetanol de segunda generación}
 \addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
 	
 
-		los anexos son los siguientes
 		\label{marco conceptual}
 		
 		
@@ -1450,7 +1451,8 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 		
 		La producción de bioetanol de segunda generación utiliza como materia prima residuos agrícolas o desechos orgánicos, dependiendo asi de la infraestructura adecuada para obtener la producción de bioetanol. El proceso de producción de bioetanol de segunda generación no tiene una ruta estandarizada, por lo que debe adaptarse a la naturaleza de la materia prima \cite{melendez2022biotecnologia}. El bioetanol de segunda generación se puede obtener con diferentes configuraciones: Sacarificación enzimática de la biomasa pretratada y la fermentación separadas, Sacarificación y fermentación simultáneas, sacarificación y co-fermentación simultáneas y bioproceso consolidado \cite{Gonzalez2018desarrollo}.
 		
-	\subsection*{B.\theanexo\ Definición de conceptos}
+	\subsection*{A.\theanexo\ Definición de conceptos}
+		\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
 		
 		
 		
@@ -1572,7 +1574,7 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 		\end{figure}
 		
 		
-	Este diagrama menciona los pasos como el pre-pretratamiento, donde se realiza un clasificado de tamaño de materia lignocelulósico, así como una limpieza y un secado, posteriormente se realiza un pretratamiento donde rompe las barreras de la lignina y obteniendo como resultado una materia con azúcares fermentables . En cuanto a la hidrólisis y fermentación se toma la materia previamente pretratada y es puesta en una hidrólisis y fermentación y por ultimo se realiza una destilación.
+	Este diagrama menciona los pasos como el pre-pretratamiento, donde se realiza un clasificado de tamaño de materia lignocelulósico, así como una limpieza y un secado, posteriormente se realiza un pretratamiento donde rompe las barreras de la lignina y obteniendo como resultado una materia con azúcares fermentables . En cuanto a la SSF se toma la materia previamente pretratada a distintas variables.
 		
 		
 		
@@ -1658,7 +1660,7 @@ Enseguida se describen algunas investigaciones sobre pretratamientos alcalinos c
 
 \cite{Nasution_2022} presentó una revisión de los pretratamientos más usados en los últimos años. Como pretratamiento alcalino se destaca el uso del NaOH. Comúnmente se recomienda manejar una concentración al 2 \% de NaOH, una relación de agua destilada de 1:10 solido-liquido, y una temperatura de operación de 80 °C, así como un tiempo de tratamiento de 2h.
 
-En un estudio afin, \cite{Arturo2022evaluacion} utilizó como biomasa bagazo de caña para producir bioetanol con dos modos diferentes de producción: sacarificación enzimática y fermentación en etapas separadas (SHF), y Sacarificación y fermentación simultáneas (SSF). Se probaron 4 tipos de pretratamientos de la materia prima, entre estos se aplicó un pretratamiento alcalino usando como base NaOH al 2 \% p/v y una carga de bagazo del 4\% p/v. El pretratamiento se llevó a cabo a 97°C durante un tiempo de 90 minutos. Al finalizar este tiempo, la biomasa tratada se acondicionó mediante etapas de enjuagado, filtrado y secado para después ser procesada por cada modo de producción, SHF o SSF. Comparando el porcentaje de alcohol obtenido a partir de cada proceso (SHF o SSF), se concluyó que el proceso SHF obtuvo un producto más concentrado, con 15 \% de alcohol, mientras que el producto del proceso SSF tenía un contenido de alcohol menor de 11 \%. En contra parte se concluyó que el proceso SSF reduce en un 80\% el tiempo consumido por el proceso SHF.
+En un estudio afin, \cite{Arturo2022evaluacion} utilizó como biomasa bagazo de caña para producir bioetanol con dos modos diferentes de producción: sacarificación enzimática y fermentación en etapas separadas (SHF), y (SSF). Se probaron 4 tipos de pretratamientos de la materia prima, entre estos se aplicó un pretratamiento alcalino usando como base NaOH al 2 \% p/v y una carga de bagazo del 4\% p/v. El pretratamiento se llevó a cabo a 97 °C durante un tiempo de 90 minutos. Al finalizar este tiempo, la biomasa tratada se acondicionó mediante etapas de enjuagado, filtrado y secado para después ser procesada por cada modo de producción, SHF o SSF. Comparando el porcentaje de alcohol obtenido a partir de cada proceso (SHF o SSF), se concluyó que el proceso SHF obtuvo un producto más concentrado, con 15 \% de alcohol, mientras que el producto del proceso SSF tenía un contenido de alcohol menor de 11 \%. En contra parte se concluyó que el proceso SSF reduce en un 80\% el tiempo consumido por el proceso SHF.
 
 %\textbf{Conclusión}\\
 
