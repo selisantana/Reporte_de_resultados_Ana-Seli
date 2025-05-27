@@ -31,21 +31,20 @@
 \contentsline {section}{\numberline {6}Conclusión}{28}{section.6}%
 \contentsline {chapter}{Bibliografía}{30}{section*.48}%
 \contentsline {subsection}{A.1\ Bioetanol de segunda generación}{31}{section*.50}%
-\contentsline {subsection}{\numberline {6.1} Definición de conceptos }{31}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Etanol}{31}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Biomasa}{31}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Bagazo de caña}{31}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Lignocelulosa}{31}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.5}Pretratamiento}{32}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}Hidrólisis}{33}{subsubsection.6.1.6}%
-\contentsline {subsubsection}{\numberline {6.1.7}Fermentación}{33}{subsubsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.2}Configuraciones en la producción de bioetanol}{34}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Sacarificación enzimática de la biomasa pretratada y la fermentación separadas}{34}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Sacarificación y fermentación simultáneas}{34}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Proceso de obtención de bioetanol 2 G utilizando una configuración SSF }{34}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Pretratamientos}{35}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Pretratamiento alcalino}{35}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Pretratamiento biológico }{36}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.0.1}Etanol}{31}{subsubsection.6.0.1}%
+\contentsline {subsubsection}{\numberline {6.0.2}Biomasa}{31}{subsubsection.6.0.2}%
+\contentsline {subsubsection}{\numberline {6.0.3}Bagazo de caña}{31}{subsubsection.6.0.3}%
+\contentsline {subsubsection}{\numberline {6.0.4}Lignocelulosa}{31}{subsubsection.6.0.4}%
+\contentsline {subsubsection}{\numberline {6.0.5}Pretratamiento}{32}{subsubsection.6.0.5}%
+\contentsline {subsubsection}{\numberline {6.0.6}Hidrólisis}{33}{subsubsection.6.0.6}%
+\contentsline {subsubsection}{\numberline {6.0.7}Fermentación}{33}{subsubsection.6.0.7}%
+\contentsline {subsection}{\numberline {6.1}Configuraciones en la producción de bioetanol}{34}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Sacarificación enzimática de la biomasa pretratada y la fermentación separadas}{34}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Sacarificación y fermentación simultáneas}{34}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Proceso de obtención de bioetanol 2 G utilizando una configuración SSF }{34}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Pretratamientos}{35}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Pretratamiento alcalino}{35}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Pretratamiento biológico }{36}{subsubsection.6.3.2}%
 \contentsline {section}{\numberline {7}Estado del arte}{36}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Pretratamientos.}{36}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Pretratamiento Alcalino}{36}{subsubsection.7.1.1}%

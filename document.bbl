@@ -39,6 +39,11 @@ Cuervo, L., Folch, J.~L., and Quiroz, R.~E. (2009).
   etanol.
 \newblock {\em BioTecnolog{\'\i}a}, 13(3):11--25.
 
+\bibitem[{Energy Information Administration}, 2021]{EIA2019}
+{Energy Information Administration} (2021).
+\newblock Key world energy statistics 2021.
+\newblock Technical report, Paris.
+
 \bibitem[Espinosa~Negr{\'\i}n et~al., 2021]{espinosa2021pretratamiento}
 Espinosa~Negr{\'\i}n, A.~M., L{\'o}pez~Gonz{\'a}lez, L.~M., and
   Casdelo~Guti{\'e}rrez, N.~L. (2021).
@@ -140,5 +145,11 @@ Valles~S{\'a}ez, A. (2022).
 \newblock {\em Estudio del proceso simult{\'a}neo de sacarificaci{\'o}n y
   fermentaci{\'o}n aceto-but{\'\i}lica-et{\'\i}lica a partir de paja de arroz}.
 \newblock PhD thesis, universidad de valencia, Valencia, España.
+
+\bibitem[Zuliani et~al., 2021]{zuliani2021biorefinery}
+Zuliani, L., Serpico, A., De~Simone, M., Frison, N., and Fusco, S. (2021).
+\newblock Biorefinery gets hot: thermophilic enzymes and microorganisms for
+  second-generation bioethanol production.
+\newblock {\em Processes}, 9(9):1583.
 
 \end{thebibliography}
