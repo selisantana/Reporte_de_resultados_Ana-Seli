@@ -7,48 +7,47 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "portalproduccon"
 Warning--can't use both volume and number fields in Arturo2022evaluacion
-You've used 18 entries,
+You've used 20 entries,
             1935 wiz_defined-function locations,
-            597 strings with 8617 characters,
-and the built_in function-call counts, 7209 in all, are:
-= -- 694
-> -- 334
-< -- 8
-+ -- 118
-- -- 114
-* -- 636
-:= -- 1294
-add.period$ -- 56
-call.type$ -- 18
-change.case$ -- 145
-chr.to.int$ -- 18
-cite$ -- 19
-duplicate$ -- 255
-empty$ -- 469
-format.name$ -- 134
-if$ -- 1374
+            614 strings with 9251 characters,
+and the built_in function-call counts, 7960 in all, are:
+= -- 769
+> -- 359
+< -- 9
++ -- 126
+- -- 122
+* -- 699
+:= -- 1427
+add.period$ -- 62
+call.type$ -- 20
+change.case$ -- 159
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 283
+empty$ -- 525
+format.name$ -- 144
+if$ -- 1519
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 94
-num.names$ -- 54
-pop$ -- 113
+missing$ -- 17
+newline$ -- 104
+num.names$ -- 60
+pop$ -- 122
 preamble$ -- 1
-purify$ -- 147
+purify$ -- 161
 quote$ -- 0
-skip$ -- 194
+skip$ -- 215
 stack$ -- 0
-substring$ -- 472
-swap$ -- 29
+substring$ -- 536
+swap$ -- 31
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 120
 warning$ -- 1
-while$ -- 54
+while$ -- 61
 width$ -- 0
-write$ -- 238
-(There were 3 warnings)
+write$ -- 264
+(There were 2 warnings)
