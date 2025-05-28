@@ -28,14 +28,6 @@
 
 \makeindex
 
-\newcounter{anexocounter}
-\newcommand{\anexo}[1]{%
-	\refstepcounter{anexocounter}%
-	\section*{Anexo \Alph{anexocounter} #1}%
-	\addcontentsline{toc}{section}{Anexo \Alph{anexocounter} #1}%
-	\setcounter{subsection}{0}%
-	\renewcommand{\thesubsection}{\Alph{anexocounter}.\arabic{subsection}}%
-}
 
 \begin{document}
 	
@@ -1409,15 +1401,14 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 	\label{grafica}
 \end{figure}
 %%%%%%%
-poner la propuesta 
-de cual es mejor, poner una tipo conclusión....
+\textbf{Relación costo producción}
+\newline
+Según las tablas antes mencionadas podemos observar varias cosas, una de ellas es que el pretratamiento que da mas producción de bioetanol de segunda generación, es el  pretratamiento alcalino, dando como máximo 17 \% de bioetanol, en comparativa al pretramiento biologico que su máximo fue de 14 \% de bioetanol, sin embargo el costo del aproducción del pretamiento alcalino es 3.7 veces mas que el costo del pretratamiento biológico.
+Por lo tanto el pretratamiento mas conveniente a utilizar es el bilogico que aun siendo el que menos producción tiene , es un margen pequeño, y el costo es menor.
 
 
 
-hacer de las tablas el nombre mas grande ................
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+%hacer de las tablas el nombre mas grande ................
 
 
 
@@ -1452,12 +1443,16 @@ hacer de las tablas el nombre mas grande ................
 
 %\begin{appendix}
 		
+\section*{Anexos}		
+		
+\newcounter{anexo}
+\setcounter{anexo}{0}
 
 % Para cada anexo:
-\anexo{Marco conceptual}
-
-\subsection{Bioetanol de segunda generación}
-
+\stepcounter{anexo}
+\subsection*{A.\theanexo\ Marco conceptual}
+\subsubsection*{A.\theanexo\ Bioetanol de segunda generación}
+\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
 	
 
 		\label{marco conceptual}
@@ -1467,8 +1462,9 @@ hacer de las tablas el nombre mas grande ................
 		
 		La producción de bioetanol de segunda generación utiliza como materia prima residuos agrícolas o desechos orgánicos, dependiendo asi de la infraestructura adecuada para obtener la producción de bioetanol. El proceso de producción de bioetanol de segunda generación no tiene una ruta estandarizada, por lo que debe adaptarse a la naturaleza de la materia prima \cite{melendez2022biotecnologia}. El bioetanol de segunda generación se puede obtener con diferentes configuraciones: Sacarificación enzimática de la biomasa pretratada y la fermentación separadas, Sacarificación y fermentación simultáneas, sacarificación y co-fermentación simultáneas y bioproceso consolidado \cite{Gonzalez2018desarrollo}.
 		
-	\subsection{Definición de conceptos}
-	
+	\subsection*{A.\theanexo\ Definición de conceptos}
+		\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
+		
 		
 		
 		Una parte  importante de la producción de bioetanol de segunda generación es conocer los conceptos, puntualmente los que forman parte del proceso, entre ellos se encuentran el etanol, la biomasa y mas 
@@ -1646,8 +1642,8 @@ Existen pretratamientos biológicos en los que comúnmente se usan microorganism
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% \newline
 	
-	\anexo{Estado del arte}
-		
+	
+		\section{Estado del arte}
 
 	\label{Estado del arte}
 El estado del arte es una minuciosa búsqueda de información referente a los avances científicos y tecnológicos de la producción de bioetanol de segunda generación, principalmente utilizando etapas juntas en el proceso. Esta revisión muestra algunos avances en la etapa de pretratamientos en el proceso de producción.
@@ -1730,7 +1726,7 @@ En el artículo de \cite{Gomes2022analisis} se analizaron tres configuraciones p
 		
 %	\end{appendix}
 	
-	\anexo{}
+	
 	\section{Diseño del control de temperatura}
 	
 	\label{diseño del control de temp}
