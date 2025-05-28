@@ -27,7 +27,14 @@
 \usepackage{array, etoolbox, tabularx}
 
 \makeindex
-
+\newcounter{anexocounter}
+\newcommand{\anexo}[1]{%
+	\refstepcounter{anexocounter}%
+	\section*{Anexo \Alph{anexocounter} #1}%
+	\addcontentsline{toc}{section}{Anexo \Alph{anexocounter} #1}%
+	\setcounter{subsection}{0}%
+	\renewcommand{\thesubsection}{\Alph{anexocounter}.\arabic{subsection}}%
+}
 
 \begin{document}
 	
@@ -1400,6 +1407,18 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 	\caption{Consumo energético para SSF. }
 	\label{grafica}
 \end{figure}
+%%%%%%%
+poner la propuesta 
+de cual es mejor, poner una tipo conclusión....
+
+
+
+hacer de las tablas el nombre mas grande ................
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 		\section{Conclusión}
 		%\begin{itemize}
@@ -1432,16 +1451,12 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 
 %\begin{appendix}
 		
-\section*{Anexos}		
-		
-\newcounter{anexo}
-\setcounter{anexo}{0}
 
 % Para cada anexo:
-\stepcounter{anexo}
-\subsection*{A.\theanexo\ Marco conceptual}
-\subsubsection*{A.\theanexo\ Bioetanol de segunda generación}
-\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
+\anexo{Marco conceptual}
+\subsection{Marco conceptual}
+\subsubsection{Bioetanol de segunda generación}
+
 	
 
 		\label{marco conceptual}
@@ -1451,9 +1466,8 @@ En cuanto al costo de producción en la Figura \ref{grafica} podemos observar el
 		
 		La producción de bioetanol de segunda generación utiliza como materia prima residuos agrícolas o desechos orgánicos, dependiendo asi de la infraestructura adecuada para obtener la producción de bioetanol. El proceso de producción de bioetanol de segunda generación no tiene una ruta estandarizada, por lo que debe adaptarse a la naturaleza de la materia prima \cite{melendez2022biotecnologia}. El bioetanol de segunda generación se puede obtener con diferentes configuraciones: Sacarificación enzimática de la biomasa pretratada y la fermentación separadas, Sacarificación y fermentación simultáneas, sacarificación y co-fermentación simultáneas y bioproceso consolidado \cite{Gonzalez2018desarrollo}.
 		
-	\subsection*{A.\theanexo\ Definición de conceptos}
-		\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
-		
+	\subsection{Definición de conceptos}
+	
 		
 		
 		Una parte  importante de la producción de bioetanol de segunda generación es conocer los conceptos, puntualmente los que forman parte del proceso, entre ellos se encuentran el etanol, la biomasa y mas 
@@ -1631,8 +1645,8 @@ Existen pretratamientos biológicos en los que comúnmente se usan microorganism
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% \newline
 	
-	
-		\section{Estado del arte}
+	\anexo{Estado del arte}
+		
 
 	\label{Estado del arte}
 El estado del arte es una minuciosa búsqueda de información referente a los avances científicos y tecnológicos de la producción de bioetanol de segunda generación, principalmente utilizando etapas juntas en el proceso. Esta revisión muestra algunos avances en la etapa de pretratamientos en el proceso de producción.
@@ -1715,7 +1729,7 @@ En el artículo de \cite{Gomes2022analisis} se analizaron tres configuraciones p
 		
 %	\end{appendix}
 	
-	
+	\anexo{}
 	\section{Diseño del control de temperatura}
 	
 	\label{diseño del control de temp}
