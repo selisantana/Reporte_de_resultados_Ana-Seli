@@ -26,8 +26,16 @@
 
 \usepackage{array, etoolbox, tabularx}
 
-\makeindex
+\newcounter{anexocounter}
+\newcommand{\anexo}[1]{%
+	\refstepcounter{anexocounter}%
+	\section*{Anexo \Alph{anexocounter}. #1}%
+	\addcontentsline{toc}{section}{Anexo \Alph{anexocounter}. #1}%
+	\setcounter{subsection}{0}%
+	\renewcommand{\thesubsection}{\Alph{anexocounter}.\arabic{subsection}}%
+}
 
+\makeindex
 
 \begin{document}
 	
@@ -54,7 +62,6 @@
 	Una de las etapas importantes para la producción de biocombustibles de segunda generación, es decir, obtenidos a partir de desechos orgánicos, es el pretratamiento que se le da a la biomasa antes de procesarla. En esta tesis se busca seleccionar una configuración adecuada para dos tipos de pretratamiento que permitan producir mayor cantidad de biocombustible. Como antecedente, se cita el estudio de \cite{zuliani2021biorefinery}, el cual describe aspectos fundamentales sobre el tema. Este reporte de resultados presenta los experimentos realizados en un reactor en lotes para producir bioetanol a partir de biomasa lignocelulósica, en particular, bagazo de caña. El énfasis está en los métodos de pretratamiento (biológico y alcalino), así como en un análisis comparativo de la relación costo-consumo energético-producción de cada combinación de etapas y condiciones de operación consideradas.
 	
 	\section{Planteamiento del problema}
-		
  
 Este proyecto busca mejorar la producción de bioetanol de segunda generación a partir de biomasa lignocelulósica mediante la evaluación de dos métodos de pretratamiento: biológico y alcalino. El estudio se centra en determinar las condiciones más adecuadas (temperatura, tamaño de partícula y tiempo) para lograr mayores rendimientos, menores costos y un consumo energético más eficiente.
 
@@ -1451,9 +1458,9 @@ Por lo tanto el pretratamiento mas conveniente a utilizar es el bilogico que aun
 
 % Para cada anexo:
 \stepcounter{anexo}
-\subsection*{A.\theanexo\ Marco conceptual}
-\subsubsection*{A.\theanexo\ Bioetanol de segunda generación}
-\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
+\anexo{Marco conceptual}
+\subsection{ Bioetanol de segunda generación}
+
 	
 
 		\label{marco conceptual}
@@ -1463,8 +1470,7 @@ Por lo tanto el pretratamiento mas conveniente a utilizar es el bilogico que aun
 		
 		La producción de bioetanol de segunda generación utiliza como materia prima residuos agrícolas o desechos orgánicos, dependiendo asi de la infraestructura adecuada para obtener la producción de bioetanol. El proceso de producción de bioetanol de segunda generación no tiene una ruta estandarizada, por lo que debe adaptarse a la naturaleza de la materia prima \cite{melendez2022biotecnologia}. El bioetanol de segunda generación se puede obtener con diferentes configuraciones: Sacarificación enzimática de la biomasa pretratada y la fermentación separadas, Sacarificación y fermentación simultáneas, sacarificación y co-fermentación simultáneas y bioproceso consolidado \cite{Gonzalez2018desarrollo}.
 		
-	\subsection*{A.\theanexo\ Definición de conceptos}
-		\addcontentsline{toc}{subsection}{A.\theanexo\ Bioetanol de segunda generación}
+	\subsection{Definición de conceptos}
 		
 		
 		
@@ -1644,7 +1650,7 @@ Existen pretratamientos biológicos en los que comúnmente se usan microorganism
 	% \newline
 	
 	
-		\section{Estado del arte}
+		\anexo{Estado del arte}
 
 	\label{Estado del arte}
 El estado del arte es una minuciosa búsqueda de información referente a los avances científicos y tecnológicos de la producción de bioetanol de segunda generación, principalmente utilizando etapas juntas en el proceso. Esta revisión muestra algunos avances en la etapa de pretratamientos en el proceso de producción.
