@@ -273,12 +273,12 @@ Para el caso del pretratamiento alcalino con hidróxido de sodio las temperatura
 
 
 
-De la misma forma, cada pretratamiento fue realizado modificando tres factores. El factor A es el tamaño de partícula, para el cual se consideraron dos niveles: TNUB y 1 cm. El factor B es la temperatura, y para este se consideraron tres niveles: 95 °C , 90 °C, 80 °C. Por último, el factor C que es el tiempo de pretratamiento, tiene dos niveles: 5400 s y 7870 s. En total se realizaron 12 experimentaciones para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. 
-
+De la misma forma, cada pretratamiento fue realizado modificando tres factores. El factor A es el tamaño de partícula, para el cual se consideraron dos niveles: TNUB y 1 cm. El factor B es la temperatura, y para este se consideraron tres niveles: 95 °C , 90 °C, 80 °C. Por último, el factor C que es el tiempo de pretratamiento, tiene dos niveles: 5400 s y 7870 s. En total se realizaron 12 experimentos para el pretratamiento alcalino, como se muestra en la Tabla \ref{alcalino}. 
 
 \begin{table}[H]
 	\centering
 	\caption{Condiciones de operación del reactor para la producción de bioetanol 2G con pretratamiento biológico. Diseño de experimentos}
+	\label{alcalino}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Num de} & \textbf{Temperatura} & \textbf{Tamaño de } & \textbf{Tiempo} \\ 
@@ -327,7 +327,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 %		\onehalfspacing
 		
-		Por otra parte, tenemos la configuración para la producción de bioetanol, donde tomando como referencia la tesis \cite{Arturo2022evaluacion}, se pueden tener los valores para los insumos en la configuración SSF, en donde intervienen los elementos como la carga de biomasa que es la cantidad de bagazo previamente pretratado con alguno de los métodos anteriores, levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es uno de los elementos importantes para realizar la hidrólisis y por ultimo la temperatura de la SSF. En la Tabla 	\ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en consideración para la SSF. \\[0.5em]
+		La producción de bioetanol fue realizada usando la configuración de hidrólisis y fermentación simultáneas. Las condiciones de operación corresponden al diseño del proceso presentado en la tesis de \cite{Arturo2022evaluacion}. Se debe precisar la carga de biomasa, que es la cantidad de bagazo previamente pretratado con alguno de los dos métodos considerados, la levadura necesaria para una buena fermentación, el pH de la solución dentro del reactor, la carga enzimática que es un elemento clave  para llevar  cabo la hidrólisis, y por ultimo la temperatura de la SSF. En la Tabla \ref{tab:Variables a modificar para la hidrolisis y fermentacion}, se muestran los valores de cada uno de los elementos a tomar en cuenta para la implementar el proceso SSF. \\[0.5em]
 		
 		\begin{table} [h!]
 			\centering
@@ -341,7 +341,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				 &   & \textbf{ biomasa}  & \textbf{enzimática } & \textbf{de levadura } & &  &     \\
 				
 				\hline
-			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43 °c} & \multirow{2}{*}{48h }   \\
+			\multirow{2}{*}{Bagazo de caña} &\multirow{2}{*}{2 l}  &\multirow{2}{*}{5\%}  & \multirow{2}{*}{20 UPF/g } & \multirow{2}{*}{10\% } &\multirow{2}{*}{ 5} & \multirow{2}{*}{43 °C} & \multirow{2}{*}{48h }   \\
 			  &   & & &  &  & &     \\		
 				\hline
 			\end{tabular}}
@@ -349,15 +349,12 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		
 
 		
-		Se puede observar que se utilizan dos volúmenes, ya que uno 3600 ml es utilizando biomasa pretratada con humus de lombriz, es decir realizando un pretratamiento biológico, y para el caso del volumen de 5.5 l es utilizando biomasa pretratada con hidróxido de sodio, también llamado pretratamiento alcalino.
-		
-		
 			\begin{itemize}
 			\item  Carga enzimática
 	     	\end{itemize}
 		
 		
-	La carga enzimática se refiere a la relación de porcentaje entre el peso de soluto y volumen de solución. En la ecuación \ref{carga} se muestra la obtención de la carga enzimática en ml, donde se utiliza las unidades de papel filtro (UPF) la cual es una medida de laboratorio para medir las enzimas y por ultimo utiliza el valor constante de 3.7 (\cite{Arturo2022evaluacion}).
+	La carga enzimática se refiere a  la cantidad de enzimas que se introduce durante el proceso SSF y está dada en unidades de papel filtro por gramo de sustrato (UPF/g). UPF es una medida de laboratorio para expresar la actividad enzimática. La ecuación \ref{carga} permite calcular la carga enzimática en unidades de ml, en función de la cantidad de unidades de papel filtro (UPF),  \cite{Arturo2022evaluacion}).
 			
 	\begin{equation}
 		\label{carga}
@@ -374,13 +371,13 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 			\subsection{Implementación}
 
-			Para las pruebas experimentales tendremos en cuenta de primera instancia los materiales necesarios en cada pretratamiento, posteriormente se mencionan los pasos que conlleva realizar cada prueba de experimentación.
+			En esta sección se describen las pruebas experimentales, indicando en primera instancia los materiales necesarios en cada pretratamiento, y posteriormente, se mencionan los pasos que conlleva realizar cada prueba.
 			
 
 			\subsubsection{Pre-Pretratamiento}
 
 			
-			El pre-pretratamiento ayuda a clasificar el tamaño de bagazo que se va a utilizar, así como secar el bagazo en caso de tener humedad. El material y compuestos para poder limpiar y clasificar el tamaño de bagazo se menciona a continuación.
+			El pre-pretratamiento es un preprocesamiento de la biomasa para someterla posteriormente al pretratamiento del tipo seleccionado para activar la producción de azúcares fermentables. El pre-pretratamiento incluye clasificar el tamaño de bagazo por tamizado, y secarlo en caso de tener humedad. El material y compuestos para poder clasificar y limpiar el bagazo son los siguientes
 			\\[0.5em]
 			\textbf{Compuestos} 
 			\begin{itemize}[label=\textcolor{blue}{$\bullet$}]
@@ -401,7 +398,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			\textbf{Procedimiento}
 			\\[0.5em]
-			\textbf{1.} Se implementa una barrera de protección mediante una lona impermeable extendida sobre el piso, evitando el contacto directo del bagazo de caña con superficies contaminantes. Sobre esta superficie aislante, se distribuye uniformemente el bagazo de caña, para facilitar el secado pasivo y la eliminación controlada de su humedad residual, proceso documentado en la Figura \ref{secado1}
+			\textbf{1.} Se implementó una barrera de protección usando una lona impermeable extendida sobre el piso, evitando el contacto directo del bagazo de caña con superficies contaminantes. Sobre esta superficie aislante, se distribuyó uniformemente el bagazo de caña para facilitar el secado pasivo y la eliminación controlada de su humedad residual. El proceso se muestra en la Figura~\ref{secado1}
 
 			
 			\textbf{2.}	La clasificación por tamaño se efectuó usando un arreglo de dos mallas metálicas de 1 cm, montadas en serie sobre un recipiente de 10 L. Mediante agitación rítmica del bagazo colocado en la malla superior (Figura \ref{cernir_bagazo_B}), las fracciones menores a 1 cm fueron seleccionadas por gravedad hacia la cubeta, mientras que las partículas mayores se retuvieron en el tamiz.
@@ -428,10 +425,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			
 			
-			\textbf{3.}	El bagazo se somete a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de 1 cm), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permite obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
+			\textbf{3.}	El bagazo se sometió a dos ciclos adicionales de cribado utilizando el mismo sistema de doble malla (abertura de 1 cm), aplicando un movimiento armónico controlado en cada repetición (Figura \ref{cernir_bagazo_2C}). Este proceso iterativo permitió obtener una fracción de partículas con tamaño significativamente reducido, optimizando la homogeneidad del material resultante.
 			
 			
-			\textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se somete a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales. Ver Figura \ref{cernir_bagazo_cedazo}.
+			\textbf{4.} Para garantizar un tamaño de partícula uniforme, el bagazo de caña se sometió a un cribado adicional mediante un cedazo de malla más fina, con el objetivo de obtener un material final con una granulometría controlada de 1 cm, lo que optimiza su posterior aprovechamiento en procesos industriales. Ver Figura \ref{cernir_bagazo_cedazo}.
 		
 		
 			\begin{figure}[H]
@@ -452,7 +449,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		\end{figure}
 		
 	
-			\textbf{5.} El bagazo cernido se pesa en una báscula hasta alcanzar la masa requerida (240 g o 180 g, según el pretratamiento asignado) y posteriormente se introduce en una bolsa de plástico, la cual se sella herméticamente para evitar alteraciones en su contenido de humedad durante el almacenamiento o transporte.
+			\textbf{5.} El bagazo cernido fue pesado en una báscula hasta alcanzar la masa requerida (240 g o 180 g, según el pretratamiento asignado) y posteriormente se introdujo en una bolsa de plástico, la cual fue sellada herméticamente para evitar alteraciones en su contenido de humedad durante el almacenamiento o transporte.
 			
 			
 			\begin{figure} [H]
@@ -469,7 +466,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\subsubsection{Pretratamiento Biológico}
 	
 			
-		Para la ejecución del pretratamiento biológico, se requiere el siguiente conjunto de materiales y reactivos estandarizados. Posteriormente se mencionan los pasos para la experimentación.\\
+		Para la ejecución del pretratamiento biológico se requiirió el siguiente conjunto de materiales y reactivos estandarizados. Posteriormente se mencionan los pasos para la experimentación.\\
 			
 			\textbf{Compuestos} \\[0.5em]
 			
@@ -489,10 +486,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			\textbf{Procedimiento}
 			\\[0.5em]
-			\textbf{1.}	La dosificación del bagazo se realiza mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento aplica únicamente cuando no se emplea la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utiliza directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamaños}.
+			\textbf{1.}	La dosificación del bagazo fue realizada mediante pesaje con una báscula digital utilizando una bolsa plástica de 3 kg como recipiente, hasta alcanzar los 180 g requeridos. Este procedimiento se aplicó únicamente cuando no se empleó la medida estándar de 1 cm de longitud de partícula, en cuyo caso se utilizó directamente el material previamente clasificado y calibrado. Ver Figura \ref{bagazo_variostamaños}.
 		
 			
-			\textbf{2.}	Mediante báscula digital (±0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL), se pesan exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
+			\textbf{2.}	Mediante báscula digital (±0.2 g) y material de vidrio calibrado (vaso de precipitado de 500 mL) se pesó exactamente 350 g de humus de lombriz grado técnico, siguiendo el procedimiento ilustrado en la Figura \ref{humus}.
 			
 			
 				\begin{figure}[H]
@@ -512,11 +509,11 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				\end{minipage}
 			\end{figure}
 			
-			\textbf{3.}	Previo a su uso, el reactor se somete a un proceso de limpieza exhaustiva (Figura \ref{progra}), seguido de la aplicación estratégica de cinta de teflón en la zona roscada inferior para garantizar un sellado hermético. Finalmente, se procede al ensamblaje mediante el apriete controlado del tornillo, asegurando así la integridad del sistema.
+			\textbf{3.}	Previo a su uso, el reactor se sometió a un proceso de limpieza exhaustiva (Figura~\ref{progra}), seguido de la aplicación estratégica de cinta de teflón en la zona roscada inferior para garantizar un sellado hermético. Finalmente, se procedió al ensamblaje mediante el apriete controlado del tornillo, asegurando así la integridad del sistema.
 			
 			
 			
-			\textbf{4.}	Se carga el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L calibrado. Posteriormente, se incorporan los 180 g de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
+			\textbf{4.}	Se cargó el reactor con 6.0 L de agua desmineralizada, dosificados mediante un vaso de precipitado de 1 L, calibrado. Posteriormente, se incorporaron los 180 g de bagazo de caña previamente pesados y contenidos en la bolsa de 3 kg, siguiendo el procedimiento ilustrado en la Figura \ref{baciad}.
 			
 
 				\begin{figure}[H]
@@ -539,7 +536,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\textbf{5.}	Se adicionaron 300 g de humus de lombriz al reactor que ya contenía agua desmineralizada y bagazo de caña (Figura \ref{humus2}).
 			
 
-			\textbf{6.} Se procede a sellar el reactor utilizando una tapa que incorpora el motor. Se colocan los sensores de tipo termopar K en los tubos de un centímetro de diámetro, asegurándose de que estén correctamente posicionados. Para evitar la fuga de vapor, se utiliza algodón para sellar adecuadamente los tubos. Además, se emplean láminas de aluminio y cinta aislante o térmica para garantizar un cierre hermético tanto alrededor de la tapa como en la zona de los sensores, tal como se observa en la Figura \ref{cellado del reactor}.
+			\textbf{6.} Se procedió a sellar el reactor utilizando una tapa que incorpora el motor. Se colocaron los sensores de tipo termopar K en los tubos de un centímetro de diámetro, asegurándo que estuvieran correctamente posicionados. Para evitar fugas de vapor, se utilizó algodón para sellar adecuadamente los tubos. Además, se emplearon láminas de aluminio y cinta aislante o térmica para garantizar un cierre hermético tanto alrededor de la tapa como en la zona de los sensores, tal como se observa en la Figura~\ref{cellado del reactor}.
 			
 		
 			
@@ -561,7 +558,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		\end{figure}
 		
 			
-			\textbf{7. } Se procede a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectan los contactos múltiples necesarios, se configuran los dispositivos y se programa el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{DiseñopretratamientoBioogico}. El proceso se mantiene durante el tiempo estipulado para el pretratamiento, el diseño del control del control de temperatura, ver anexo \ref{diseño del control de temp}. Las Figuras \ref{progra 1} y \ref{progra 2} muestran las pantallas con el control en funcionamiento.
+			\textbf{7. } Se procedió a conectar las Raspberry Pi y los monitores, así como las fuentes de alimentación y el sistema de respaldo (no-break). Se conectaron los contactos múltiples necesarios, se configuraron los dispositivos y se programó el control para mantener la temperatura conforme al diseño experimental descrito en el apartado \ref{DiseñopretratamientoBioogico}. El proceso se mantuvo durante el tiempo estipulado para el pretratamiento. El diseño del control de temperatura se reporta en el anexo \ref{diseño del control de temp}. Las Figuras \ref{progra 1} y \ref{progra 2} muestran las pantallas con el control en funcionamiento.
 			
 			\begin{figure}[H]
 				\centering
@@ -585,7 +582,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
 			\subsubsection{Pretratamiento Alcalino}
-			El pretratamiento alcalino es un tipo de pretratamiento, a continuación se muestran los pasos y los insumos para llevar a cabo las pruebas experimentales.		
+			El pretratamiento alcalino de la biomasa se implementó usando Hidróxido de Sodio. A continuación se muestran los insumos y los pasos para llevar a cabo las pruebas experimentales.		
 			\\[1 em]
 			\textbf{Compuestos} 
 			\\[0.5em]
@@ -609,9 +606,9 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\textbf{Procedimiento}
 			\\[0.5em]
 			
-			\textbf{1.}	La cantidad de bagazo se determina mediante pesaje con báscula digital (precisión ±0.2 g) usando una bolsa plástica de 30×40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se emplea la medida de 1 cm, se utiliza directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
+			\textbf{1.}	La cantidad de bagazo se determinó mediante pesaje con báscula digital (precisión ±0.2 g) usando una bolsa plástica de 30×40 cm como contenedor, hasta alcanzar 180 g. Alternativamente, cuando se requirió la medida de 1 cm, se utilizó directamente el material preclasificado y calibrado, según se ilustra en la Figura \ref{bagazo1}.\\
 			
-			\textbf{2.} Mediante una báscula digital (precisión ±0.2 g) y vaso de precipitado de vidrio, se pesan exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
+			\textbf{2.} Mediante una báscula digital (precisión ±0.2 g) y vaso de precipitado de vidrio, se pesaron exactamente 120 g de hidróxido de sodio en pellets, asegurando la exactitud requerida para el proceso.Ver Figura \ref{cernir_bagazo_hidroxidopesado}.
 			
 			
 			\begin{figure}[H]
@@ -633,7 +630,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			
 			
-			\textbf{3.} El reactor y su mezclador se enjuagan minuciosamente con agua desmineralizada para garantizar su limpieza óptima antes de su uso, eliminando cualquier residuo que pueda afectar el proceso.
+			\textbf{3.} El reactor y su mezclador fueron enjuagados minuciosamente con agua desmineralizada para garantizar su limpieza óptima antes de ser usado, eliminando cualquier residuo que puediera afectar el proceso.
 			\begin{figure} [H]
 				\centering
 				\includegraphics[width=3cm, height=5cm,angle=90]{imagenes/reactor limpio}
@@ -641,9 +638,9 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				\label{reactor limpio}
 			\end{figure}
 			
-			\textbf{4.} Se procede a activar los componentes eléctricos y la resistencia, verificando su correcto funcionamiento. Posteriormente, se instala el tornillo de sellado en la base del reactor, asegurando su hermeticidad. En el interior del equipo previamente sanitizado, se incorporan el agua desmineralizada y el bagazo de caña en las proporciones establecidas, iniciando así el proceso de tratamiento. 
+			\textbf{4.} Se procedió a activar los componentes eléctricos y la resistencia, verificando su correcto funcionamiento. Posteriormente, se instaló el tornillo de sellado en la base del reactor, asegurando su hermeticidad. En el interior del equipo previamente sanitizado se incorporaron el agua desmineralizada y el bagazo de caña en las proporciones establecidas, iniciando así el proceso de tratamiento. 
 			
-			\textbf{5.} Se incorpora el hidróxido de sodio (NaOH) previamente dosificado al reactor que contiene la mezcla de agua desmineralizada y bagazo de caña,  como se documenta en la Figura \ref{bagazo con hidroxido}.
+			\textbf{5.} Se incorporó el hidróxido de sodio (NaOH) previamente dosificado al reactor que contiene la mezcla de agua desmineralizada y bagazo de caña,  como se documenta en la Figura \ref{bagazo con hidroxido}.
 			
 			
 			\begin{figure}[H]
@@ -664,11 +661,11 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			\end{figure}
 			
 			
-			\textbf{6.} El reactor se sella herméticamente mediante un sistema multicapa compuesto por:algodón como barrera primaria, papel aluminio para aislamiento térmico y cinta aislante/ térmica como sellado secundario, garantizando el cierre completo del sistema como se detalla en la Figura \ref{sellado_bio}.
+			\textbf{6.} El reactor se selló herméticamente mediante un sistema multicapa compuesto por: algodón como barrera primaria, papel aluminio para aislamiento térmico y cinta aislante/ térmica como sellado secundario, garantizando el cierre completo del sistema como se detalla en la Figura \ref{sellado_bio}.
 			
 			
 			
-			\textbf{7.} Finalmente, se activa el sistema de control automatizado (Figura \ref{programa}), implementando los perfiles programados de temperatura para dentro del reactor y el tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}), con el objetivo de garantizar las condiciones óptimas para el proceso.
+			\textbf{7.} Finalmente, se activó el sistema de control automatizado (Figura \ref{programa}), para seguir los perfiles programados de temperatura para el interior del reactor y el tiempo de pretratamiento establecidos en el diseño experimental (Figura \ref{Diagrama1}). Este control garantizó las condiciones requeridas para el proceso.
 			
 			
 			\begin{figure}[H]
@@ -688,7 +685,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				\end{minipage}
 			\end{figure}
 			
-			\textbf{7.} El diseño del control de la temperatura podemos observarla en el anexo \ref{diseño del control de temp}
+			\textbf{7.} El diseño del control de temperatura para llevar a cabo este pretratamiento de la biomasa está reportado en el anexo \ref{diseño del control de temp}
 			
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\t
 			
@@ -709,10 +706,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 			
 			\textbf{Procedimiento}
 			\\[0.5em] 
-			\textbf{1.} Durante el pretratamiento biológico, se registran periódicamente los datos experimentales para garantizar su trazabilidad, y al finalizar el proceso se almacena toda la información recopilada. Adicionalmente, se registra el consumo energético mediante la lectura del watímetro (Figura \ref{watimetro}), el cual cuantifica la energía utilizada en kilovatios-hora (kWh) a lo largo del tratamiento.
+			\textbf{1.} Durante el pretratamiento biológico se registraron periódicamente los datos experimentales para garantizar su trazabilidad, y al finalizar el proceso, se almacenó toda la información recopilada. Adicionalmente, se registró el consumo energético mediante la lectura del watímetro (Figura \ref{watimetro}), el cual cuantificó la energía utilizada en kilovatios-hora (kWh) a lo largo del tratamiento.
 			
 			
-			\textbf{2.} Bajo condiciones controladas, se desarma el sistema retirando primero los elementos de sellado (aluminio/algodón), luego los componentes electrónicos (sensores termopares tipo k) y finalmente el conjunto tapa-mezclador, dejando la configuración documentada en la Figura \ref{biologico1}.
+			\textbf{2.} Bajo condiciones controladas, se desarmó el sistema, retirando primero los elementos de sellado (aluminio/algodón), luego los componentes electrónicos (sensores termopares tipo k) y finalmente el conjunto tapa-mezclador, dejando la configuración documentada en la Figura \ref{biologico1}.
 	
 			
 					
@@ -734,7 +731,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				\end{figure}
 				
 			
-			\textbf{3.} Para la separación sólido-líquido, se implementa un sistema de filtración compuesto por una cubeta de 10 L que integra una manta filtrante y un colador (Figura \ref{Cubeta con colador y manta para colar el bagazo pretratado.}). En este dispositivo se coloca el bagazo pretratado, permitiendo la retención de la biomasa y el paso del liquido resultante, tal como se documenta en la Figura \ref{Bagazo1}.
+			\textbf{3.} Para la separación sólido-líquido se implementó un sistema de filtración compuesto por una cubeta de 10 L que integraba una manta filtrante y un colador (Figura \ref{Cubeta con colador y manta para colar el bagazo pretratado.}). En este dispositivo se colocó el bagazo pretratado, permitiendo la retención de la biomasa y el paso del liquido resultante, tal como se documenta en la Figura \ref{Bagazo1}.
  
 				\begin{figure}[H]
 				\centering
@@ -753,10 +750,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 				\end{minipage}
 			\end{figure}
 	
-	     \textbf{4.} El bagazo pretratado se mantiene en la cubeta hasta completar el filtrado del agua residual, tras lo cual se somete a un proceso de lavado con agua adicional para eliminar el máximo posible de humus de lombriz o el hidróxido de sodio respectivamente. Posteriormente, el material se exprime manualmente para extraer el exceso de líquido y se deja escurrir, siguiendo el procedimiento ilustrado en la Figura \ref{biologico3}.
+	     \textbf{4.} El bagazo pretratado se mantuvo en la cubeta hasta completar el filtrado del agua residual, tras lo cual se sometió a un proceso de lavado con agua adicional para eliminar el máximo posible de humus de lombriz o el hidróxido de sodio respectivamente. Posteriormente, el material se exprimió manualmente para extraer el exceso de líquido y se dejó escurrir, siguiendo el procedimiento ilustrado en la Figura \ref{biologico3}.
 	     
 	
-	\textbf{5.} Para eliminar la humedad residual, el bagazo se extiende uniformemente en una bandeja y se introduce en un horno, donde se seca bajo condiciones controladas hasta alcanzar el contenido de humedad deseado, optimizando así el tiempo de proceso como se muestra en la Figura \ref{secado2}. 
+	\textbf{5.} Para eliminar la humedad residual, el bagazo se extiendió uniformemente en una bandeja y se introdujo en un horno, donde se secó bajo condiciones controladas hasta alcanzar el contenido de humedad deseado, optimizando así el tiempo de proceso como se muestra en la Figura \ref{secado2}. 
 	
 	
 	
@@ -781,11 +778,11 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 	
 	
-		\textbf{6.} Tras el secado inicial, el bagazo se coloca nuevamente en el colador para someterlo a un segundo enjuague con agua desmineralizada, asegurando la eliminación de residuos solubles (humus de lombriz o hidróxido de sodio), proceso que se documenta en la Figura \ref{enjuagado}.
+		\textbf{6.} Tras el secado inicial, el bagazo se colocó nuevamente en el colador para someterlo a un segundo enjuague con agua desmineralizada, asegurando la eliminación de residuos solubles (humus de lombriz o hidróxido de sodio), proceso que se documenta en la Figura \ref{enjuagado}.
 		
 	
 		
-	  \textbf{7.}Tras el escurrido manual, el material se somete a secado pasivo en condiciones ambientales (25 ± 2°C, humedad relativa menor a 60\%) hasta obtener peso constante, verificando la eliminación completa de humedad según se especifica en la Figura \ref{biologico4}.
+	  \textbf{7.}Tras el escurrido manual, el material se sometió a secado pasivo en condiciones ambientales (25 ± 2°C, humedad relativa menor a 60\%) hasta obtener peso constante, verificando la eliminación completa de humedad según se especifica en la Figura \ref{biologico4}.
 	
 	
 		\begin{figure}[H]
@@ -809,15 +806,15 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	
 	
 	
-	 \textbf{8.} Una vez completado el secado, el bagazo se almacena en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de la SSF, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch es lavado con agua desmineralizada. \\[0.5em]
+	 \textbf{8.} Una vez completado el secado, el bagazo se almacenó en bolsas herméticas para prevenir la absorción de humedad ambiental, garantizando así las condiciones óptimas para su uso en los posteriores procesos de la SSF, tal como se muestra en la Figura \ref{biologico4}. Posteriormente el reactor tipo batch fue lavado con agua desmineralizada. \\[0.5em]
 	
-	\textbf{9.} En el anexo \ref{diseño del control de temp} podemos observar el diseño del control de temperatura.
+	\textbf{9.} En el anexo \ref{diseño del control de temp} se reporta el diseño del control de temperatura para este pretratamiento.
 	
 
 			
 				\subsubsection{Hidrólisis y fermentación en etapas simultaneas}
 				
-			Para la SSF se consideraron los datos del apartado del diseño factorial, a continuación se presenta la lista de materiales.
+			Para la SSF se consideraron los datos del apartado del diseño factorial, a continuación se presenta la lista de materiales y el procedimiento para la producción de bietanol 2G.
 			\\
 					 \textbf{Compuestos} \\[0.5em]
 					 
@@ -840,10 +837,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 					 
 		  \textbf{Procedimiento}
 					\\[0.5em]	 
-		 \textbf{1.}  El reactor tipo batch, previamente lavado, se desinfecta con agua desmineralizada y se procede a sellar herméticamente su base para garantizar condiciones estériles antes de iniciar el proceso, evitando así cualquier contaminación externa que pueda afectar la reacción.\\[0.5em]
+		 \textbf{1.}  El reactor tipo batch, previamente lavado, fue desinfectado con agua desmineralizada y se procedió a sellar herméticamente su base para garantizar condiciones estériles antes de iniciar el proceso, evitando así cualquier contaminación externa que pueda afectar la reacción.\\[0.5em]
 
 		 	
-		 \textbf{2.} Cada reactivo (ácido cítrico, levadura activa) se pesa individualmente usando una báscula digital calibrada y un vaso de precipitado estéril, mientras que el agua se mide volumétricamente, ajustando las cantidades según los parámetros establecidos en el diseño de experimentos para garantizar la reproducibilidad del proceso y la trazabilidad de los datos. Ver Figura\ref{pesado2}.
+		 \textbf{2.} Cada reactivo (ácido cítrico, levadura activa) se pesó individualmente usando una báscula digital calibrada y un vaso de precipitado estéril, mientras que el agua se midió volumétricamente, ajustando las cantidades según los parámetros establecidos en el diseño de experimentos para garantizar la reproducibilidad del proceso y la trazabilidad de los datos. Ver Figura\ref{pesado2}.
 		 
 	
 		 
@@ -865,9 +862,9 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 		 \end{figure}
 		 
 		 
-	     \textbf{3.} En el interior del reactor tipo batch se depositan el agua desmineralizada y el bagazo de caña previamente pretratado, siguiendo las proporciones establecidas en el protocolo experimental (como se ilustra en la Figura \ref{ hidrolisis}), asegurando una distribución homogénea de los componentes para garantizar las condiciones óptimas de reacción.
+	     \textbf{3.} En el interior del reactor tipo batch se depositaron el agua desmineralizada y el bagazo de caña previamente pretratado, siguiendo las proporciones establecidas en el protocolo experimental (como se ilustra en la Figura \ref{ hidrolisis}), asegurando una distribución homogénea de los componentes que garantizara las condiciones requeridas para la reacción.
 	     	
-	     \textbf{4.} Al reactor tipo batch que contiene el bagazo de caña pretratado y el agua desmineralizada se le adiciona la levadura activa previamente pesada (ver Figura \ref{hidrolisis4}), la cual se mezcla homogéneamente hasta lograr su completa incorporación al medio de reacción. 
+	     \textbf{4.} Al reactor tipo batch conteniendo el bagazo de caña pretratado y el agua desmineralizada se le adicionó la levadura activa previamente pesada (ver Figura \ref{hidrolisis4}), la cual se mezcló homogéneamente hasta lograr su completa incorporación al medio de reacción. 
 	     
 	    
 	     
@@ -890,10 +887,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	     \end{figure}
 	     
 	     
-	     \textbf{5.} Mediante micropipeta calibrada se miden los mililitros exactos de la enzima Cellic CTec2 según el diseño de experimentos, la cual se añade al sistema y se mezcla meticulosamente hasta su completa integración (Figura \ref{hidrolisis9}), asegurando la actividad enzimática óptima	\\ 
+	     \textbf{5.} Con ayuda de una micropipeta calibrada se midieron los mililitros exactos de la enzima Cellic CTec2 según el diseño de experimentos, la cual se añadió al sistema y se mezcló meticulosamente hasta su completa integración (Figura \ref{hidrolisis9}), asegurando la actividad enzimática óptima	\\ 
 	     	
 	     	 
-	     \textbf{6.} El pH de la mezcla se mide utilizando un medidor de pH Hanna Instruments previamente calibrado, introduciendo el electrodo en la solución y agitando suavemente para obtener una lectura estable; dependiendo del resultado, se añade gradualmente ácido cítrico en cantidades pesadas con precisión, monitoreando el cambio en el pH después de cada adición hasta alcanzar el valor deseado según los parámetros establecidos en el diseño experimental, ver figura \ref{hidrolisis3}.
+	     \textbf{6.} El pH de la mezcla se midió utilizando un medidor de pH Hanna Instruments previamente calibrado, introduciendo el electrodo en la solución y agitando suavemente para obtener una lectura estable; dependiendo del resultado, se añadió gradualmente ácido cítrico en cantidades pesadas con precisión, monitoreando el cambio en el pH después de cada adición hasta alcanzar el valor deseado según los parámetros establecidos en el diseño experimental, ver figura \ref{hidrolisis3}.
 	     
 	     
 	     
@@ -914,10 +911,10 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	     	\end{minipage}
 	     \end{figure}
 	     
-	      \textbf{7.} El reactor tipo batch se sella herméticamente utilizando algodón y papel aluminio (ver Figura \ref{hidrolisis 6}), y se instala una trampa de aire compuesta por una manguera insertada en uno de los orificios de la tapa del reactor tipo batch. Para garantizar un cierre seguro y evitar fugas, se refuerza la conexión entre la manguera y la tapa con cinta adhesiva. El extremo libre de la manguera se sumerge en una cubeta con agua, permitiendo la liberación controlada del dióxido de carbono generado durante la reacción, al mismo tiempo que impide la entrada de oxígeno al sistema. Este diseño asegura un ambiente anaeróbico adecuado para el proceso.
+	      \textbf{7.} El reactor tipo batch se selló herméticamente utilizando algodón y papel aluminio (ver Figura \ref{hidrolisis 6}), y se instaló una trampa de aire compuesta por una manguera insertada en uno de los orificios de la tapa del reactor. Para garantizar un cierre seguro y evitar fugas, se reforzó la conexión entre la manguera y la tapa con cinta adhesiva. El extremo libre de la manguera se sumergió en una cubeta con agua, permitiendo la liberación controlada del dióxido de carbono generado durante la reacción, al mismo tiempo que impidió la entrada de oxígeno al sistema. Este diseño asegura un ambiente anaeróbico adecuado para el proceso.
 	      \\[0.5em]
 	     
-	     	\textbf{8.} Se inicia el sistema de control para la SSF, ajustando los parámetros de tiempo y temperatura según las condiciones predefinidas en el diseño experimental (ver apartado \ref{SacariSF}), garantizando así las condiciones óptimas para el proceso. Ver Figura \ref{hidrolisis 8} para observar la estructura y conexiones.
+	     	\textbf{8.} Se inició el sistema de control para la SSF, ajustando los parámetros de tiempo y temperatura según las condiciones predefinidas en el diseño experimental (ver apartado \ref{SacariSF}), garantizando así las condiciones adecuadas para el proceso. Ver Figura \ref{hidrolisis 8} para observar la estructura y conexiones.
 	     	
 	 
 	     		     \begin{figure}[H]
@@ -949,7 +946,7 @@ A continuación se presenta un diagrama donde se clasifica por factores cada var
 	     	\end{figure}
 	     	
 	     	
-	     	\textbf{10.} Se puede observar el diseño del control en el anexo \ref{diseño del control de temp}.
+	     	\textbf{10.} El diseño del control del proceso SSF se reporta en el anexo \ref{diseño del control de temp}.
 	     	
 	     	
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
