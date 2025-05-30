@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  29 MAY 2025 23:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  29 MAY 2025 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,7 +1189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--35
 <imagenes/bagazo.png, id=698, 260.47313pt x 287.57437pt>
 File: imagenes/bagazo.png Graphic file (type png)
 <use imagenes/bagazo.png>
-Package pdftex.def Info: imagenes/bagazo.png  used on input line 1479.
+Package pdftex.def Info: imagenes/bagazo.png  used on input line 1484.
 (pdftex.def)             Requested size: 187.89914pt x 207.4483pt.
 
 
@@ -1197,20 +1197,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Citation `Portalproduccon' on page 32 undefined on input line 14
-89.
+94.
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1495
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1500
 
  []
 
 <imagenes/pretrata_1.png, id=709, 749.80125pt x 529.98pt>
 File: imagenes/pretrata_1.png Graphic file (type png)
 <use imagenes/pretrata_1.png>
-Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1498.
+Package pdftex.def Info: imagenes/pretrata_1.png  used on input line 1503.
 (pdftex.def)             Requested size: 187.89914pt x 132.81004pt.
 [33 <./imagenes/bagazo.png>] [34 <./imagenes/pretrata_1.png>]
-Overfull \hbox (6.1456pt too wide) in paragraph at lines 1567--1572
+Overfull \hbox (6.1456pt too wide) in paragraph at lines 1572--1577
 []\OT1/cmr/m/n/12 En el art^^S^^Pcu-lo [[]] men-cio-na que la sa-ca-ri-fi-ca-ci
 ^^Son se rea-li-za si-mult^^Sanea-
  []
@@ -1219,10 +1219,10 @@ Overfull \hbox (6.1456pt too wide) in paragraph at lines 1567--1572
 File: imagenes/diagrama producciónssf.png Graphic file (type png)
 <use imagenes/diagrama producciónssf.png>
 Package pdftex.def Info: imagenes/diagrama producciónssf.png  used on input li
-ne 1578.
+ne 1583.
 (pdftex.def)             Requested size: 281.85587pt x 158.54167pt.
 [35]
-Overfull \hbox (29.61842pt too wide) in paragraph at lines 1589--1591
+Overfull \hbox (29.61842pt too wide) in paragraph at lines 1594--1596
 \OT1/cmr/m/n/12 ren-tes in-ves-ti-ga-cio-nes so-bre la pro-duc-ci^^Son de bio-e
 ta-nol de se-gun-da ge-ne-ra-ci^^Son. [[]]
  []
@@ -1232,56 +1232,56 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.6.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1658 \subsection{Pretratamientos.}
+l.1663 \subsection{Pretratamientos.}
                                      [38]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.6.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1707 ...raciones en la producción de bioetanol}
+l.1712 ...raciones en la producción de bioetanol}
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .6.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1711 ...pretratada y la fermentación separadas}
+l.1716 ...pretratada y la fermentación separadas}
                                                    [39]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.6.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1732 ... de la planta aplicando una Señal PRBS}
+l.1737 ... de la planta aplicando una Señal PRBS}
                                                   
 <imagenes/diagrama_PRBS.png, id=778, 340.27126pt x 614.295pt>
 File: imagenes/diagrama_PRBS.png Graphic file (type png)
 <use imagenes/diagrama_PRBS.png>
-Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 1739.
+Package pdftex.def Info: imagenes/diagrama_PRBS.png  used on input line 1744.
 (pdftex.def)             Requested size: 187.89914pt x 339.21306pt.
  [40]
 <imagenes/temperatura con prbs.png, id=786, 1445.4pt x 697.10437pt>
 File: imagenes/temperatura con prbs.png Graphic file (type png)
 <use imagenes/temperatura con prbs.png>
 Package pdftex.def Info: imagenes/temperatura con prbs.png  used on input line 
-1748.
+1753.
 (pdftex.def)             Requested size: 375.80544pt x 181.24286pt.
  [41 <./imagenes/diagrama_PRBS.png> <./imagenes/temperatura con prbs.png (PNG c
 opy)>]
 <imagenes/temp_neta.png, id=793, 1445.4pt x 697.10437pt>
 File: imagenes/temp_neta.png Graphic file (type png)
 <use imagenes/temp_neta.png>
-Package pdftex.def Info: imagenes/temp_neta.png  used on input line 1759.
+Package pdftex.def Info: imagenes/temp_neta.png  used on input line 1764.
 (pdftex.def)             Requested size: 328.82707pt x 158.58617pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.6.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1768 ...dentificación del sistema de la planta}
+l.1773 ...dentificación del sistema de la planta}
                                                   	
 <imagenes/identificacion.png, id=796, 473.6094pt x 247.6452pt>
 File: imagenes/identificacion.png Graphic file (type png)
 <use imagenes/identificacion.png>
-Package pdftex.def Info: imagenes/identificacion.png  used on input line 1782.
+Package pdftex.def Info: imagenes/identificacion.png  used on input line 1787.
 (pdftex.def)             Requested size: 375.80544pt x 196.51044pt.
 
 
@@ -1290,7 +1290,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <imagenes/Polos y ceros.png, id=798, 1445.4pt x 697.10437pt>
 File: imagenes/Polos y ceros.png Graphic file (type png)
 <use imagenes/Polos y ceros.png>
-Package pdftex.def Info: imagenes/Polos y ceros.png  used on input line 1790.
+Package pdftex.def Info: imagenes/Polos y ceros.png  used on input line 1795.
 (pdftex.def)             Requested size: 469.75502pt x 226.55623pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1300,12 +1300,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.6.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1797 	\subsection{Control PID}
+l.1802 	\subsection{Control PID}
                                 
 <imagenes/pid tuner.png, id=808, 1445.4pt x 767.86874pt>
 File: imagenes/pid tuner.png Graphic file (type png)
 <use imagenes/pid tuner.png>
-Package pdftex.def Info: imagenes/pid tuner.png  used on input line 1810.
+Package pdftex.def Info: imagenes/pid tuner.png  used on input line 1815.
 (pdftex.def)             Requested size: 328.82707pt x 174.68456pt.
 
 
@@ -1316,7 +1316,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: imagenes/sistema_controlado.png Graphic file (type png)
 <use imagenes/sistema_controlado.png>
 Package pdftex.def Info: imagenes/sistema_controlado.png  used on input line 18
-46.
+51.
 (pdftex.def)             Requested size: 375.80544pt x 199.64116pt.
 
 [44 <./imagenes/pid tuner.png>] [45 <./imagenes/sistema_controlado.png>]
@@ -1371,7 +1371,7 @@ he/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/U
 sers/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.
 pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb>
-Output written on document.pdf (49 pages, 21843482 bytes).
+Output written on document.pdf (49 pages, 21843852 bytes).
 PDF statistics:
  977 PDF objects out of 1000 (max. 8388607)
  196 named destinations out of 1000 (max. 500000)
