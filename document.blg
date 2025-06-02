@@ -8,45 +8,45 @@ The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
 Warning--can't use both volume and number fields in Arturo2022evaluacion
-You've used 24 entries,
+You've used 25 entries,
             1935 wiz_defined-function locations,
-            635 strings with 9992 characters,
-and the built_in function-call counts, 9350 in all, are:
-= -- 898
-> -- 429
+            641 strings with 10435 characters,
+and the built_in function-call counts, 9888 in all, are:
+= -- 944
+> -- 472
 < -- 11
-+ -- 150
-- -- 146
-* -- 816
-:= -- 1691
-add.period$ -- 74
-call.type$ -- 24
-change.case$ -- 192
-chr.to.int$ -- 24
-cite$ -- 25
-duplicate$ -- 334
-empty$ -- 611
-format.name$ -- 172
-if$ -- 1777
++ -- 166
+- -- 162
+* -- 865
+:= -- 1789
+add.period$ -- 78
+call.type$ -- 25
+change.case$ -- 205
+chr.to.int$ -- 25
+cite$ -- 26
+duplicate$ -- 352
+empty$ -- 642
+format.name$ -- 189
+if$ -- 1880
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 124
-num.names$ -- 72
-pop$ -- 147
+missing$ -- 21
+newline$ -- 129
+num.names$ -- 75
+pop$ -- 164
 preamble$ -- 1
-purify$ -- 193
+purify$ -- 206
 quote$ -- 0
-skip$ -- 256
+skip$ -- 264
 stack$ -- 0
-substring$ -- 596
-swap$ -- 34
+substring$ -- 608
+swap$ -- 35
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 150
 warning$ -- 1
-while$ -- 70
+while$ -- 72
 width$ -- 0
-write$ -- 315
+write$ -- 328
 (There was 1 warning)
