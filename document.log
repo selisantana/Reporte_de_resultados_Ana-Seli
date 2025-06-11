@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  8 JUN 2025 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.12)  10 JUN 2025 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,20 +1119,20 @@ Overfull \hbox (5.43532pt too wide) in paragraph at lines 1062--1081
  []
 
 [21] [22] [23] [24]
-<imagenes/biologico_TNUB.png, id=630, 1445.4pt x 697.10437pt>
-File: imagenes/biologico_TNUB.png Graphic file (type png)
-<use imagenes/biologico_TNUB.png>
-Package pdftex.def Info: imagenes/biologico_TNUB.png  used on input line 1339.
+<imagenes/biologico_11.png, id=630, 1445.4pt x 697.10437pt>
+File: imagenes/biologico_11.png Graphic file (type png)
+<use imagenes/biologico_11.png>
+Package pdftex.def Info: imagenes/biologico_11.png  used on input line 1339.
 (pdftex.def)             Requested size: 256.05855pt x 176.40305pt.
 
 Overfull \hbox (28.43651pt too wide) in paragraph at lines 1339--1340
 [][] 
  []
 
-<imagenes/biologico_11.png, id=631, 1445.4pt x 697.10437pt>
-File: imagenes/biologico_11.png Graphic file (type png)
-<use imagenes/biologico_11.png>
-Package pdftex.def Info: imagenes/biologico_11.png  used on input line 1345.
+<imagenes/biologico_TNUB.png, id=631, 1445.4pt x 697.10437pt>
+File: imagenes/biologico_TNUB.png Graphic file (type png)
+<use imagenes/biologico_TNUB.png>
+Package pdftex.def Info: imagenes/biologico_TNUB.png  used on input line 1345.
 (pdftex.def)             Requested size: 256.05855pt x 176.40305pt.
 
 Overfull \hbox (28.43651pt too wide) in paragraph at lines 1345--1346
@@ -1161,7 +1161,7 @@ File: imagenes/consumoenergetico.png Graphic file (type png)
 Package pdftex.def Info: imagenes/consumoenergetico.png  used on input line 138
 1.
 (pdftex.def)             Requested size: 455.23724pt x 199.1661pt.
-[26 <./imagenes/biologico_TNUB.png (PNG copy)> <./imagenes/biologico_11.png (PN
+[26 <./imagenes/biologico_11.png (PNG copy)> <./imagenes/biologico_TNUB.png (PN
 G copy)> <./imagenes/alcalino_TNUB.png (PNG copy)> <./imagenes/alcalino_1cm.png
  (PNG copy)>]
 <imagenes/CONSUMOENERGETICOSSF.png, id=652, 1445.4pt x 697.10437pt>
@@ -1358,7 +1358,7 @@ rs/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 msy8.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb><C:/Users/elfhe/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on document.pdf (49 pages, 21832683 bytes).
+Output written on document.pdf (49 pages, 21832666 bytes).
 PDF statistics:
  993 PDF objects out of 1000 (max. 8388607)
  198 named destinations out of 1000 (max. 500000)
